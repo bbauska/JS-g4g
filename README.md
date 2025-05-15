@@ -1655,14 +1655,15 @@ generateImageForm.addEventListener('submit', (e) => {
 <h4>Output:</h4>
 <!-- image-ai-02.mp4 -->
 <p align="center" width="100%">
+  <iframe src="./image/image-ai-02.mp4">
   <figure>
     <img src="./images/image-ai-01.png"
-	<iframe src="./image/image-ai-02.mp4">
     title="Image AI."
     alt="Image AI"
     style="border: 2px solid #000000; width:25%;" />
 	<figcaption>Image AI.</figcaption>
   </figure>
+  </iframe>
 </p>
 
 
