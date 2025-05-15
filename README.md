@@ -134,14 +134,12 @@ focus on a basic task—searching for specific words or phrases within text.</p>
     &lt;link rel="stylesheet" 
           type="text/css" href="./style.css"&gt;
 &lt;/head&gt;
-
 &lt;body&gt;
   &lt;div class="container"&gt;
     &lt;input id="searchbar" 
       onkeyup="search_animal()" 
       type="text" name="search" 
       placeholder="Search animals.."&gt;
-
     &lt;ul id='list'&gt;
       &lt;li class="animals"&gt;Cat&lt;/li&gt;
       &lt;li class="animals"&gt;Dog&lt;/li&gt;
@@ -156,7 +154,6 @@ focus on a basic task—searching for specific words or phrases within text.</p>
       &lt;li class="animals"&gt;Horse&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
-
   &lt;script src="./script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
@@ -202,7 +199,6 @@ focus on a basic task—searching for specific words or phrases within text.</p>
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -212,13 +208,12 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 // JavaScript code
 function search_animal() {
   let input = document.getElementById('searchbar').value
   input = input.toLowerCase();
   let x = document.getElementsByClassName('animals');
-
   for (i = 0; i < x.length; i++) {
     if (!x[i].innerHTML.toLowerCase().includes(input)) {
       x[i].style.display = "none";
@@ -228,4 +223,4 @@ function search_animal() {
     }
   }
 }
-</pre>
+</code></pre>
