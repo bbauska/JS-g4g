@@ -1,7 +1,7 @@
 <h2>var,let,const - search - map in html</h2>
 <ol>
-  <li><h3><a href="#01">var, let, const</a></h3></li>
-  <li><h3><a href="#02">Search utility creation</a>,</h3></li>
+  <li><h3><a href="#01">What are var, let, const?</a></h3></li>
+  <li><h3><a href="#02">Create Web Search utility,</a>,</h3></li>
   <li><h3><a href="#03">Make a map in HTML</a>,</h3></li>
 </ol>
 
@@ -113,7 +113,7 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 <!-- image-search-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. search image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="left">
+<p align="center" width="100%">
   <img src="./images/image-search-01.png"
   title="Search image."
   alt="Search image"
@@ -238,7 +238,7 @@ function search_animal() {
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. search image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="left">
+<p align="center" width="100%">
   <img src="./images/image-search-02.gif"
   title="Search image."
   alt="Search image"
@@ -263,5 +263,5 @@ and web apps. You can learn CSS from the ground up by following
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>How to Add Map in HTML?</h2>
+<h2 id="03">03. How to Add Map in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
