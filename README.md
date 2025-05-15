@@ -4,14 +4,15 @@
 <h2 id="#toc">Web Development with Geeks 4 Geeks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
-  <li><h3><a href="#01">What are var, let, const?</a></h3></li>
+  <li><h3><a href="#01">What are var, let, const?</a>,</h3></li>
   <li><h3><a href="#02">Create Web Search utility</a>,</h3></li>
   <li><h3><a href="#03">Make a map in HTML</a>,</h3></li>
   <li><h3><a href="#04">Design Joke Generator App in HTML CSS &amp; JavaScript</a>,</h3></li>
   <li><h3><a href="#05">Create a Create a Stack Visualizer using HTML CSS and Javascript</a>,</h3></li>
   <li><h3><a href="#06">Create a Bookmark Landing Page using HTML CSS and JavaScript</a>,</h3></li>
-  <li><h3><a href="#07">How to Add Icons in HTML?</a></h3></li>
-  <li><h3><a href="#08">Build an AI Image Generator Website in HTML CSS and JavaScript</a></h3></li>
+  <li><h3><a href="#07">How to Add Icons in HTML?</a>,</h3></li>
+  <li><h3><a href="#08">Build an AI Image Generator Website in HTML CSS and JavaScript</a>,</h3></li>
+  <li><h3><a href="#09">Build a Weather App in HTML CSS and JavaScript</a>,</h3></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="01">01. How to declare variables in different ways in JavaScript?</h2>
@@ -1650,6 +1651,7 @@ generateImageForm.addEventListener('submit', (e) => {
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-ai-02.mp4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--
 <p align="center" width="100%">
   <figure>
     <img src="./images/image-ai-01.png"
@@ -1659,8 +1661,11 @@ generateImageForm.addEventListener('submit', (e) => {
     <figcaption>Image AI.</figcaption>
   </figure>
 </p>
+-->
 
+https://media.geeksforgeeks.org/wp-content/uploads/20240725151806/qa.mp4
 
+<!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fxKnmW0QxHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38877164.76467194!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1422925644298" width="600" height="450" frameborder="0" style="border:0"></iframe>
@@ -1671,7 +1676,13 @@ generateImageForm.addEventListener('submit', (e) => {
 ></iframe>
 
 <iframe src="./image/image-ai-02.mp4" width="600" height="450" frameborder="0" style="border:0"></iframe>
+-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="09">09. Build A Weather App in HTML CSS &amp; JavaScript</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am</h6>
 <h6>Date editted: 5/15/2025 9:00+am</h6>
