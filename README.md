@@ -1650,6 +1650,8 @@ generateImageForm.addEventListener('submit', (e) => {
 })
 ```
 
+</details>
+
 <h4>Output:</h4>
 <!-- image-ai-02.mp4 -->
 <p align="center" width="100%">
