@@ -1,12 +1,12 @@
 <h2>var,let,const - search - map in html</h2>
 <ol>
-  <li><h3>var, let, const</h3></li>
-  <li><h3>Search utility creation,</h3></li>
-  <li><h3>Make a map in HTML,</h3></li>
+  <li><h3><a href="#01">var, let, const</a></h3></li>
+  <li><h3><a href="#02">Search utility creation</a>,</h3></li>
+  <li><h3><a href="#03">Make a map in HTML</a>,</h3></li>
 </ol>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>How to declare variables in different ways in JavaScript?</h2>
+<h2 id="01">01. How to declare variables in different ways in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In JavaScript, variables can be declared using keywords like <b><mark>var</mark></b>, 
 <b><mark>let</mark></b>, or <b><mark>const</mark></b>, each keyword is used in some specific 
@@ -104,7 +104,7 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 |Can be redeclared anywhere in the program |    Cannot be redeclared inside a block    | Cannot be redeclared inside a block |
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Search Bar using HTML, CSS and JavaScript</h2>
+<h2 id="02">02. Search Bar using HTML, CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Every website needs a search bar through which a user can search the content of their 
 concern on that page. We’re going to learn how to create one using only HTML, CSS, and 
