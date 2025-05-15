@@ -1603,7 +1603,7 @@ body {
 </details>
 
 <details>
-  <sumamry>JavaScript</summary>
+  <summary>JavaScript</summary>
   
 ```
 // index.js
