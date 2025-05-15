@@ -182,6 +182,8 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
 <pre>
 * {
   margin: 0;
@@ -226,9 +228,12 @@ focus on a basic task—searching for specific words or phrases within text.</p>
   }
 }
 </pre>
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
 <pre>
 // JavaScript code
 function search_animal() {
@@ -245,6 +250,7 @@ function search_animal() {
   }
 }
 </pre>
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -286,7 +292,7 @@ of interest.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Now, let's explore two popular approaches for adding maps to a webpage:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Table of Content</h4>
+<h4>Table of Contents</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Methods to Add a Map in HTML
@@ -327,6 +333,8 @@ generate an embed code that you can copy and paste directly into your HTML docum
 using an <b><mark>&lt;iframe&gt;</mark></b> element. It shows a webpage with centered 
 heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
 
 ```
 <!-- Using iframe -->
@@ -356,6 +364,7 @@ heading and a google map showing specific location.</h4>
 </html>
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -401,6 +410,8 @@ L.marker([Latitude, Longitude]).addTo(map)
 <b><mark>leaflet.js</mark></b>, it is a open-source javascript library. The map centers on India Gate, 
 New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
 
 ```
 <!-- Using leaflet Map -->
@@ -437,6 +448,7 @@ New Delhi and displays it with marker.</h4>
 </html>
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -459,9 +471,9 @@ show those jokes on the screen.</p>
 <h4>Prerequisites</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -481,6 +493,8 @@ HTML, CSS & JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
 
 ```
 <!DOCTYPE html>
@@ -511,9 +525,12 @@ HTML, CSS & JavaScript.</p>
 </html>
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
 
 ```
 body {
@@ -527,17 +544,14 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-
 .container {
 	text-align: center;
 }
-
 .app-title {
 	color: #4CAF50;
 	font-size: 32px;
 	margin-bottom: 20px;
 }
-
 .joke-container {
 	padding: 20px;
 	background: #fff;
@@ -548,7 +562,6 @@ body {
 	margin: 20px;
 	overflow: hidden;
 }
-
 .laugh-icon,
 .random-icon,
 .copy-icon {
@@ -556,13 +569,11 @@ body {
 	margin-bottom: 10px;
 	color: #FFD700;
 }
-
 #jokeText {
 	font-size: 18px;
 	color: #555;
 	margin: 20px 10px;
 }
-
 button {
 	padding: 12px 30px;
 	font-size: 18px;
@@ -574,11 +585,9 @@ button {
 	cursor: pointer;
 	transition: background 0.3s ease-in-out;
 }
-
 button:hover {
 	background: #FF6565;
 }
-
 @media screen and (max-width: 600px) {
 	.joke-container {
 		width: 90%;
@@ -586,9 +595,12 @@ button:hover {
 }
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
 
 ```
 const joke = document.getElementById('jokeText');
@@ -619,6 +631,7 @@ function cpyFn() {
 }
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -929,6 +942,8 @@ browser for easy and quick access.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
 
 ```
 <!DOCTYPE html>
@@ -973,9 +988,12 @@ browser for easy and quick access.</p>
 </html>
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
 
 ```
 /* styles.css */
@@ -1119,9 +1137,12 @@ a:hover {
 }
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
 
 ```
 // Script.js
@@ -1204,6 +1225,7 @@ function addDeleteBookmarkListener(
 }
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="07">07. How to Add Icons in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
