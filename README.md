@@ -259,9 +259,184 @@ and web apps. You can learn HTML from the ground up by following
 and web apps. You can learn CSS from the ground up by following 
 <a href="https://www.geeksforgeeks.org/css-tutorials/">this CSS Tutorial</a> and 
 <a href="https://www.geeksforgeeks.org/css-examples/">CSS Examples</a>.</p>
-
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="03">03. How to Add Map in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>When building websites, including a map is often necessary to display important locations, 
+such as office addresses, at the footer or on dedicated pages. Adding a map enhances user 
+experience, making it easier for users to locate your business or other important points 
+of interest.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Prerequisites</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Basic knowledge of HTML and CSS is required to follow along with the examples.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Methods to Add a Map in HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Now, let's explore two popular approaches for adding maps to a webpage:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Table of Content</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Methods to Add a Map in HTML
+    <ul>
+	  <li>Using &lt;iframe&gt; to Embed Google Maps</li>
+      <li>Using Leaflet.js to Add Interactive Maps</li>
+	</ul>
+  </li>
+</ul>
+<p>Now we will learn one by one how we can add maps in HTML.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1. Using &lt;iframe&gt; to Embed Google Maps</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The easiest and most commonly used method to add a map in HTML is by embedding a Google 
+Map using the <iframe> tag. Google Maps provides an option to generate an embed code that 
+you can copy and paste directly into your HTML document.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Steps to Embed Google Maps:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ol>
+  <li>Go to Google Maps.</li>
+  <li>Search for the location you want to display.</li>
+  <li>Click the Share option and choose Embed a Map.</li>
+  <li>Copy the provided &lt;iframe&gt; code and paste it into your HTML where you want the map to appear.</li>
+</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Syntax:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+&lt;iframe src="https://www.google.com/maps/embed?pb=YourMapURL"
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;
+&lt;/iframe&gt;
+</pre>
+<h4>Example: Below given example demonstrates how to embed a goggle map into a webpage 
+using an &lt;iframe&gt; element. It shows a webpage with centered heading and a google map 
+showing specific location.</h4>
+
+```
+<!-- Using iframe -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Embed Google Map</title>
+</head>
+
+<body style="display: grid;
+ justify-content: center">
+    <h2 style="text-align: center">
+        Add map in html using iframe</h2>
+    <iframe src="https://www.google.com/maps/embed?pb
+    =!1m18!1m12!1m3!1d4291.745453141256!2d
+    77.39914006293347!3d28.504393188935435!
+    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+    !3m3!1m2!1s0x390ce626851f7009%3A0x62118
+    5133cfd1ad1!2sGeeksforGeeks%20%7C%20
+    Coding%20Classes%20%7C%20Noida!5e0!3m2!1
+    sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. map image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+  <img src="./images/image-map-01.png"
+  title="Map image 1."
+  alt="Map image 1"
+  style="border: 2px solid #000000; width:35%;" />
+</p>
+<!-- image-map01.jpg -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>2. Using <b><mark>Leaflet.js</mark></b> to Add Interactive Maps</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p><b><mark>Leaflet</mark></b> is a popular open source library to add interactive maps in our website. It is a 
+Javascript library for mobile friendly lighweight and interactive maps. It is designed to 
+be easy to use and mobile-friendly.It is customizable, as you can customize it with variety 
+of additional plugins.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Steps to Use <b><mark>Leaflet.js</mark></b>:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ol>
+  <li>Include the <b><mark>Leaflet.js</mark></b> library: Link the CSS and JavaScript files in your HTML document.</li>
+  <li>Create a map container: Add a &lt;div&gt; element where the map will be displayed.</li>
+  <li>Initialize the map: Use <b><mark>Leaflet.js</mark></b> to create the map and set the center coordinates and zoom level.</li>
+</ol>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Syntax:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+let map = L.map('map').setView([Latitude, Longitude], ZoomLevel);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([Latitude, Longitude]).addTo(map)
+    .bindPopup('Popup Text Here.')
+    .openPopup();
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example: Below is the example for creating interactive map in our website using 
+<b><mark>leaflet.js</mark></b>, it is a open-source javascript library. The map centers on India Gate, 
+New Delhi and displays it with marker.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!-- Using leaflet Map -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leaflet Map Example</title>
+    <link rel="stylesheet" href="
+    https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZy
+    oHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9V
+        M+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <h2 style="text-align: center;">
+        India Gate Location</h2>
+    <div id="mapid" style="height: 75vh; width: 50vw;
+     margin-left: 25%;"></div>
+    <script>
+        var map = L.map("mapid").setView
+            ([28.612894, 77.229446], 13); L.tileLayer
+                ("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+                    attribution: "&copy; OpenStreetMap contributors",
+                }).addTo(map);
+        L.marker([28.612894, 77.229446])
+            .addTo(map)
+            .bindPopup("India Gate, New Delhi")
+            .openPopup();
+    </script>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. map image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+  <img src="./images/image-map-02.png"
+  title="Map image."
+  alt="Map image"
+  style="border: 2px solid #000000; width:35%;" />
+</p>
+<!-- image-map02.jpg -->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="04">04. </h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
