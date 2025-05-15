@@ -746,7 +746,7 @@ stack then the stack underflow message will be displayed in the message box.</p>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
+<pre>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
@@ -934,7 +934,7 @@ header {
     background-color: rgb(255, 15, 59);
   }
 }
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1051,7 +1051,7 @@ browser for easy and quick access.</p>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
+<pre>
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
@@ -1191,7 +1191,7 @@ a:hover {
     margin-left: 0;
   }
 }
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1200,8 +1200,7 @@ a:hover {
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 // Script.js
 // Get DOM elements
 const urlInput = 
@@ -1280,7 +1279,7 @@ function addDeleteBookmarkListener(
       bookmarkItem.querySelector(".delete");
     deleteButton.addEventListener("click", () => { bookmarkItem.remove(); });
 }
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1539,8 +1538,7 @@ of creating an AI Image generator website with the help of HTML, CSS, and JavaSc
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  
-```
+<pre>
 /* style.css */
 body {
   padding: 0;
@@ -1598,7 +1596,6 @@ body {
   width: 100%;
   height: 350px;
 }
-
 @media screen and (min-width: 280px) and (max-width: 920px) {
   .container {
     width: 100%;
@@ -1608,15 +1605,14 @@ body {
     height: 300px;
   }
 }
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  
-```
+<pre>
 // index.js
 let generateImageForm = 
   document.getElementById('generate-image-form');
@@ -1656,7 +1652,7 @@ generateImageForm.addEventListener('submit', (e) => {
       "Input field can not be empty!";
   }
 })
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1950,15 +1946,23 @@ function weatherShowFn(data) {
 <h4>In this Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The url and apiKey variables store the API endpoint and key to access the weather data from OpenWeatherMap.</li>
-  <li>The weatherFn function sends a request to the OpenWeatherMap API with the city name (default is "Pune") and retrieves the weather data asynchronously. If the request is successful, it proceeds to display the data.</li>
-  <li>If the city is not found or an error occurs, an alert is shown to the user saying "City not found. Please try again."</li>
-  <li>The weatherShowFn function updates the webpage with weather details such as the city name, temperature, description, wind speed, and current date/time. It also sets the weather icon (though the icon URL is missing and needs to be added).</li>
-  <li>The current date and time are displayed using moment.js, formatted as "Month day, year, time" (e.g., "April 16th 2025, 3:45:00 PM").</li>
+  <li>The url and apiKey variables store the API endpoint and key to access the weather 
+    data from OpenWeatherMap.</li>
+  <li>The weatherFn function sends a request to the OpenWeatherMap API with the city name 
+    (default is "Pune") and retrieves the weather data asynchronously. If the request is 
+	successful, it proceeds to display the data.</li>
+  <li>If the city is not found or an error occurs, an alert is shown to the user saying 
+    "City not found. Please try again."</li>
+  <li>The weatherShowFn function updates the webpage with weather details such as the 
+    city name, temperature, description, wind speed, and current date/time. It also sets 
+	the weather icon (though the icon URL is missing and needs to be added).</li>
+  <li>The current date and time are displayed using moment.js, formatted as "Month day, year, time" 
+    (e.g., "April 16th 2025, 3:45:00 PM").</li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Weather App - Complete Code</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: This example describes the basic implementation for a Weather App in HTML CSS and JavaScript.</h4>
+<h4>Example: This example describes the basic implementation for a Weather App in HTML CSS 
+and JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
