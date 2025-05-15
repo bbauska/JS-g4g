@@ -10,6 +10,7 @@
   <li><h3><a href="#05">Create a Create a Stack Visualizer using HTML CSS and Javascript</a>,</h3></li>
   <li><h3><a href="#06">Create a Bookmark Landing Page using HTML CSS and JavaScript</a>,</h3></li>
   <li><h3><a href="#07">How to Add Icons in HTML?</a></h3></li>
+  <li><h3><a href="#08">Build an AI Image Generator Website in HTML CSS and JavaScript</a></h3></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="01">01. How to declare variables in different ways in JavaScript?</h2>
@@ -370,10 +371,12 @@ heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. map image using iframe ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
+  <figure>
   <img src="./images/image-map-01.jpg"
   title="Map image 1 using iframe."
   alt="Map image 1 using iframe"
   style="border: 2px solid #000000; width:35%;" />
+  figcaption="Add map in HTML using iframe.</figcaption>
 </p>
 <!-- image-map01.jpg -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -454,12 +457,15 @@ New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. map image using leaflet.js ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <img src="./images/image-map-02.jpg"
-  title="Map image example using leaflet.js."
-  alt="Map image example using leaflet.js"
-  style="border: 2px solid #000000; width:35%;" />
+  <figure>
+    <img src="./images/image-map-02.jpg"
+    title="Map image example using leaflet.js."
+    alt="Map image example using leaflet.js"
+    style="border: 2px solid #000000; width:35%;" />
+	<figcaption="Add map in HTML using leaflet.js.</figcaption>
+  </figure>
 </p>
-<!-- image-map02.jpg -->
+<!-- image-map-02.jpg -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. Design Joke Generator App in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1258,9 +1264,9 @@ the required icon.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-fonticons-01.png -->
-!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using Bootstrap Icons</h3>
-!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Bootstrap Icons are a collection of icons designed to be used with Bootstrap framework. 
 To use Bootstrap Icons, include the Bootstrap Icons library using a CDN link in the &lt;head&gt; 
 section of your HTML document. Then, use the &lt;i&gt; tag with the appropriate class name to 
@@ -1283,9 +1289,9 @@ display the icon.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-fonticons-02.png -->
-!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using Google Icons (Material Icons)</h3>
-!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Google Icons, also known as Material Icons, provide a wide range of icons that follow Material 
 Design guidelines. To use Google Icons, include the Google Icons library using a CDN link in the 
 &lt;head&gt; section. Then, use the &lt;span&gt; tag with the class material-icons and specify 
@@ -1325,11 +1331,258 @@ needed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-fonticons-04.png -->
 
+<h2 id="08">08. Build an AI Image Generator Website in HTML CSS and JavaScript</h2>
+<p>Create an AI image generator website using HTML, CSS, and JavaScript by developing a user interface that lets users input text prompts and generate images by AI.</p>
+
+<p>We incorporated API integration to fetch data, providing users with an effortless and dynamic experience in generating AI-driven images. An AI image generator website should have an input bar at the top of it, which simply accepts the text entered by the user and generates an image with the help of AI related to the entered text once the user submits the form or clicks the button to generate the image.</p>
+
+<h4>Preview:</h4>
+<!-- image-ai-01.png -->
+<figure>
+  <img src="./images/image-ai-01.png" alt="AI Image generator Website Preview" style="width:50%">
+  <figcaption>AI Image generator Website Preview</figcaption>
+</figure>
+
+<h3>Approach</h3>
+<p>The below approach can be utilized to build an AI image generator website using HTML, CSS and JavaScript:</p>
+<ul>
+<li>Define a webpage with meta tags, title, and sections for headings, input form, and image display.</li>
+<li>Styles the webpage layout, form elements, and adjusts container and image styles responsively.</li>
+<li>Manages form submission, fetches random images based on entered text, and handles errors.</li>
+<li>Utilizes media queries to adjust container width and image height for different screen sizes.</li>
+<li>Provides error messages for failed image fetch requests and empty input fields.</li>
+</ul>
+<h4>Example: The below example will explain you the process and the practical implementation of creating an AI Image generator website with the help of HTML, CSS, and JavaScript:</h4>
+
+<details>
+  <summary>HTML</summary>
+  
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Define the character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>
+      AI Image generator Website using HTML, CSS and JavaScript
+    </title>
+    
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main container for all the content -->
+    <div class="main-container">
+
+        <!-- Container for the heading and form -->
+        <div class="container">
+            
+            <!-- Section for page headings -->
+            <div class="headings-container">
+                <h1>GeeksforGeeks</h1> <!-- Main heading -->
+                <h2 class="heading">
+                  	AI Image generator website using JavaScript
+                </h2> <!-- Secondary heading explaining the purpose -->
+                <h5 class="sub-heading">
+                  Enter the text in the below input bar and 
+                  <br />
+                  get the AI generated image related to this text.
+                </h5> <!-- Subheading with instructions -->
+            </div>
+
+            <!-- Form container for input and submit button -->
+            <div id="generate-image-form" class="form-container">
+                
+                <!-- Form to input text and generate image -->
+                <form class="my-form">
+                    <!-- Text input for the user to enter some text -->
+                    <input id="input-value" 
+                           placeholder="Enter some text..." 
+                           type="text"
+                           class="form-input form-controls">
+
+                    <!-- Button to submit and generate image -->
+                    <button type="submit" 
+                            class="image-generate-btn 
+                                   form-controls">
+                      	Generate Image
+                    </button>
+                </form>
+            </div>
+
+            <!-- Section to display the generated image -->
+            <div id="images-visible" class="image-container">
+                <!-- Placeholder text that will be updated with the result -->
+                <p id="imageContainerText"></p>
+                
+                <!-- Image tag to display the AI generated image -->
+                <img id="generated-image" 
+                     class="my-generated-image" 
+                     src='' alt="AI Generated Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+```
+
+</details>
+
+<details>
+  <summary>CSS</summary>
+  
+```
+/* style.css */
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 20px;
+    border: 2px solid #ccc;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.heading {
+    color: #318C46;
+}
+
+.headings-container {
+    text-align: center;
+    color: #000;
+}
+
+.form-controls {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.image-generate-btn {
+    background-color: #318C46;
+    cursor: pointer;
+    color: #fff;
+}
+
+#imageContainerText {
+    color: #000;
+}
+
+.image-container {
+    margin: 50px 0;
+    display: none;
+    text-align: center;
+}
+
+.my-generated-image {
+    width: 100%;
+    height: 350px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 920px) {
+    .container {
+        width: 100%;
+    }
+
+    .my-generated-image {
+        width: 100%;
+        height: 300px;
+    }
+}
+```
+
+</details>
+
+<details>
+  <sumamry>JavaScript</summary>
+  
+```
+// index.js
+
+let generateImageForm = 
+    document.getElementById('generate-image-form');
+let formInput = 
+    document.getElementById('input-value');
+let imageContainerText = 
+    document.getElementById('imageContainerText');
+let imageGenerated = 
+    document.getElementById('generated-image');
+let imageContainer = 
+    document.getElementById('images-visible');
+
+async function fetchImages(category) {
+    try {
+        let response = 
+        await fetch(`use a API`);
+        if (!response.ok) {
+            throw new Error('Unable to fetch the data');
+        }
+        imageContainerText.innerText = 
+        "Below is your generated Image:";
+        imageContainer.style.display = "block";
+        imageGenerated.src = response.url;
+        console.log(response.url);
+    }
+    catch (error) {
+        console.log(error);
+    }
+}
+
+generateImageForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let enteredText = formInput.value;
+    if (enteredText !== "") {
+        fetchImages(enteredText);
+    }
+    else {
+        imageContainerText.innerText = 
+            "Input field can not be empty!";
+    }
+})
+```
+
+<h4>Output:</h4>
+<!-- image-ai-02.mp4 -->
+
+
+
+
 
 
 
 
 
 <h6>Date created: 5/14/2025 9+pm</h6>
-<h6>Date editted: 5/15/2025 12:00+pm</h6>
+<h6>Date editted: 5/15/2025 12:00+am</h6>
+<h6>Date editted: 5/15/2025 9:00+am</h6>
 
