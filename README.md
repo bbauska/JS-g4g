@@ -6,6 +6,10 @@
   <li><h3><a href="#01">What are var, let, const?</a></h3></li>
   <li><h3><a href="#02">Create Web Search utility</a>,</h3></li>
   <li><h3><a href="#03">Make a map in HTML</a>,</h3></li>
+  <li><h3><a href="#04">Design Joke Generator App in HTML CSS &amp; JavaScript</a>,</h3></li>
+  <li><h3><a href="#05">Create a Create a Stack Visualizer using HTML CSS and Javascript</a>,</h3></li>
+  <li><h3><a href="#06">Create a Bookmark Landing Page using HTML CSS and JavaScript</a>,</h3></li>
+  <li><h3><a href="#07">How to Add Icons in HTML?</a></h3></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="01">01. How to declare variables in different ways in JavaScript?</h2>
@@ -312,9 +316,12 @@ generate an embed code that you can copy and paste directly into your HTML docum
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;
 &lt;/iframe&gt;
 </pre>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: Below given example demonstrates how to embed a goggle map into a webpage 
 using an <b><mark>&lt;iframe&gt;</mark></b> element. It shows a webpage with centered 
 heading and a google map showing specific location.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!-- Using iframe -->
@@ -437,11 +444,855 @@ New Delhi and displays it with marker.</h4>
 </p>
 <!-- image-map02.jpg -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="04">04. </h2>
+<h2 id="04">04. Design Joke Generator App in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>We will go to learn how can we create a Joke generator app using HTML, CSS, and JavaScript. We 
+will also add a feature to copy the generated joke. We will use API to fetch the jokes and will 
+show those jokes on the screen.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Prerequisites</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Approach</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Create the Joke Generator Application UI Structure using HTML Elements like &lt;div&gt;, 
+&lt;h1&gt;, &lt;button&gt;. Then link all the required CDNs for external fonts and icons. 
+Once we design the structure of the application, then we can style the elements and the 
+application using CSS properties for a responsive and attractive layout with different 
+properties like width, padding, height, etc.</p>
+<p>In the JavaScript code, as we are fetching the Joke from the external API, we need to 
+define the function jokeFn() which requests the External API for the joke and once the 
+joke is received, it is displayed in the Application's UI.</p>
+<p>The cpyFn() allows us to copy the generated Joke to the clipboard for further use.
+Example: This example describes the basic implementation for a Joke generator App in 
+HTML, CSS & JavaScript.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Joke Generator</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="joke-container animate__animated animate__fadeIn">
+			<h1 class="app-title">GeeksforGeeks Joke Generator</h1>
+			<i class="laugh-icon"></i>
+			<p id="jokeText">Loading joke...</p>
+			<button id="newJokeBtn"><i class="random-icon">
+			</i> New Joke</button>
+			<button id="copyJokeBtn"><i class="copy-icon">
+			</i> Copy Joke</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(to right,
+			#3494E6, #EC6EAD);
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	text-align: center;
+}
+
+.app-title {
+	color: #4CAF50;
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+
+.joke-container {
+	padding: 20px;
+	background: #fff;
+	border-radius: 10px;
+	width: 60%;
+	height: 60%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	margin: 20px;
+	overflow: hidden;
+}
+
+.laugh-icon,
+.random-icon,
+.copy-icon {
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #FFD700;
+}
+
+#jokeText {
+	font-size: 18px;
+	color: #555;
+	margin: 20px 10px;
+}
+
+button {
+	padding: 12px 30px;
+	font-size: 18px;
+	background: #FF4848;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	margin: 20px 10px;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+	background: #FF6565;
+}
+
+@media screen and (max-width: 600px) {
+	.joke-container {
+		width: 90%;
+	}
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+const joke = document.getElementById('jokeText');
+const jokeBtn = document.getElementById('newJokeBtn');
+const cpyBtn = document.getElementById('copyJokeBtn');
+jokeBtn.addEventListener('click', jokeFn);
+cpyBtn.addEventListener('click', cpyFn);
+jokeFn();
+function jokeFn() {
+	fetch('...')
+		.then(response => response.json())
+		.then(data => {
+			joke.textContent = data.joke;
+		})
+		.catch(error => {
+			console.error('Error fetching joke:', error);
+			joke.textContent = 'Failed to fetch joke. Please try again.';
+		});
+}
+function cpyFn() {
+	const textArea = document.createElement('textarea');
+	textArea.value = joke.textContent;
+	document.body.appendChild(textArea);
+	textArea.select();
+	document.execCommand('copy');
+	document.body.removeChild(textArea);
+	alert('Joke copied to clipboard!');
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="05">05. Create a Stack Visualizer using HTML CSS and Javascript</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this article, we will see how to create a stack visualizer using HTML, CSS & Javascript, 
+along with understanding its implementation through the illustration.</p>
+
+<p>Stack is a well-known linear data structure that may follow the order LIFO(Last In First Out) 
+or FILO(First In Last Out).</p>
+
+<!-- image-stack-01.png -->
+
+<p>There are many real-life examples of a stack. Like, the stack of books in a library is a good 
+real-life example of a stack. If we want to clear the stack then we have to remove the first 
+book or the top book of the stack, i.e. the book which has been placed at the bottommost 
+position remains in the stack for the longest period of time. So, it follows the order 
+LIFO(Last In First Out)/FILO(First In Last Out) order.</p>
+
+<p>In this article, we are going to tell how to build the stack visualizer from the scratch 
+using HTML, CSS and Javascript. In this stack visualizer, we have a bucket in which we can 
+put the elements and the bucket has a limit of containing a certain number of elements. 
+When the limit is crossed, but we try to put an element the stack overflow message will be 
+displayed in the message box and then we need to pop the element from the stack to insert 
+new elements. Also when we want to pop an element from an empty stack then the stack underflow 
+message will be displayed in the message box.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Approach</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The following approach will be utilized to create the Stack Visualizer:</p>
+
+<p>Create a project folder and inside it create three files "index.html"(for writing the HTML), 
+"style.css"(for writing the CSS), and "index.js"(for writing the js). You can also create a 
+separate file to keep the CSS code for the responsiveness of the page.</p>
+<p>Now first create the interface of the visualizer using HTML & CSS. First Create a heading. 
+Then after the heading create a container box which will contain the whole visualizer. Now 
+inside this container add one input box and three buttons for pushing an element, popping an 
+element and resetting the visualizer.</p>
+<p>Then below the input and the buttons create a bucket using a div and give the border left, 
+right and the bottom and make the top border none in the CSS. This way you can create the 
+bucket.</p>
+On the left side of the bucket make four options to show the top of the stack, recently 
+popped element, recently pushed element and the size of the stack. Also, create a message 
+box under the info section to show the message. Use flexbox properties to align and justify 
+all content in the right place.
+Now add some javascript to create the visualizer totally working. First, select all elements 
+which you need to use in javascript using the "document.querySelector" and store them inside 
+variables. Also, declare an empty array which we use and maintain as an internal stack.
+Now make two functions, one to disable the three buttons and the second one to enable three 
+buttons. Use the "button.disabled = true" to disable the button and "button.disabled = false". 
+You can also add any style for disabled buttons by "classList.add" if needed.
+Now write the function for the push button. First, add a click "eventListener" to the push 
+button. Then add a call-back function to the event listener. In this function, first, add 
+an if condition for blank input and show an error message and return. After that add another 
+if condition for checking the stack overflow condition. At last, write the code to a new 
+element in the bucket. Use document.createElement("div") to create a new element and add 
+this element to the bucket using the "bucket.appendChild( )" function. Also, update the 
+internal stack or the array. You can also add the setTimeout function to show the adding 
+element delay. Also, disable the three buttons during the element pushing time. After pushing 
+the element, update the value of the top, recently pushed element details and show a successful 
+message in the message box.
+Now write the function for the Pop button. first, check the stack underflow condition using the 
+if statement. If the stack has no element then show a message of stack underflow. If not, then 
+pop the last element by using "bucket.removeChild" and also delete the last element of the 
+internal stack. At last update the top and the recently popped element. You can also add the 
+setTimeout function to show the popping element delay with animation.
+At last, write the function of the reset button. First, clear the internal stack. Then make 
+all info content blank by using ".innerHTML" and delete all elements from the bucket by using 
+"bucket.removeChild".
+Example: This example illustrates how to build a stack visualizer using HTML CSS & Javascript.
+
+```
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(231, 231, 231);
+}
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.heading {
+    color: green;
+}
+.container {
+    height: 620px;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 8px 8px 20px rgb(128, 128, 128);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.container-header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.container-header input {
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.push,
+.pop,
+.reset,
+.box {
+    height: 50px;
+    width: 140px;
+    font-size: 25px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+.disable-button {
+    background-color: rgb(0, 59, 0);
+}
+.container-header button:active {
+    transform: scale(0.95);
+}
+.container-body {
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stack {
+    width: 500px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 3px 0 0;
+    border-color: black;
+    border-style: solid;
+}
+.main-stack-bucket {
+    height: 450px;
+    width: 200px;
+    border-width: 0 4px 4px 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+.ele {
+    height: 80px;
+    width: 170px;
+    background-color: green;
+    color: white;
+    border: 4px black solid;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ele-add {
+    animation: pushAnimation 0.3s infinite linear;
+}
+.ele-remove {
+    animation: popAnimation 0.3s infinite linear;
+}
+@keyframes pushAnimation {
+    0% {
+        background-color: green;
+    }
+    100% {
+        background-color: rgb(17, 92, 255);
+    }
+}
+@keyframes popAnimation {
+    0% {
+        background-color: green;
+    }
+    100% {
+        background-color: rgb(255, 15, 59);
+    }
+}
+.info {
+    height: 470px;
+    width: 500px;
+    padding-left: 20px;
+}
+[class^="sec"] {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.massage-box {
+    height: 180px;
+    width: 400px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.massage-box h2 {
+    text-align: center;
+    font-weight: 600;
+}
+.massage {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.error-massage {
+    animation: errorMassage 0.4s infinite linear;
+}
+@keyframes errorMassage {
+    0% {
+        background-color: bisque;
+    }
+    100% {
+        background-color: rgb(255, 15, 59);
+    }
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Output
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-stack-02.gif -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="06">06. Create a Bookmark Landing Page using HTML CSS and JavaScript</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this article, we are going to implement a Bookmark Landing Page using HTML, CSS, and 
+JavaScript. Users can effortlessly add, manage, and remove bookmarks, resulting in a tidy 
+digital library for their favorite websites. Bookmarking the Landing Page refers to a web 
+page or website where the users bookmark the website, in order to save it in their web 
+browser for easy and quick access.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Final Output</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-bookmark-01.jpg only 1 image -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Approach</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Create a new project folder and organize it with the following files: index.html, 
+    styles.css, and script.js.</li>
+  <li>Open index.html in a code editor and create the basic HTML structure. Include a header, a form 
+    for input, and an empty list for bookmarks.</li>
+  <li>If the URL is not empty (form validations are successful).</li>
+  <li>It creates a new list item (<li>) element to represent the bookmark.</li>
+  <li>It adds the class "bookmark-item" to the list item to apply CSS styling.</li>
+  <li>It sets the HTML content of the list item, including an anchor (<a>) element for the URL 
+    and a "Delete" button.</li>
+  <li>It appends the newly created list item to the list of bookmarks.</li>
+  <li>It clears the input field for the next bookmark entry.</li>
+  <li>It calls the addDeleteBookmarkListener function to add an event listener to the "Delete" button.</li>
+  <li>When the "Delete" button is clicked, the associated bookmark item is removed from the list of bookmarks.</li>
+  <li>In the styles.css file, add CSS rules to style your page. Use classes and IDs to target specific 
+    elements and make the design visually appealing.</li>
+  <li>In the script.js file, start by adding an event listener to handle adding bookmarks.</li>
+</ul>
+<p>Example: Below is the implementation of the Bookmark Landing Page using HTML, CSS, and JavaScript.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+    content="width=device-width, 
+      initial-scale=1.0">
+  <title>Bookmark Landing Page</title>
+  <link rel="stylesheet" 
+       href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Bookmarks</h1>
+  </header>
+  <main>
+    <section class="bookmark-form">
+      <input type="url" 
+             name="url" 
+             id="urlInput" 
+             placeholder="Enter URL" 
+             pattern="https://.*" 
+             size="50" 
+             required>
+      <button id="addBookmark">
+        Add Bookmark
+      </button>
+      <button id="deleteAll">
+        Delete All Bookmarks
+      </button>
+    </section>
+    <section class="bookmarks">
+      <ul id="bookmarkList">
+      <!-- Bookmarks will be added here dynamically -->
+      </ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.bookmark-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+input[type="url"] {
+  flex: 1;
+  padding: 10px;
+}
+button#addBookmark {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 6px;
+}
+button#addBookmark:hover {
+  background-color: #160af3;
+}
+button#deleteAll {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-weight: 600;
+}
+button#deleteAll:hover {
+  background-color: #f80404;
+}
+.bookmark-item {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border: 2px solid #1d22b3;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #e6f2f5;
+}
+.bookmark-item a {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+.bookmark-item a:hover {
+  text-decoration: underline;
+}
+/* Style the "Delete" button */
+.delete {
+  background-color: #ff6347; /* Red color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.delete:hover {
+  background-color: #f80404;
+}
+.edit {
+  background-color: #6947ff; /* Red color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: medium;
+  cursor: pointer;
+}
+.edit:hover {
+  background-color: #4b0da3;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(40, 130, 189);
+}
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+  .bookmark-form {
+    flex-direction: column;
+  }
+  input[type="url"],
+  button#addBookmark,
+  button#deleteAll {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 345px) {
+  main {
+    padding: 10px;
+  }
+  .bookmark-form {
+    flex-direction: column;
+  }
+  input[type="url"],
+  button#addBookmark,
+  button#deleteAll {
+    margin-left: 0;
+  }
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+// Script.js
+// Get DOM elements
+const urlInput = 
+  document.getElementById("urlInput");
+const addBookmarkButton =
+  document.getElementById("addBookmark");
+const deleteAllButton = 
+  document.getElementById("deleteAll");
+const bookmarkList = 
+  document.getElementById("bookmarkList");
+// Function to validate URLs
+function isValidURL(url) {
+  const pattern =
+    /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?$/;
+  return pattern.test(url);
+}
+// Event listener for adding a bookmark
+addBookmarkButton.addEventListener(
+  "click", () => {
+    const url = urlInput.value.trim();
+    if (isValidURL(url)) {
+      const bookmarkItem = document.createElement("li");
+      bookmarkItem.classList.add("bookmark-item");
+      bookmarkItem.innerHTML = 
+        `<a href="${url}" taret="_blank">${url}</a>
+        <div class="buttons"> 
+          <button class="edit"g>Edit</button>
+          <button class="delete">Delete</button>
+        </div>`;
+        bookmarkList.appendChild(bookmarkItem);
+        urlInput.value = "";
+        addEditBookmarkListener(bookmarkItem);
+        addDeleteBookmarkListener(bookmarkItem);
+    }
+    else {
+      alert(
+        "Please enter a valid URL (http:// or https://)."
+      );
+    }
+});
+// Event listener for deleting all bookmarks
+deleteAllButton.addEventListener(
+  "click", () => {
+    while (
+      bookmarkList.firstChild) {
+      bookmarkList.removeChild
+      (bookmarkList.firstChild)
+    }
+});
+// Event listener for editing bookmarks
+function addEditBookmarkListener(
+  bookmarkItem) {
+  const editButton = 
+    bookmarkItem.querySelector(".edit");
+  const bookmarkLink = 
+    bookmarkItem.querySelector("a");
+  editButton.addEventListener(
+    "click", () => {
+      const newURL = prompt("Edit the URL:",
+        bookmarkLink.getAttribute("href"));
+      if (newURL && isValidURL(newURL)) {
+        bookmarkLink.setAttribute("href", newURL);
+        bookmarkLink.innerHTML = newURL;
+      }
+      else if (newURL) {
+        alert(
+          "Please enter a valid URL (http:// or https://)."
+        );
+      }
+  });
+}
+// Event listener for deleting a bookmark
+function addDeleteBookmarkListener(
+  bookmarkItem) {
+    const deleteButton = 
+      bookmarkItem.querySelector(".delete");
+    deleteButton.addEventListener("click", () => { bookmarkItem.remove(); });
+}
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="07">07. How to Add Icons in HTML?</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Icons in HTML are small images that show actions or items on a website, like a "home" button 
+or a "search" symbol. They help people find things easily. To add icons in HTML, you can use an 
+icon library like Font Awesome, Bootstrap Icons, Google Icons, and Image Icons.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>1. Using Font Awesome Icons</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Font Awesome is a popular icon library that provides scalable vector icons. To use Font Awesome, 
+you need to include a CDN link to the library in your HTML document's <head> section. Then, you can 
+use the appropriate class name associated with an inline element, such as the <i> tag, to display 
+the required icon.</p>
+
+```
+<head>
+  <!-- Include Font Awesome icon library -->
+  <link href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+  rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Font Awesome Icon -->
+  <i class="fas fa-home"></i>
+</body>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-fonticons-01.png -->
+!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>2. Using Bootstrap Icons</h3>
+!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Bootstrap Icons are a collection of icons designed to be used with Bootstrap framework. To use Bootstrap Icons, include the Bootstrap Icons library using a CDN link in the <head> section of your HTML document. Then, use the <i> tag with the appropriate class name to display the icon.</p>
+
+```
+<head>
+  <!-- Include Bootstrap Icons library -->
+  <link href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
+  rel="stylesheet" />
+</head>
+<body>
+  <!-- Bootstrap Icon -->
+  <i class="bi bi-house-fill"></i>
+</body>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-fonticons-02.png -->
+!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>3. Using Google Icons (Material Icons)</h3>
+!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Google Icons, also known as Material Icons, provide a wide range of icons that follow Material 
+Design guidelines. To use Google Icons, include the Google Icons library using a CDN link in the 
+&lt;head&gt; section. Then, use the &lt;span&gt; tag with the class material-icons and specify 
+the icon name.</p>
+
+```
+<head>
+  <!-- Include Google Icons library -->
+  <link href=
+"https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Google Icon -->
+  <span class="material-icons">home</span>
+</body>
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-fonticons-03.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>4. Using Image Icons</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>You can also use image files as icons by utilizing the <img> tag . This method allows 
+you to use custom images as icons. You can apply CSS to adjust the size of the icon as 
+needed.</p>
+
+```
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240527124348/zi.png" 
+  alt="home icon" style="width: 24px; height: 24px;" />
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-fonticons-04.png -->
+
+
+
+
 
 
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+pm</h6>
-
 
