@@ -88,7 +88,7 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |  var  |  let |  const |
-|-----------------|-----------------|-----------------|
+|:-----------------:|:-----------------:|-----------------|
 |Can be redeclared	| Cannot be redeclared	| Cannot be redeclared |
 |Can be reassigned a value |Can be reassigned a value|Cannot reassign the value |
 |Only have global and function scope |Can have a block scope |Can have a block scope |
