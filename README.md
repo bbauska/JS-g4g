@@ -104,6 +104,14 @@ concern on that page. We’re going to learn how to create one using only HTML, 
 JavaScript. Instead of getting into complex algorithms for finding related content, we’ll 
 focus on a basic task—searching for specific words or phrases within text.</p>
 <!-- image-search-01.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. search image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+  <img src="./images/image-search-01.png"
+  title="Search image."
+  alt="Search image"
+  style="border: 2px solid #000000; width:35%;" />
+</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Approach</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -224,6 +232,14 @@ function search_animal() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. search image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="left">
+  <img src="./images/image-search-02.gif"
+  title="Search image."
+  alt="Search image"
+  style="border: 2px solid #000000; width:35%;" />
+</p>
 <!-- image-search-02.gif -->
 <p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
 environments. You can learn JavaScript from the ground up by following this 
