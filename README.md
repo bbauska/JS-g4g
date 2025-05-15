@@ -96,11 +96,6 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 |Variables are <b><mark>hoisted</mark></b> on top and can be used anywhere | Variables must be initialized before use | Variables must be initialized before use |
 |Can be redeclared anywhere in the program |    Cannot be redeclared inside a block    | Cannot be redeclared inside a block |
 
-
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Search Bar using HTML, CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -108,6 +103,7 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 concern on that page. We’re going to learn how to create one using only HTML, CSS, and 
 JavaScript. Instead of getting into complex algorithms for finding related content, we’ll 
 focus on a basic task—searching for specific words or phrases within text.</p>
+<!-- image-search-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Approach</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -226,4 +222,22 @@ function search_animal() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-search-02.gif -->
+<p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
+environments. You can learn JavaScript from the ground up by following this 
+<a href="https://www.geeksforgeeks.org/javascript-tutorial/">JavaScript Tutorial</a> and 
+<a href="https://www.geeksforgeeks.org/javascript-examples/">JavaScript Examples</a>.</p>
+
+<p>HTML is the foundation of webpages, is used for webpage development by structuring websites 
+and web apps. You can learn HTML from the ground up by following 
+<a href="https://www.geeksforgeeks.org/html-tutorials/">this HTML Tutorial</a> and 
+<a href="">HTML Examples</a>.</p>
+
+<p>CSS is the foundation of webpages, is used for webpage development by styling websites 
+and web apps. You can learn CSS from the ground up by following 
+<a href="https://www.geeksforgeeks.org/css-tutorials/">this CSS Tutorial</a> and 
+<a href="https://www.geeksforgeeks.org/css-examples/">CSS Examples</a>.</p>
+
+
