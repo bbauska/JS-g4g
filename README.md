@@ -90,11 +90,11 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 
 |  <b><mark>var</mark></b>  |  <b><mark>let</mark></b> |  <b><mark>const</mark></b> |
 |:-----------------:|:--------------------:|:-------------------:|
-|Can be redeclared	| Cannot be redeclared	| Cannot be redeclared |
+|Can be redeclared    | Cannot be redeclared    | Cannot be redeclared |
 |Can be reassigned a value |Can be reassigned a value|Cannot reassign the value |
 |Only have global and function <b><mark>scope</mark></b> |Can have a <b><mark>block scope</mark></b> |Can have a <b><mark>block scope</mark></b> |
 |Variables are <b><mark>hoisted</mark></b> on top and can be used anywhere | Variables must be initialized before use | Variables must be initialized before use |
-|Can be redeclared anywhere in the program |	Cannot be redeclared inside a block	| Cannot be redeclared inside a block |
+|Can be redeclared anywhere in the program |    Cannot be redeclared inside a block    | Cannot be redeclared inside a block |
 
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
