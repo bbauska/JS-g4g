@@ -554,8 +554,7 @@ HTML, CSS & JavaScript.</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 body {
   margin: 0;
   padding: 0;
@@ -616,7 +615,7 @@ button:hover {
     width: 90%;
   }
 }
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -625,8 +624,7 @@ button:hover {
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
+<pre>
 const joke = document.getElementById('jokeText');
 const jokeBtn = document.getElementById('newJokeBtn');
 const cpyBtn = document.getElementById('copyJokeBtn');
@@ -653,7 +651,7 @@ function cpyFn() {
   document.body.removeChild(textArea);
   alert('Joke copied to clipboard!');
 }
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
