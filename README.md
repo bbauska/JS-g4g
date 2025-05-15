@@ -117,14 +117,17 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 concern on that page. We’re going to learn how to create one using only HTML, CSS, and 
 JavaScript. Instead of getting into complex algorithms for finding related content, we’ll 
 focus on a basic task—searching for specific words or phrases within text.</p>
-<!-- image-search-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. search example animals ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-search-01.png -->
 <p align="center" width="100%">
-  <img src="./images/image-search-01.png"
-  title="Search example animals."
-  alt="Search example animals"
-  style="border: 2px solid #000000; width:35%;" />
+  <figure>
+    <img src="./images/image-search-01.png"
+    title="Search Bar example with animals."
+    alt="Search Bar example with animals"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Search Bar example with animals.</figcaption>
+  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -132,8 +135,10 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 <ul>
   <li>Create HTML with a search input and an ordered list of animals.</li>
   <li>Now assign the relevant IDs and classes to particular input boxes and list items.</li>
-  <li>Apply initial styles for the container, search bar, and list items. Consider animations or transitions for visual appeal.</li>
-  <li>Write a function (search_animal()) to handle input, loop through items, and toggle display based on content match.</li>
+  <li>Apply initial styles for the container, search bar, and list items. Consider animations 
+    or transitions for visual appeal.</li>
+  <li>Write a function (search_animal()) to handle input, loop through items, and toggle 
+    display based on content match.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: In this example, we will see the implementation of the above search bar with HTML and with an example.</h4>
@@ -256,13 +261,16 @@ function search_animal() {
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. search example animated ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
-  <img src="./images/image-search-02.gif"
-  title="Search example animated."
-  alt="Search example animated"
-  style="border: 2px solid #000000; width:35%;" />
-</p>
 <!-- image-search-02.gif -->
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-search-02.gif"
+    title="Search Bar using HTML CSS and JavaScript."
+    alt="Search Bar using HTML CSS and JavaScript"
+    style="border: 2px solid #000000; width:25%;" />
+  	<figcaption>Search Bar using HTML CSS and JavaScript.</figcaption>
+  </figure>
+</p>
 <p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
 environments. You can learn JavaScript from the ground up by following this 
 <a href="https://www.geeksforgeeks.org/javascript-tutorial/">JavaScript Tutorial</a> and 
@@ -370,15 +378,16 @@ heading and a google map showing specific location.</h4>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. map image using iframe ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-map01.jpg -->
 <p align="center" width="100%">
   <figure>
-  <img src="./images/image-map-01.jpg"
-  title="Map image 1 using iframe."
-  alt="Map image 1 using iframe"
-  style="border: 2px solid #000000; width:35%;" />
-  figcaption="Add map in HTML using iframe.</figcaption>
+    <img src="./images/image-map-01.jpg"
+    title="Add map in HTML using iframe."
+    alt="Add map in HTML using iframe"
+    style="border: 2px solid #000000; width:25%;" />
+    <figcaption>Add map in HTML using iframe.</figcaption>
+  </figure>
 </p>
-<!-- image-map01.jpg -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using <b><mark>Leaflet.js</mark></b> to Add Interactive Maps</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -456,16 +465,16 @@ New Delhi and displays it with marker.</h4>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. map image using leaflet.js ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-map-02.jpg -->
 <p align="center" width="100%">
   <figure>
     <img src="./images/image-map-02.jpg"
-    title="Map image example using leaflet.js."
-    alt="Map image example using leaflet.js"
-    style="border: 2px solid #000000; width:35%;" />
-	<figcaption="Add map in HTML using leaflet.js.</figcaption>
+    title="Add Map in HTML using leaflet.js."
+    alt="Add Map in HTML using leaflet.js"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Add map in HTML using leaflet.js.</figcaption>
   </figure>
 </p>
-<!-- image-map-02.jpg -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. Design Joke Generator App in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -650,7 +659,15 @@ along with understanding its implementation through the illustration.</p>
 or FILO(First In Last Out).</p>
 
 <!-- image-stack-01.png -->
-
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-stack-01.png"
+    title="Stack."
+    alt="Stack"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Stack.</figcaption>
+  </figure>
+</p>
 <p>There are many real-life examples of a stack. Like, the stack of books in a library is a good 
 real-life example of a stack. If we want to clear the stack then we have to remove the first 
 book or the top book of the stack, i.e. the book which has been placed at the bottommost 
@@ -910,6 +927,15 @@ header {
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-stack-02.gif -->
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-stack-02.gifjpg"
+    title="Stack."
+    alt="Stack"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Stack.</figcaption>
+  </figure>
+</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="06">06. Create a Bookmark Landing Page using HTML CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -922,6 +948,16 @@ browser for easy and quick access.</p>
 <h4>Final Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-bookmark-01.jpg only 1 image -->
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-bookmark-01.jpg"
+    title="Bookmark."
+    alt="Bookmark"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Bookmark.</figcaption>
+  </figure>
+</p>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1264,6 +1300,16 @@ the required icon.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-fonticons-01.png -->
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-fonticons-01.png"
+    title="Font-Awesome Icons (1)."
+    alt="Font-Awesome Icons (1)"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Font-Awesome Icons (1).</figcaption>
+  </figure>
+</p>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using Bootstrap Icons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1289,6 +1335,16 @@ display the icon.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-fonticons-02.png -->
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-fonticons-02.png"
+    title="Bootstrap Icons (2)."
+    alt="Bootstrap Icons (2)"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Bootstrap Icons (2).</figcaption>
+  </figure>
+</p>
+
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using Google Icons (Material Icons)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1314,6 +1370,15 @@ the icon name.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-fonticons-03.png -->
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-fonticons-03.png"
+    title="Google Icons (3)."
+    alt="Google Icons (3)"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Google Icons (3).</figcaption>
+  </figure>
+</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>4. Using Image Icons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1330,6 +1395,15 @@ needed.</p>
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-fonticons-04.png -->
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-fonticons-04.png"
+    title="Image Icons (4)."
+    alt="Image Icons (4)"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Image Icons (4).</figcaption>
+  </figure>
+</p>
 
 <h2 id="08">08. Build an AI Image Generator Website in HTML CSS and JavaScript</h2>
 <p>Create an AI image generator website using HTML, CSS, and JavaScript by developing a user interface that lets users input text prompts and generate images by AI.</p>
@@ -1338,10 +1412,15 @@ needed.</p>
 
 <h4>Preview:</h4>
 <!-- image-ai-01.png -->
-<figure>
-  <img src="./images/image-ai-01.png" alt="AI Image generator Website Preview" style="width:50%">
-  <figcaption>AI Image generator Website Preview</figcaption>
-</figure>
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-ai-01.png"
+    title="AI Image Generator website preview."
+    alt="AI Image Generator website preview"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>AI Image Generator website preview.</figcaption>
+  </figure>
+</p>
 
 <h3>Approach</h3>
 <p>The below approach can be utilized to build an AI image generator website using HTML, CSS and JavaScript:</p>
@@ -1573,7 +1652,15 @@ generateImageForm.addEventListener('submit', (e) => {
 
 <h4>Output:</h4>
 <!-- image-ai-02.mp4 -->
-
+<p align="center" width="100%">
+  <figure>
+    <img src="./images/image-ai-02.mp4"
+    title="Image AI."
+    alt="Image AI"
+    style="border: 2px solid #000000; width:25%;" />
+	<figcaption>Image AI.</figcaption>
+  </figure>
+</p>
 
 
 
