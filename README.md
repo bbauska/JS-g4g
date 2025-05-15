@@ -139,6 +139,9 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -174,6 +177,8 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -645,27 +650,28 @@ message will be displayed in the message box.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following approach will be utilized to create the Stack Visualizer:</p>
 
-<p>Create a project folder and inside it create three files "index.html"(for writing the HTML), 
-"style.css"(for writing the CSS), and "index.js"(for writing the js). You can also create a 
-separate file to keep the CSS code for the responsiveness of the page.</p>
-<p>Now first create the interface of the visualizer using HTML & CSS. First Create a heading. 
-Then after the heading create a container box which will contain the whole visualizer. Now 
-inside this container add one input box and three buttons for pushing an element, popping an 
-element and resetting the visualizer.</p>
-<p>Then below the input and the buttons create a bucket using a div and give the border left, 
-right and the bottom and make the top border none in the CSS. This way you can create the 
-bucket.</p>
-On the left side of the bucket make four options to show the top of the stack, recently 
-popped element, recently pushed element and the size of the stack. Also, create a message 
-box under the info section to show the message. Use flexbox properties to align and justify 
-all content in the right place.
-Now add some javascript to create the visualizer totally working. First, select all elements 
+<ul>
+  <li>Create a project folder and inside it create three files "index.html"(for writing the HTML), 
+    "style.css"(for writing the CSS), and "index.js"(for writing the js). You can also create a 
+    separate file to keep the CSS code for the responsiveness of the page.</li>
+  <li>Now first create the interface of the visualizer using HTML & CSS. First Create a heading. 
+    Then after the heading create a container box which will contain the whole visualizer. Now 
+    inside this container add one input box and three buttons for pushing an element, popping an 
+    element and resetting the visualizer.</li>
+  <li>Then below the input and the buttons create a bucket using a div and give the border left, 
+    right and the bottom and make the top border none in the CSS. This way you can create the 
+    bucket.</li>
+  <li>On the left side of the bucket make four options to show the top of the stack, recently 
+    popped element, recently pushed element and the size of the stack. Also, create a message 
+    box under the info section to show the message. Use flexbox properties to align and justify 
+    all content in the right place.</li>
+  <li>Now add some javascript to create the visualizer totally working. First, select all elements 
 which you need to use in javascript using the "document.querySelector" and store them inside 
-variables. Also, declare an empty array which we use and maintain as an internal stack.
-Now make two functions, one to disable the three buttons and the second one to enable three 
+variables. Also, declare an empty array which we use and maintain as an internal stack.</li>
+  <li>Now make two functions, one to disable the three buttons and the second one to enable three 
 buttons. Use the "button.disabled = true" to disable the button and "button.disabled = false". 
-You can also add any style for disabled buttons by "classList.add" if needed.
-Now write the function for the push button. First, add a click "eventListener" to the push 
+You can also add any style for disabled buttons by "classList.add" if needed.</li>
+  <li>Now write the function for the push button. First, add a click "eventListener" to the push 
 button. Then add a call-back function to the event listener. In this function, first, add 
 an if condition for blank input and show an error message and return. After that add another 
 if condition for checking the stack overflow condition. At last, write the code to a new 
@@ -674,16 +680,21 @@ this element to the bucket using the "bucket.appendChild( )" function. Also, upd
 internal stack or the array. You can also add the setTimeout function to show the adding 
 element delay. Also, disable the three buttons during the element pushing time. After pushing 
 the element, update the value of the top, recently pushed element details and show a successful 
-message in the message box.
-Now write the function for the Pop button. first, check the stack underflow condition using the 
+message in the message box.</li>
+<li>Now write the function for the Pop button. first, check the stack underflow condition using the 
 if statement. If the stack has no element then show a message of stack underflow. If not, then 
 pop the last element by using "bucket.removeChild" and also delete the last element of the 
 internal stack. At last update the top and the recently popped element. You can also add the 
-setTimeout function to show the popping element delay with animation.
-At last, write the function of the reset button. First, clear the internal stack. Then make 
+setTimeout function to show the popping element delay with animation.</li>
+<li>At last, write the function of the reset button. First, clear the internal stack. Then make 
 all info content blank by using ".innerHTML" and delete all elements from the bucket by using 
-"bucket.removeChild".
-Example: This example illustrates how to build a stack visualizer using HTML CSS & Javascript.
+"bucket.removeChild".</li>
+</ul>
+
+<h4>Example: This example illustrates how to build a stack visualizer using HTML CSS & Javascript.</h4>
+
+<details>
+  <summary>CSS</summary>
 
 ```
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -875,8 +886,9 @@ header {
 }
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Output
+<h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-stack-02.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1202,8 +1214,8 @@ icon library like Font Awesome, Bootstrap Icons, Google Icons, and Image Icons.<
 <h3>1. Using Font Awesome Icons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Font Awesome is a popular icon library that provides scalable vector icons. To use Font Awesome, 
-you need to include a CDN link to the library in your HTML document's <head> section. Then, you can 
-use the appropriate class name associated with an inline element, such as the <i> tag, to display 
+you need to include a CDN link to the library in your HTML document's &lt;head&gt; section. Then, you can 
+use the appropriate class name associated with an inline element, such as the &lt;i&gt; tag, to display 
 the required icon.</p>
 
 ```
@@ -1227,7 +1239,10 @@ the required icon.</p>
 !--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using Bootstrap Icons</h3>
 !--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Bootstrap Icons are a collection of icons designed to be used with Bootstrap framework. To use Bootstrap Icons, include the Bootstrap Icons library using a CDN link in the <head> section of your HTML document. Then, use the <i> tag with the appropriate class name to display the icon.</p>
+<p>Bootstrap Icons are a collection of icons designed to be used with Bootstrap framework. 
+To use Bootstrap Icons, include the Bootstrap Icons library using a CDN link in the &lt;head&gt; 
+section of your HTML document. Then, use the &lt;i&gt; tag with the appropriate class name to 
+display the icon.</p>
 
 ```
 <head>
