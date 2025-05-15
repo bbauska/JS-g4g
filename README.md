@@ -4,7 +4,7 @@
 <h2>Web Development with Geeks 4 Geeks</h2>
 <ol>
   <li><h3><a href="#01">What are var, let, const?</a></h3></li>
-  <li><h3><a href="#02">Create Web Search utility,</a>,</h3></li>
+  <li><h3><a href="#02">Create Web Search utility</a>,</h3></li>
   <li><h3><a href="#03">Make a map in HTML</a>,</h3></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -15,7 +15,7 @@
 conditions. Understanding these declarations is crucial for managing variable lifetimes and 
 avoiding unintended side effects in code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Table of Content</h4>
+<h3>Table of Content</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>JavaScript <b><mark>var</mark></b></li>
@@ -94,7 +94,7 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>GeeksforGeeks</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></h2>
+<h3>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |  <b><mark>var</mark></b>  |  <b><mark>let</mark></b> |  <b><mark>const</mark></b> |
@@ -122,7 +122,7 @@ focus on a basic task—searching for specific words or phrases within text.</p>
   style="border: 2px solid #000000; width:35%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Approach</h4>
+<h3>Approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>Create HTML with a search input and an ordered list of animals.</li>
@@ -273,7 +273,7 @@ of interest.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Basic knowledge of HTML and CSS is required to follow along with the examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Methods to Add a Map in HTML</h4>
+<h3>Methods to Add a Map in HTML</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Now, let's explore two popular approaches for adding maps to a webpage:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -440,5 +440,9 @@ New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<h6>Date created: 5/14/2025 9+pm</h6>
+<h6>Date editted: 5/15/2025 12:00+pm</h6>
 
 
