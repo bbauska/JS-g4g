@@ -1911,11 +1911,9 @@ const url =
 	'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
 	'f00c38e0279b7bc85480c3fe775d518c';
-
 $(document).ready(function () {
 	weatherFn('Pune');
 });
-
 async function weatherFn(cName) {
 	const temp =
 		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
@@ -1931,7 +1929,6 @@ async function weatherFn(cName) {
 		console.error('Error fetching weather data:', error);
 	}
 }
-
 function weatherShowFn(data) {
 	$('#city-name').text(data.name);
 	$('#date').text(moment().
@@ -1948,6 +1945,7 @@ function weatherShowFn(data) {
 	$('#weather-info').fadeIn();
 }
 </pre>
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2017,6 +2015,7 @@ function weatherShowFn(data) {
 </html>
 ```
 
+</details>
 <!--~~~~~~~~~~~~~~~ style.css ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>style.css</summary>
