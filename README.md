@@ -1,17 +1,18 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>How to declare variables in different ways in JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In JavaScript, variables can be declared using keywords like var, let, or const, each keyword 
-is used in some specific conditions. Understanding these declarations is crucial for managing 
-variable lifetimes and avoiding unintended side effects in code.<?p>
+<p>In JavaScript, variables can be declared using keywords like <b><mark>var</mark></b>, 
+<b><mark>let</mark></b>, or <b><mark>const</mark></b>, each keyword is used in some specific 
+conditions. Understanding these declarations is crucial for managing variable lifetimes and 
+avoiding unintended side effects in code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Content</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>JavaScript var</li>
-  <li>JavaScript let</li>
-  <li>JavaScript const</li>
-  <li>Difference Between var, let, and const</li>
+  <li>JavaScript <b><mark>var</mark></b></li>
+  <li>JavaScript <b><mark>let</mark></b></li>
+  <li>JavaScript <b><mark>const</mark></b></li>
+  <li>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript <b><mark>var</mark></b></h2>
@@ -84,15 +85,15 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>GeeksforGeeks</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Difference Between var, let, and const</h2>
+<h2>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 |  <b><mark>var</mark></b>  |  <b><mark>let</mark></b> |  <b><mark>const</mark></b> |
 |:-----------------:|:--------------------:|:-------------------:|
 |Can be redeclared	| Cannot be redeclared	| Cannot be redeclared |
 |Can be reassigned a value |Can be reassigned a value|Cannot reassign the value |
-|Only have global and function scope |Can have a block scope |Can have a block scope |
-|Variables are hoisted on top and can be used anywhere | Variables must be initialized before use | Variables must be initialized before use |
+|Only have global and function <b><mark>scope</mark></b> |Can have a <b><mark>block scope</mark></b> |Can have a <b><mark>block scope</mark></b> |
+|Variables are <b><mark>hoisted</mark></b> on top and can be used anywhere | Variables must be initialized before use | Variables must be initialized before use |
 |Can be redeclared anywhere in the program |	Cannot be redeclared inside a block	| Cannot be redeclared inside a block |
 
 
