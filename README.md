@@ -101,3 +101,131 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2>Search Bar using HTML, CSS and JavaScript</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Every website needs a search bar through which a user can search the content of their 
+concern on that page. We’re going to learn how to create one using only HTML, CSS, and 
+JavaScript. Instead of getting into complex algorithms for finding related content, we’ll 
+focus on a basic task—searching for specific words or phrases within text.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Approach</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Create HTML with a search input and an ordered list of animals.</li>
+  <li>Now assign the relevant IDs and classes to particular input boxes and list items.</li>
+  <li>Apply initial styles for the container, search bar, and list items. Consider animations or transitions for visual appeal.</li>
+  <li>Write a function (search_animal()) to handle input, loop through items, and toggle display based on content match.</li>
+</ul>
+<h4>Example: In this example, we will see the implementation of the above search bar with HTML and with an example.</h4>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" 
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Search Bar Example&lt;/title&gt;
+    &lt;link rel="stylesheet" 
+          type="text/css" href="./style.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;input id="searchbar" 
+      onkeyup="search_animal()" 
+      type="text" name="search" 
+      placeholder="Search animals.."&gt;
+
+    &lt;ul id='list'&gt;
+      &lt;li class="animals"&gt;Cat&lt;/li&gt;
+      &lt;li class="animals"&gt;Dog&lt;/li&gt;
+      &lt;li class="animals"&gt;Elephant&lt;/li&gt;
+      &lt;li class="animals"&gt;Fish&lt;/li&gt;
+      &lt;li class="animals"&gt;Gorilla&lt;/li&gt;
+      &lt;li class="animals"&gt;Monkey&lt;/li&gt;
+      &lt;li class="animals"&gt;Turtle&lt;/li&gt;
+      &lt;li class="animals"&gt;Whale&lt;/li&gt;
+      &lt;li class="animals"&gt;Alligator&lt;/li&gt;
+      &lt;li class="animals"&gt;Donkey&lt;/li&gt;
+      &lt;li class="animals"&gt;Horse&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;script src="./script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+#searchbar {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 50%;
+  box-sizing: border-box;
+}
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.animals {
+  font-size: 1.2em;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  animation: fadeIn 0.5s ease-in-out;
+}
+.animals:last-child {
+  border-bottom: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+// JavaScript code
+function search_animal() {
+  let input = document.getElementById('searchbar').value
+  input = input.toLowerCase();
+  let x = document.getElementsByClassName('animals');
+
+  for (i = 0; i < x.length; i++) {
+    if (!x[i].innerHTML.toLowerCase().includes(input)) {
+      x[i].style.display = "none";
+    }
+    else {
+      x[i].style.display = "list-item";
+    }
+  }
+}
+</pre>
