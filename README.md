@@ -114,11 +114,11 @@ JavaScript. Instead of getting into complex algorithms for finding related conte
 focus on a basic task—searching for specific words or phrases within text.</p>
 <!-- image-search-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. search image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. search example animals ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/image-search-01.png"
-  title="Search image."
-  alt="Search image"
+  title="Search example animals."
+  alt="Search example animals"
   style="border: 2px solid #000000; width:35%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -239,11 +239,11 @@ function search_animal() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. search image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. search example animated ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/image-search-02.gif"
-  title="Search image."
-  alt="Search image"
+  title="Search example animated."
+  alt="Search example animated"
   style="border: 2px solid #000000; width:35%;" />
 </p>
 <!-- image-search-02.gif -->
@@ -289,11 +289,11 @@ of interest.</p>
 </ul>
 <p>Now we will learn one by one how we can add maps in HTML.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>1. Using &lt;iframe&gt; to Embed Google Maps</h3>
+<h3>1. Using <b><mark>&lt;iframe&gt;</mark></b> to Embed Google Maps</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The easiest and most commonly used method to add a map in HTML is by embedding a Google 
-Map using the <iframe> tag. Google Maps provides an option to generate an embed code that 
-you can copy and paste directly into your HTML document.</p>
+Map using the <b><mark>&lt;iframe&gt;</mark></b> tag. Google Maps provides an option to 
+generate an embed code that you can copy and paste directly into your HTML document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Steps to Embed Google Maps:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -301,7 +301,8 @@ you can copy and paste directly into your HTML document.</p>
   <li>Go to Google Maps.</li>
   <li>Search for the location you want to display.</li>
   <li>Click the Share option and choose Embed a Map.</li>
-  <li>Copy the provided &lt;iframe&gt; code and paste it into your HTML where you want the map to appear.</li>
+  <li>Copy the provided <b><mark>&lt;iframe&gt;</mark></b> code and paste it into your HTML 
+    where you want the map to appear.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
@@ -312,8 +313,8 @@ you can copy and paste directly into your HTML document.</p>
 &lt;/iframe&gt;
 </pre>
 <h4>Example: Below given example demonstrates how to embed a goggle map into a webpage 
-using an &lt;iframe&gt; element. It shows a webpage with centered heading and a google map 
-showing specific location.</h4>
+using an <b><mark>&lt;iframe&gt;</mark></b> element. It shows a webpage with centered 
+heading and a google map showing specific location.</h4>
 
 ```
 <!-- Using iframe -->
@@ -345,13 +346,12 @@ showing specific location.</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. map image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. map image using iframe ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/image-map-01.png"
-  title="Map image 1."
-  alt="Map image 1"
+  title="Map image 1 using iframe."
+  alt="Map image 1 using iframe"
   style="border: 2px solid #000000; width:35%;" />
 </p>
 <!-- image-map01.jpg -->
@@ -428,15 +428,14 @@ New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. map image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. map image using leaflet.js ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <img src="./images/image-map-02.png"
-  title="Map image."
-  alt="Map image"
+  title="Map image example using leaflet.js."
+  alt="Map image example using leaflet.js"
   style="border: 2px solid #000000; width:35%;" />
 </p>
 <!-- image-map02.jpg -->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
