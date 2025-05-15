@@ -1667,6 +1667,7 @@ generateImageForm.addEventListener('submit', (e) => {
 <iframe src="./image/image-ai-02.mp4" width="600" height="450" frameborder="0" style="border:0"></iframe>
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fxKnmW0QxHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am</h6>
