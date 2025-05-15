@@ -14,7 +14,7 @@ variable lifetimes and avoiding unintended side effects in code.<?p>
   <li>Difference Between var, let, and const</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>JavaScript var</h2>
+<h2>JavaScript <b><mark>var</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This keyword is used to declare variables globally. If you use this keyword to declare a variable 
 then the variable can be accessible globally and changeable also. It is good for a short length 
@@ -35,7 +35,7 @@ console.log(geeks);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>GeeksforGeeks</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>JavaScript let</h2>
+<h2>JavaScript <b><mark>let</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This keyword is used to declare variables locally. If you use this keyword to declare a 
 variable then the variable can be accessible locally and it is changeable as well. It is good 
@@ -62,7 +62,7 @@ console.log(geeks);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>GeeksforGeeks</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>JavaScript const</h2>
+<h2>JavaScript <b><mark>const</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This keyword is used to declare variable locally. If you use this keyword to declare a variable 
 then the variable will only be accessible within that block similar to the variable defined by 
@@ -87,8 +87,8 @@ can’t be reassigned. So we should assign the value while declaring the variabl
 <h2>Difference Between var, let, and const</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-|  var  |  let |  const |
-|:-----------------:|:-----------------:|-----------------|
+|  <b><mark>var</mark></b>  |  <b><mark>let</mark></b> |  <b><mark>const</mark></b> |
+|:-----------------:|:--------------------:|:-------------------:|
 |Can be redeclared	| Cannot be redeclared	| Cannot be redeclared |
 |Can be reassigned a value |Can be reassigned a value|Cannot reassign the value |
 |Only have global and function scope |Can have a block scope |Can have a block scope |
