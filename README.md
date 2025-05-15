@@ -1,7 +1,8 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>webdev with Geeks4Geeks</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>Web Development with Geeks 4 Geeks</h2>
+<h2 id="#toc">Web Development with Geeks 4 Geeks</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
   <li><h3><a href="#01">What are var, let, const?</a></h3></li>
   <li><h3><a href="#02">Create Web Search utility</a>,</h3></li>
@@ -126,7 +127,7 @@ focus on a basic task—searching for specific words or phrases within text.</p>
     title="Search Bar example with animals."
     alt="Search Bar example with animals"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Search Bar example with animals.</figcaption>
+    <figcaption>Search Bar example with animals.</figcaption>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -141,10 +142,11 @@ focus on a basic task—searching for specific words or phrases within text.</p>
     display based on content match.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: In this example, we will see the implementation of the above search bar with HTML and with an example.</h4>
+<h4>Example: In this example, we will see the implementation of the above search bar with 
+HTML and with an example.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
 
@@ -187,7 +189,7 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
 <pre>
@@ -237,7 +239,7 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
 <pre>
@@ -268,7 +270,7 @@ function search_animal() {
     title="Search Bar using HTML CSS and JavaScript."
     alt="Search Bar using HTML CSS and JavaScript"
     style="border: 2px solid #000000; width:25%;" />
-  	<figcaption>Search Bar using HTML CSS and JavaScript.</figcaption>
+      <figcaption>Search Bar using HTML CSS and JavaScript.</figcaption>
   </figure>
 </p>
 <p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
@@ -306,9 +308,9 @@ of interest.</p>
 <ul>
   <li>Methods to Add a Map in HTML
     <ul>
-	  <li>Using &lt;iframe&gt; to Embed Google Maps</li>
+      <li>Using &lt;iframe&gt; to Embed Google Maps</li>
       <li>Using Leaflet.js to Add Interactive Maps</li>
-	</ul>
+    </ul>
   </li>
 </ul>
 <p>Now we will learn one by one how we can add maps in HTML.</p>
@@ -336,12 +338,13 @@ generate an embed code that you can copy and paste directly into your HTML docum
     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;
 &lt;/iframe&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: Below given example demonstrates how to embed a goggle map into a webpage 
 using an <b><mark>&lt;iframe&gt;</mark></b> element. It shows a webpage with centered 
 heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
 
@@ -355,17 +358,17 @@ heading and a google map showing specific location.</h4>
 </head>
 
 <body style="display: grid;
- justify-content: center">
+  justify-content: center">
     <h2 style="text-align: center">
         Add map in html using iframe</h2>
     <iframe src="https://www.google.com/maps/embed?pb
-    =!1m18!1m12!1m3!1d4291.745453141256!2d
-    77.39914006293347!3d28.504393188935435!
-    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
-    !3m3!1m2!1s0x390ce626851f7009%3A0x62118
-    5133cfd1ad1!2sGeeksforGeeks%20%7C%20
-    Coding%20Classes%20%7C%20Noida!5e0!3m2!1
-    sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen=""
+      =!1m18!1m12!1m3!1d4291.745453141256!2d
+      77.39914006293347!3d28.504393188935435!
+      2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+      !3m3!1m2!1s0x390ce626851f7009%3A0x62118
+      5133cfd1ad1!2sGeeksforGeeks%20%7C%20
+      Coding%20Classes%20%7C%20Noida!5e0!3m2!1
+      sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen=""
         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 </body>
@@ -391,17 +394,19 @@ heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using <b><mark>Leaflet.js</mark></b> to Add Interactive Maps</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p><b><mark>Leaflet</mark></b> is a popular open source library to add interactive maps in our website. It is a 
-Javascript library for mobile friendly lighweight and interactive maps. It is designed to 
-be easy to use and mobile-friendly.It is customizable, as you can customize it with variety 
-of additional plugins.</p>
+<p><b><mark>Leaflet</mark></b> is a popular open source library to add interactive maps in 
+our website. It is a Javascript library for mobile friendly lighweight and interactive maps. 
+It is designed to be easy to use and mobile-friendly. It is customizable, as you can customize 
+it with variety of additional plugins.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Steps to Use <b><mark>Leaflet.js</mark></b>:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
-  <li>Include the <b><mark>Leaflet.js</mark></b> library: Link the CSS and JavaScript files in your HTML document.</li>
+  <li>Include the <b><mark>Leaflet.js</mark></b> library: Link the CSS and JavaScript files in 
+    your HTML document.</li>
   <li>Create a map container: Add a &lt;div&gt; element where the map will be displayed.</li>
-  <li>Initialize the map: Use <b><mark>Leaflet.js</mark></b> to create the map and set the center coordinates and zoom level.</li>
+  <li>Initialize the map: Use <b><mark>Leaflet.js</mark></b> to create the map and set the 
+    center coordinates and zoom level.</li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
@@ -410,18 +415,20 @@ of additional plugins.</p>
 let map = L.map('map').setView([Latitude, Longitude], ZoomLevel);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
 L.marker([Latitude, Longitude]).addTo(map)
-    .bindPopup('Popup Text Here.')
-    .openPopup();
+  .bindPopup('Popup Text Here.')
+  .openPopup();
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: Below is the example for creating interactive map in our website using 
-<b><mark>leaflet.js</mark></b>, it is a open-source javascript library. The map centers on India Gate, 
-New Delhi and displays it with marker.</h4>
+<b><mark>leaflet.js</mark></b>, it is a open-source javascript library. The map centers on 
+India Gate, New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
 
@@ -431,30 +438,30 @@ New Delhi and displays it with marker.</h4>
 <html>
 
 <head>
-    <title>Leaflet Map Example</title>
-    <link rel="stylesheet" href="
+  <title>Leaflet Map Example</title>
+  <link rel="stylesheet" href="
     https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZy
     oHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9V
-        M+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9V
+    M+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
-    <h2 style="text-align: center;">
-        India Gate Location</h2>
-    <div id="mapid" style="height: 75vh; width: 50vw;
-     margin-left: 25%;"></div>
-    <script>
-        var map = L.map("mapid").setView
-            ([28.612894, 77.229446], 13); L.tileLayer
-                ("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-                    attribution: "&copy; OpenStreetMap contributors",
-                }).addTo(map);
-        L.marker([28.612894, 77.229446])
-            .addTo(map)
-            .bindPopup("India Gate, New Delhi")
-            .openPopup();
-    </script>
+  <h2 style="text-align: center;">
+    India Gate Location</h2>
+  <div id="mapid" style="height: 75vh; width: 50vw;
+    margin-left: 25%;"></div>
+  <script>
+    var map = L.map("mapid").setView
+      ([28.612894, 77.229446], 13); L.tileLayer
+      ("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+    L.marker([28.612894, 77.229446])
+      .addTo(map)
+      .bindPopup("India Gate, New Delhi")
+      .openPopup();
+  </script>
 </body>
 
 </html>
@@ -472,16 +479,15 @@ New Delhi and displays it with marker.</h4>
     title="Add Map in HTML using leaflet.js."
     alt="Add Map in HTML using leaflet.js"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Add map in HTML using leaflet.js.</figcaption>
+    <figcaption>Add map in HTML using leaflet.js.</figcaption>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. Design Joke Generator App in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>We will go to learn how can we create a Joke generator app using HTML, CSS, and JavaScript. We 
-will also add a feature to copy the generated joke. We will use API to fetch the jokes and will 
-show those jokes on the screen.</p>
-
+<p>We will go to learn how can we create a Joke generator app using HTML, CSS, and 
+JavaScript. We will also add a feature to copy the generated joke. We will use API 
+to fetch the jokes and will show those jokes on the screen.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Prerequisites</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -504,10 +510,9 @@ joke is received, it is displayed in the Application's UI.</p>
 <p>The cpyFn() allows us to copy the generated Joke to the clipboard for further use.
 Example: This example describes the basic implementation for a Joke generator App in 
 HTML, CSS & JavaScript.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
 
@@ -516,25 +521,25 @@ HTML, CSS & JavaScript.</p>
 <html lang="en">
 
 <head>
-	<link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="stylesheet" href="style.css">
-	<title>Joke Generator</title>
+  <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Joke Generator</title>
 </head>
 
 <body>
-	<div class="container">
-		<div class="joke-container animate__animated animate__fadeIn">
-			<h1 class="app-title">GeeksforGeeks Joke Generator</h1>
-			<i class="laugh-icon"></i>
-			<p id="jokeText">Loading joke...</p>
-			<button id="newJokeBtn"><i class="random-icon">
-			</i> New Joke</button>
-			<button id="copyJokeBtn"><i class="copy-icon">
-			</i> Copy Joke</button>
-		</div>
-	</div>
-	<script src="script.js"></script>
+  <div class="container">
+    <div class="joke-container animate__animated animate__fadeIn">
+      <h1 class="app-title">GeeksforGeeks Joke Generator</h1>
+      <i class="laugh-icon"></i>
+      <p id="jokeText">Loading joke...</p>
+      <button id="newJokeBtn"><i class="random-icon">
+      </i> New Joke</button>
+      <button id="copyJokeBtn"><i class="copy-icon">
+      </i> Copy Joke</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
@@ -543,77 +548,77 @@ HTML, CSS & JavaScript.</p>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
 
 ```
 body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Montserrat', sans-serif;
-	background: linear-gradient(to right,
-			#3494E6, #EC6EAD);
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to right,
+    #3494E6, #EC6EAD);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container {
-	text-align: center;
+  text-align: center;
 }
 .app-title {
-	color: #4CAF50;
-	font-size: 32px;
-	margin-bottom: 20px;
+  color: #4CAF50;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 .joke-container {
-	padding: 20px;
-	background: #fff;
-	border-radius: 10px;
-	width: 60%;
-	height: 60%;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-	margin: 20px;
-	overflow: hidden;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 60%;
+  height: 60%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  overflow: hidden;
 }
 .laugh-icon,
 .random-icon,
 .copy-icon {
-	font-size: 20px;
-	margin-bottom: 10px;
-	color: #FFD700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #FFD700;
 }
 #jokeText {
-	font-size: 18px;
-	color: #555;
-	margin: 20px 10px;
+  font-size: 18px;
+  color: #555;
+  margin: 20px 10px;
 }
 button {
-	padding: 12px 30px;
-	font-size: 18px;
-	background: #FF4848;
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	margin: 20px 10px;
-	cursor: pointer;
-	transition: background 0.3s ease-in-out;
+  padding: 12px 30px;
+  font-size: 18px;
+  background: #FF4848;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 button:hover {
-	background: #FF6565;
+  background: #FF6565;
 }
 @media screen and (max-width: 600px) {
-	.joke-container {
-		width: 90%;
-	}
+  .joke-container {
+    width: 90%;
+  }
 }
 ```
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
 
@@ -625,24 +630,24 @@ jokeBtn.addEventListener('click', jokeFn);
 cpyBtn.addEventListener('click', cpyFn);
 jokeFn();
 function jokeFn() {
-	fetch('...')
-		.then(response => response.json())
-		.then(data => {
-			joke.textContent = data.joke;
-		})
-		.catch(error => {
-			console.error('Error fetching joke:', error);
-			joke.textContent = 'Failed to fetch joke. Please try again.';
-		});
+  fetch('...')
+    .then(response => response.json())
+    .then(data => {
+      joke.textContent = data.joke;
+    })
+    .catch(error => {
+      console.error('Error fetching joke:', error);
+        joke.textContent = 'Failed to fetch joke. Please try again.';
+    });
 }
 function cpyFn() {
-	const textArea = document.createElement('textarea');
-	textArea.value = joke.textContent;
-	document.body.appendChild(textArea);
-	textArea.select();
-	document.execCommand('copy');
-	document.body.removeChild(textArea);
-	alert('Joke copied to clipboard!');
+  const textArea = document.createElement('textarea');
+  textArea.value = joke.textContent;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textArea);
+  alert('Joke copied to clipboard!');
 }
 ```
 
@@ -652,11 +657,11 @@ function cpyFn() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="05">05. Create a Stack Visualizer using HTML CSS and Javascript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this article, we will see how to create a stack visualizer using HTML, CSS & Javascript, 
-along with understanding its implementation through the illustration.</p>
+<p>In this article, we will see how to create a stack visualizer using HTML, CSS & 
+Javascript, along with understanding its implementation through the illustration.</p>
 
-<p>Stack is a well-known linear data structure that may follow the order LIFO(Last In First Out) 
-or FILO(First In Last Out).</p>
+<p>Stack is a well-known linear data structure that may follow the order LIFO(Last In 
+First Out) or FILO(First In Last Out).</p>
 
 <!-- image-stack-01.png -->
 <p align="center" width="100%">
@@ -665,70 +670,75 @@ or FILO(First In Last Out).</p>
     title="Stack."
     alt="Stack"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Stack.</figcaption>
+    <figcaption>Stack.</figcaption>
   </figure>
 </p>
-<p>There are many real-life examples of a stack. Like, the stack of books in a library is a good 
-real-life example of a stack. If we want to clear the stack then we have to remove the first 
-book or the top book of the stack, i.e. the book which has been placed at the bottommost 
-position remains in the stack for the longest period of time. So, it follows the order 
-LIFO(Last In First Out)/FILO(First In Last Out) order.</p>
+<p>There are many real-life examples of a stack. Like, the stack of books in a library is 
+a good real-life example of a stack. If we want to clear the stack then we have to remove 
+the first book or the top book of the stack, i.e. the book which has been placed at the 
+bottommost position remains in the stack for the longest period of time. So, it follows 
+the order LIFO(Last In First Out)/FILO(First In Last Out) order.</p>
 
-<p>In this article, we are going to tell how to build the stack visualizer from the scratch 
-using HTML, CSS and Javascript. In this stack visualizer, we have a bucket in which we can 
-put the elements and the bucket has a limit of containing a certain number of elements. 
-When the limit is crossed, but we try to put an element the stack overflow message will be 
-displayed in the message box and then we need to pop the element from the stack to insert 
-new elements. Also when we want to pop an element from an empty stack then the stack underflow 
-message will be displayed in the message box.</p>
+<p>In this article, we are going to tell how to build the stack visualizer from the 
+scratch using HTML, CSS and Javascript. In this stack visualizer, we have a bucket in 
+which we can put the elements and the bucket has a limit of containing a certain number 
+of elements. When the limit is crossed, but we try to put an element the stack overflow 
+message will be displayed in the message box and then we need to pop the element from 
+the stack to insert new elements. Also when we want to pop an element from an empty 
+stack then the stack underflow message will be displayed in the message box.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following approach will be utilized to create the Stack Visualizer:</p>
-
 <ul>
-  <li>Create a project folder and inside it create three files "index.html"(for writing the HTML), 
-    "style.css"(for writing the CSS), and "index.js"(for writing the js). You can also create a 
-    separate file to keep the CSS code for the responsiveness of the page.</li>
-  <li>Now first create the interface of the visualizer using HTML & CSS. First Create a heading. 
-    Then after the heading create a container box which will contain the whole visualizer. Now 
-    inside this container add one input box and three buttons for pushing an element, popping an 
-    element and resetting the visualizer.</li>
-  <li>Then below the input and the buttons create a bucket using a div and give the border left, 
-    right and the bottom and make the top border none in the CSS. This way you can create the 
-    bucket.</li>
-  <li>On the left side of the bucket make four options to show the top of the stack, recently 
-    popped element, recently pushed element and the size of the stack. Also, create a message 
-    box under the info section to show the message. Use flexbox properties to align and justify 
-    all content in the right place.</li>
-  <li>Now add some javascript to create the visualizer totally working. First, select all elements 
-which you need to use in javascript using the "document.querySelector" and store them inside 
-variables. Also, declare an empty array which we use and maintain as an internal stack.</li>
-  <li>Now make two functions, one to disable the three buttons and the second one to enable three 
-buttons. Use the "button.disabled = true" to disable the button and "button.disabled = false". 
-You can also add any style for disabled buttons by "classList.add" if needed.</li>
-  <li>Now write the function for the push button. First, add a click "eventListener" to the push 
-button. Then add a call-back function to the event listener. In this function, first, add 
-an if condition for blank input and show an error message and return. After that add another 
-if condition for checking the stack overflow condition. At last, write the code to a new 
-element in the bucket. Use document.createElement("div") to create a new element and add 
-this element to the bucket using the "bucket.appendChild( )" function. Also, update the 
-internal stack or the array. You can also add the setTimeout function to show the adding 
-element delay. Also, disable the three buttons during the element pushing time. After pushing 
-the element, update the value of the top, recently pushed element details and show a successful 
-message in the message box.</li>
-<li>Now write the function for the Pop button. first, check the stack underflow condition using the 
-if statement. If the stack has no element then show a message of stack underflow. If not, then 
-pop the last element by using "bucket.removeChild" and also delete the last element of the 
-internal stack. At last update the top and the recently popped element. You can also add the 
-setTimeout function to show the popping element delay with animation.</li>
-<li>At last, write the function of the reset button. First, clear the internal stack. Then make 
-all info content blank by using ".innerHTML" and delete all elements from the bucket by using 
-"bucket.removeChild".</li>
+  <li>Create a project folder and inside it create three files "index.html"(for writing 
+    the HTML), "style.css"(for writing the CSS), and "index.js"(for writing the js). You 
+    can also create a separate file to keep the CSS code for the responsiveness of the 
+    page.</li>
+  <li>Now first create the interface of the visualizer using HTML & CSS. First Create a 
+    heading. Then after the heading create a container box which will contain the whole 
+    visualizer. Now inside this container add one input box and three buttons for pushing 
+    an element, popping an element and resetting the visualizer.</li>
+  <li>Then below the input and the buttons create a bucket using a div and give the 
+    border left, right and the bottom and make the top border none in the CSS. This way 
+    you can create the bucket.</li>
+  <li>On the left side of the bucket make four options to show the top of the stack, 
+    recently popped element, recently pushed element and the size of the stack. Also, 
+    create a message box under the info section to show the message. Use flexbox 
+    properties to align and justify all content in the right place.</li>
+  <li>Now add some javascript to create the visualizer totally working. First, select all 
+    elements which you need to use in javascript using the "document.querySelector" and 
+    store them inside variables. Also, declare an empty array which we use and maintain 
+    as an internal stack.</li>
+  <li>Now make two functions, one to disable the three buttons and the second one to 
+    enable three buttons. Use the "button.disabled = true" to disable the button and 
+    "button.disabled = false". You can also add any style for disabled buttons by 
+    "classList.add" if needed.</li>
+  <li>Now write the function for the push button. First, add a click "eventListener" to 
+    the push button. Then add a call-back function to the event listener. In this 
+    function, first, add an if condition for blank input and show an error message and 
+    return. After that add another if condition for checking the stack overflow 
+    condition. At last, write the code to a new element in the bucket. Use 
+    <b><mark>document.createElement("div")</mark></b> to create a new element and add 
+    this element to the bucket using the "bucket.appendChild( )" function. Also, update 
+    the internal stack or the array. You can also add the setTimeout function to show 
+    the adding element delay. Also, disable the three buttons during the element pushing 
+    time. After pushing the element, update the value of the top, recently pushed element 
+    details and show a successful message in the message box.</li>
+  <li>Now write the function for the Pop button. first, check the stack underflow condition 
+    using the if statement. If the stack has no element then show a message of stack 
+    underflow. If not, then pop the last element by using "bucket.removeChild" and also 
+    delete the last element of the internal stack. At last update the top and the 
+    recently popped element. You can also add the setTimeout function to show the popping 
+    element delay with animation.</li>
+  <li>At last, write the function of the reset button. First, clear the internal stack. 
+    Then make all info content blank by using ".innerHTML" and delete all elements from the 
+    bucket by using "bucket.removeChild".</li>
 </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example illustrates how to build a stack visualizer using HTML CSS & Javascript.</h4>
-
+<!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
 
@@ -736,189 +746,189 @@ all info content blank by using ".innerHTML" and delete all elements from the bu
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    background-color: rgb(231, 231, 231);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(231, 231, 231);
 }
 header {
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 .heading {
-    color: green;
+  color: green;
 }
 .container {
-    height: 620px;
-    width: 1000px;
-    background-color: white;
-    box-shadow: 8px 8px 20px rgb(128, 128, 128);
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
+  height: 620px;
+  width: 1000px;
+  background-color: white;
+  box-shadow: 8px 8px 20px rgb(128, 128, 128);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
 }
 .container-header {
-    height: 90px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 .container-header input {
-    height: 50px;
-    width: 400px;
-    font-size: 25px;
-    border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 5px;
+  height: 50px;
+  width: 400px;
+  font-size: 25px;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 5px;
 }
 .push,
 .pop,
 .reset,
 .box {
-    height: 50px;
-    width: 140px;
-    font-size: 25px;
-    background-color: green;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.2s;
-    border: none;
+  height: 50px;
+  width: 140px;
+  font-size: 25px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
 }
 .disable-button {
-    background-color: rgb(0, 59, 0);
+  background-color: rgb(0, 59, 0);
 }
 .container-header button:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 .container-body {
-    width: 1000px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .stack {
-    width: 500px;
-    height: 470px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-width: 0 3px 0 0;
-    border-color: black;
-    border-style: solid;
+  width: 500px;
+  height: 470px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 0 3px 0 0;
+  border-color: black;
+  border-style: solid;
 }
 .main-stack-bucket {
-    height: 450px;
-    width: 200px;
-    border-width: 0 4px 4px 4px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 0 0 10px 10px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column-reverse;
-    gap: 5px;
-    padding-bottom: 5px;
+  height: 450px;
+  width: 200px;
+  border-width: 0 4px 4px 4px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column-reverse;
+  gap: 5px;
+  padding-bottom: 5px;
 }
 .ele {
-    height: 80px;
-    width: 170px;
-    background-color: green;
-    color: white;
-    border: 4px black solid;
-    border-radius: 10px;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 80px;
+  width: 170px;
+  background-color: green;
+  color: white;
+  border: 4px black solid;
+  border-radius: 10px;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ele-add {
-    animation: pushAnimation 0.3s infinite linear;
+  animation: pushAnimation 0.3s infinite linear;
 }
 .ele-remove {
-    animation: popAnimation 0.3s infinite linear;
+  animation: popAnimation 0.3s infinite linear;
 }
 @keyframes pushAnimation {
-    0% {
-        background-color: green;
-    }
-    100% {
-        background-color: rgb(17, 92, 255);
-    }
+  0% {
+    background-color: green;
+  }
+  100% {
+    background-color: rgb(17, 92, 255);
+  }
 }
 @keyframes popAnimation {
-    0% {
-        background-color: green;
-    }
-    100% {
-        background-color: rgb(255, 15, 59);
-    }
+  0% {
+    background-color: green;
+  }
+  100% {
+    background-color: rgb(255, 15, 59);
+  }
 }
 .info {
-    height: 470px;
-    width: 500px;
-    padding-left: 20px;
+  height: 470px;
+  width: 500px;
+  padding-left: 20px;
 }
 [class^="sec"] {
-    display: flex;
-    width: 350px;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-    justify-content: space-between;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: space-between;
 }
 .massage-box {
-    height: 180px;
-    width: 400px;
-    margin-top: 30px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 180px;
+  width: 400px;
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .massage-box h2 {
-    text-align: center;
-    font-weight: 600;
+  text-align: center;
+  font-weight: 600;
 }
 .massage {
-    height: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
 }
 .error-massage {
-    animation: errorMassage 0.4s infinite linear;
+  animation: errorMassage 0.4s infinite linear;
 }
 @keyframes errorMassage {
-    0% {
-        background-color: bisque;
-    }
-    100% {
-        background-color: rgb(255, 15, 59);
-    }
+  0% {
+    background-color: bisque;
+  }
+  100% {
+    background-color: rgb(255, 15, 59);
+  }
 }
 ```
 
@@ -933,7 +943,7 @@ header {
     title="Stack."
     alt="Stack"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Stack.</figcaption>
+    <figcaption>Stack.</figcaption>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -954,10 +964,9 @@ browser for easy and quick access.</p>
     title="Bookmark."
     alt="Bookmark"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Bookmark.</figcaption>
+    <figcaption>Bookmark.</figcaption>
   </figure>
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -980,10 +989,9 @@ browser for easy and quick access.</p>
   <li>In the script.js file, start by adding an event listener to handle adding bookmarks.</li>
 </ul>
 <p>Example: Below is the implementation of the Bookmark Landing Page using HTML, CSS, and JavaScript.</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
 
@@ -1033,7 +1041,7 @@ browser for easy and quick access.</p>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
 
@@ -1182,7 +1190,7 @@ a:hover {
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
 
@@ -1286,8 +1294,8 @@ the required icon.</p>
 <head>
   <!-- Include Font Awesome icon library -->
   <link href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-  rel="stylesheet" />
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+    rel="stylesheet" />
 </head>
 
 <body>
@@ -1306,10 +1314,9 @@ the required icon.</p>
     title="Font-Awesome Icons (1)."
     alt="Font-Awesome Icons (1)"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Font-Awesome Icons (1).</figcaption>
+    <figcaption>Font-Awesome Icons (1).</figcaption>
   </figure>
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using Bootstrap Icons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1341,10 +1348,9 @@ display the icon.</p>
     title="Bootstrap Icons (2)."
     alt="Bootstrap Icons (2)"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Bootstrap Icons (2).</figcaption>
+    <figcaption>Bootstrap Icons (2).</figcaption>
   </figure>
 </p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using Google Icons (Material Icons)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1376,7 +1382,7 @@ the icon name.</p>
     title="Google Icons (3)."
     alt="Google Icons (3)"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Google Icons (3).</figcaption>
+    <figcaption>Google Icons (3).</figcaption>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1401,16 +1407,23 @@ needed.</p>
     title="Image Icons (4)."
     alt="Image Icons (4)"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Image Icons (4).</figcaption>
+    <figcaption>Image Icons (4).</figcaption>
   </figure>
 </p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="08">08. Build an AI Image Generator Website in HTML CSS and JavaScript</h2>
-<p>Create an AI image generator website using HTML, CSS, and JavaScript by developing a user interface that lets users input text prompts and generate images by AI.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Create an AI image generator website using HTML, CSS, and JavaScript by developing a 
+user interface that lets users input text prompts and generate images by AI.</p>
 
-<p>We incorporated API integration to fetch data, providing users with an effortless and dynamic experience in generating AI-driven images. An AI image generator website should have an input bar at the top of it, which simply accepts the text entered by the user and generates an image with the help of AI related to the entered text once the user submits the form or clicks the button to generate the image.</p>
-
+<p>We incorporated API integration to fetch data, providing users with an effortless and 
+dynamic experience in generating AI-driven images. An AI image generator website should 
+have an input bar at the top of it, which simply accepts the text entered by the user and 
+generates an image with the help of AI related to the entered text once the user submits 
+the form or clicks the button to generate the image.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Preview:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-ai-01.png -->
 <p align="center" width="100%">
   <figure>
@@ -1418,21 +1431,29 @@ needed.</p>
     title="AI Image Generator website preview."
     alt="AI Image Generator website preview"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>AI Image Generator website preview.</figcaption>
+    <figcaption>AI Image Generator website preview.</figcaption>
   </figure>
 </p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
-<p>The below approach can be utilized to build an AI image generator website using HTML, CSS and JavaScript:</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The below approach can be utilized to build an AI image generator website using HTML, 
+CSS and JavaScript:</p>
 <ul>
-<li>Define a webpage with meta tags, title, and sections for headings, input form, and image display.</li>
-<li>Styles the webpage layout, form elements, and adjusts container and image styles responsively.</li>
-<li>Manages form submission, fetches random images based on entered text, and handles errors.</li>
-<li>Utilizes media queries to adjust container width and image height for different screen sizes.</li>
-<li>Provides error messages for failed image fetch requests and empty input fields.</li>
+  <li>Define a webpage with meta tags, title, and sections for headings, input form, and 
+    image display.</li>
+  <li>Styles the webpage layout, form elements, and adjusts container and image styles 
+    responsively.</li>
+  <li>Manages form submission, fetches random images based on entered text, and handles 
+    errors.</li>
+  <li>Utilizes media queries to adjust container width and image height for different 
+    screen sizes.</li>
+  <li>Provides error messages for failed image fetch requests and empty input fields.</li>
 </ul>
-<h4>Example: The below example will explain you the process and the practical implementation of creating an AI Image generator website with the help of HTML, CSS, and JavaScript:</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example: The below example will explain you the process and the practical implementation 
+of creating an AI Image generator website with the help of HTML, CSS, and JavaScript:</h4>
+<!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
   
@@ -1441,218 +1462,196 @@ needed.</p>
 <html lang="en">
 
 <head>
-    <!-- Define the character encoding and viewport settings -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Define the character encoding and viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Page title -->
-    <title>
-      AI Image generator Website using HTML, CSS and JavaScript
-    </title>
+  <!-- Page title -->
+  <title>
+    AI Image generator Website using HTML, CSS and JavaScript
+  </title>
     
-    <!-- Link to external CSS file for styling -->
-    <link rel="stylesheet" href="style.css">
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Main container for all the content -->
-    <div class="main-container">
-
-        <!-- Container for the heading and form -->
-        <div class="container">
-            
-            <!-- Section for page headings -->
-            <div class="headings-container">
-                <h1>GeeksforGeeks</h1> <!-- Main heading -->
-                <h2 class="heading">
-                  	AI Image generator website using JavaScript
-                </h2> <!-- Secondary heading explaining the purpose -->
-                <h5 class="sub-heading">
-                  Enter the text in the below input bar and 
-                  <br />
-                  get the AI generated image related to this text.
-                </h5> <!-- Subheading with instructions -->
-            </div>
-
-            <!-- Form container for input and submit button -->
-            <div id="generate-image-form" class="form-container">
-                
-                <!-- Form to input text and generate image -->
-                <form class="my-form">
-                    <!-- Text input for the user to enter some text -->
-                    <input id="input-value" 
-                           placeholder="Enter some text..." 
-                           type="text"
-                           class="form-input form-controls">
-
-                    <!-- Button to submit and generate image -->
-                    <button type="submit" 
-                            class="image-generate-btn 
-                                   form-controls">
-                      	Generate Image
-                    </button>
-                </form>
-            </div>
-
-            <!-- Section to display the generated image -->
-            <div id="images-visible" class="image-container">
-                <!-- Placeholder text that will be updated with the result -->
-                <p id="imageContainerText"></p>
-                
-                <!-- Image tag to display the AI generated image -->
-                <img id="generated-image" 
-                     class="my-generated-image" 
-                     src='' alt="AI Generated Image">
-            </div>
-        </div>
+  <!-- Main container for all the content -->
+  <div class="main-container">
+    <!-- Container for the heading and form -->
+    <div class="container">
+      <!-- Section for page headings -->
+      <div class="headings-container">
+        <h1>Cellardoor</h1> <!-- Main heading -->
+        <h2 class="heading">
+          AI Image generator website using JavaScript
+        </h2> <!-- Secondary heading explaining the purpose -->
+        <h5 class="sub-heading">
+          Enter the text in the below input bar and 
+          <br />
+          get the AI generated image related to this text.
+        </h5> <!-- Subheading with instructions -->
+      </div>
+      <!-- Form container for input and submit button -->
+      <div id="generate-image-form" class="form-container">
+        <!-- Form to input text and generate image -->
+        <form class="my-form">
+          <!-- Text input for the user to enter some text -->
+          <input id="input-value" 
+            placeholder="Enter some text..." 
+            type="text"
+            class="form-input form-controls">
+          <!-- Button to submit and generate image -->
+          <button type="submit" 
+            class="image-generate-btn 
+            form-controls">
+            Generate Image
+          </button>
+        </form>
+      </div>
+      <!-- Section to display the generated image -->
+      <div id="images-visible" class="image-container">
+        <!-- Placeholder text that will be updated with the result -->
+        <p id="imageContainerText"></p>
+        <!-- Image tag to display the AI generated image -->
+        <img id="generated-image" 
+          class="my-generated-image" 
+          src='' alt="AI Generated Image">
+      </div>
     </div>
-
-    <script src="index.js"></script>
+  </div>
+  <script src="index.js"></script>
 </body>
 
 </html>
 ```
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
   
 ```
 /* style.css */
-
 body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 .main-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .container {
-    padding: 20px;
-    border: 2px solid #ccc;
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
+  padding: 20px;
+  border: 2px solid #ccc;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
-
 .heading {
-    color: #318C46;
+  color: #318C46;
 }
-
 .headings-container {
-    text-align: center;
-    color: #000;
+  text-align: center;
+  color: #000;
 }
-
 .form-controls {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
-
 .form-input:focus {
-    outline: none;
+  outline: none;
 }
-
 .image-generate-btn {
-    background-color: #318C46;
-    cursor: pointer;
-    color: #fff;
+  background-color: #318C46;
+  cursor: pointer;
+  color: #fff;
 }
-
 #imageContainerText {
-    color: #000;
+  color: #000;
 }
-
 .image-container {
-    margin: 50px 0;
-    display: none;
-    text-align: center;
+  margin: 50px 0;
+  display: none;
+  text-align: center;
 }
-
 .my-generated-image {
-    width: 100%;
-    height: 350px;
+  width: 100%;
+  height: 350px;
 }
 
 @media screen and (min-width: 280px) and (max-width: 920px) {
-    .container {
-        width: 100%;
-    }
-
-    .my-generated-image {
-        width: 100%;
-        height: 300px;
-    }
+  .container {
+    width: 100%;
+  }
+  .my-generated-image {
+    width: 100%;
+    height: 300px;
+  }
 }
 ```
 
 </details>
-
+<!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
   
 ```
 // index.js
-
 let generateImageForm = 
-    document.getElementById('generate-image-form');
+  document.getElementById('generate-image-form');
 let formInput = 
-    document.getElementById('input-value');
+  document.getElementById('input-value');
 let imageContainerText = 
-    document.getElementById('imageContainerText');
+  document.getElementById('imageContainerText');
 let imageGenerated = 
-    document.getElementById('generated-image');
+  document.getElementById('generated-image');
 let imageContainer = 
-    document.getElementById('images-visible');
-
+  document.getElementById('images-visible');
 async function fetchImages(category) {
-    try {
-        let response = 
-        await fetch(`use a API`);
-        if (!response.ok) {
-            throw new Error('Unable to fetch the data');
-        }
-        imageContainerText.innerText = 
-        "Below is your generated Image:";
-        imageContainer.style.display = "block";
-        imageGenerated.src = response.url;
-        console.log(response.url);
+  try {
+    let response = 
+      await fetch(`use a API`);
+    if (!response.ok) {
+      throw new Error('Unable to fetch the data');
     }
-    catch (error) {
-        console.log(error);
-    }
+    imageContainerText.innerText = 
+    "Below is your generated Image:";
+    imageContainer.style.display = "block";
+    imageGenerated.src = response.url;
+    console.log(response.url);
+  }
+  catch (error) {
+    console.log(error);
+  }
 }
-
 generateImageForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let enteredText = formInput.value;
-    if (enteredText !== "") {
-        fetchImages(enteredText);
-    }
-    else {
-        imageContainerText.innerText = 
-            "Input field can not be empty!";
-    }
+  e.preventDefault();
+  let enteredText = formInput.value;
+  if (enteredText !== "") {
+    fetchImages(enteredText);
+  }
+  else {
+    imageContainerText.innerText = 
+      "Input field can not be empty!";
+  }
 })
 ```
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-ai-02.mp4 -->
 <p align="center" width="100%">
   <figure>
@@ -1660,14 +1659,14 @@ generateImageForm.addEventListener('submit', (e) => {
     title="Image AI."
     alt="Image AI"
     style="border: 2px solid #000000; width:25%;" />
-	<figcaption>Image AI.</figcaption>
+    <figcaption>Image AI.</figcaption>
   </figure>
 </p>
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fxKnmW0QxHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38877164.76467194!2d-95.677068!3d37.06250000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1422925644298" width="600" height="450" frameborder="0" style="border:0"></iframe>
-
 
 <iframe
   src="https://codepen.io/team/codepen/embed/preview/PNaGbb"
