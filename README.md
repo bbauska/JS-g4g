@@ -149,7 +149,7 @@ HTML and with an example.</h4>
 <!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -192,6 +192,7 @@ HTML and with an example.</h4>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 * {
   margin: 0;
@@ -242,6 +243,7 @@ HTML and with an example.</h4>
 <!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 // JavaScript code
 function search_animal() {
@@ -346,6 +348,7 @@ heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!-- Using iframe -->
@@ -429,6 +432,7 @@ India Gate, New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!-- Using leaflet Map -->
@@ -512,6 +516,7 @@ HTML, CSS & JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -548,6 +553,7 @@ HTML, CSS & JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 body {
@@ -618,6 +624,7 @@ button:hover {
 <!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 const joke = document.getElementById('jokeText');
@@ -739,6 +746,7 @@ stack then the stack underflow message will be displayed in the message box.</p>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -992,6 +1000,7 @@ browser for easy and quick access.</p>
 <!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -1042,6 +1051,7 @@ browser for easy and quick access.</p>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 /* styles.css */
@@ -1191,6 +1201,7 @@ a:hover {
 <!--~~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 // Script.js
@@ -1454,6 +1465,7 @@ of creating an AI Image generator website with the help of HTML, CSS, and JavaSc
 <!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   
 ```
 <!DOCTYPE html>
@@ -1528,6 +1540,7 @@ of creating an AI Image generator website with the help of HTML, CSS, and JavaSc
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   
 ```
 /* style.css */
@@ -1603,6 +1616,7 @@ body {
 <!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
   
 ```
 // index.js
@@ -1649,6 +1663,7 @@ generateImageForm.addEventListener('submit', (e) => {
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
+<p><a href="https://media.geeksforgeeks.org/wp-content/uploads/20240725151806/qa.mp4">Image AI</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-ai-02.mp4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--
@@ -1662,8 +1677,6 @@ generateImageForm.addEventListener('submit', (e) => {
   </figure>
 </p>
 -->
-
-https://media.geeksforgeeks.org/wp-content/uploads/20240725151806/qa.mp4
 
 <!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fxKnmW0QxHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -1681,9 +1694,502 @@ https://media.geeksforgeeks.org/wp-content/uploads/20240725151806/qa.mp4
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="09">09. Build A Weather App in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>A weather app contains a user input field for the user, which takes the input of the 
+city name. Once the user enters the city name and clicks on the button, then the API 
+Request is been sent to the OpenWeatherMap and the response is been retrieved in the 
+application which consists of weather, wind speed, description, etc.</p>
+<h4>Preview Image</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-weather-01.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Project Overview</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Our weather app will have the following features:</p>
+<ul>
+  <li>City Name Input: Users can enter a city name.</li>
+  <li>Weather Data Fetching: The app fetches weather data from the OpenWeatherMap API.</li>
+  <li>Display Weather Information: Shows temperature, wind speed, weather description, etc.</li>
+  <li>Error Handling: If an invalid city is entered, the app will show an error message.</li>
+  <li>Default Weather: By default, it will show the weather for Pune.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Step 1: Setting Up the Project</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Create a directory for your project and create three files inside it:</p>
+<ul>
+  <li>index.html – The HTML file for the structure of the app.</li>
+  <li>styles.css – The CSS file for styling the app.</li>
+  <li>script.js – The JavaScript file for fetching the weather data and adding interactivity.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Step 2: HTML Structure</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>This is the structure of the weather app. We will use basic HTML elements like &lt;div&gt;, 
+&lt;input&gt;, and &lt;button&gt; to create the input field, button, and display the weather data.</p>
+<!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
+```
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<title>GFG App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-card">
+			<h1 style="color: green;">
+				GeeksforGeeks
+			</h1>
+			<h3>
+				Weather App
+			</h3>
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="animate__animated animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<img id="weather-icon" src="" alt="Weather Icon">
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="script2.js"></script>
+</body>
+</html>
+```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>In this Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li><b>&lt;input&gt;</b>: This input field allows the user to type in the city name.</li>
+  <li><b>&lt;button&gt;</b>: When clicked, this button will trigger the weather fetching logic.</li>
+  <li><b>&#35;weather-info</b>: A container that holds the weather details, such as temperature, description, and wind speed. Initially hidden.</li>
+  <li><b>&#35;error-message</b>: This element displays an error message when the city is invalid or not found. It is also hidden initially.
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Step 3: Styling with CSS</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Next, add some basic styling to make the Weather app visually appealing. Open the styles.css file and add the following CSS code:</p>
+<!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+}
+
+.container {
+    text-align: center;
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 450px;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+#city-input::placeholder {
+    color: #aaa;
+}
+
+#city-input-btn {
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#city-input-btn:hover {
+    background-color: #1565C0;
+}
+
+#weather-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+#date {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+</pre>
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>In this Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>The page is centered using Flexbox with a smooth gradient background that transitions from green to blue.</li>
+  <li>The weather details are in a card with a semi-transparent white background, rounded corners, and a shadow. It slightly enlarges when hovered.</li>
+  <li>The input field allows users to type the city name, with padding, a light border, and a blue border when focused, plus gray placeholder text.</li>
+  <li>The button triggers the weather-fetching action, has a blue background, white text, rounded corners, and changes to a darker blue on hover.</li>
+  <li>Weather details are initially hidden. When shown, they include a 100px weather icon, bold and larger temperature, medium-sized description, and red wind speed and date for emphasis.</li>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Step 4: Add JavaScript</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this step, we'll implement the logic that interacts with the OpenWeatherMap API to fetch weather data and display it to the user.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+const url =
+	'https://api.openweathermap.org/data/2.5/weather';
+const apiKey =
+	'f00c38e0279b7bc85480c3fe775d518c';
+
+$(document).ready(function () {
+	weatherFn('Pune');
+});
+
+async function weatherFn(cName) {
+	const temp =
+		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
+	try {
+		const res = await fetch(temp);
+		const data = await res.json();
+		if (res.ok) {
+			weatherShowFn(data);
+		} else {
+			alert('City not found. Please try again.');
+		}
+	} catch (error) {
+		console.error('Error fetching weather data:', error);
+	}
+}
+
+function weatherShowFn(data) {
+	$('#city-name').text(data.name);
+	$('#date').text(moment().
+		format('MMMM Do YYYY, h:mm:ss a'));
+	$('#temperature').
+		html(`${data.main.temp}°C`);
+	$('#description').
+		text(data.weather[0].description);
+	$('#wind-speed').
+		html(`Wind Speed: ${data.wind.speed} m/s`);
+	$('#weather-icon').
+		attr('src',
+			`...`);
+	$('#weather-info').fadeIn();
+}
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>In this Example:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>The url and apiKey variables store the API endpoint and key to access the weather data from OpenWeatherMap.</li>
+  <li>The weatherFn function sends a request to the OpenWeatherMap API with the city name (default is "Pune") and retrieves the weather data asynchronously. If the request is successful, it proceeds to display the data.</li>
+  <li>If the city is not found or an error occurs, an alert is shown to the user saying "City not found. Please try again."</li>
+  <li>The weatherShowFn function updates the webpage with weather details such as the city name, temperature, description, wind speed, and current date/time. It also sets the weather icon (though the icon URL is missing and needs to be added).</li>
+  <li>The current date and time are displayed using moment.js, formatted as "Month day, year, time" (e.g., "April 16th 2025, 3:45:00 PM").</li>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Weather App - Complete Code</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example: This example describes the basic implementation for a Weather App in HTML CSS and JavaScript.</h4>
+<!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  
+```
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" href="style2.css">
+	<link rel="stylesheet" href=
+	  "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href=
+	  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href=
+	  "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+	<title>GFG App</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-card">
+			<h1 style="color: green;">
+				GeeksforGeeks
+			</h1>
+			<h3>
+				Weather App
+			</h3>
+			<input type="text" id="city-input"
+				placeholder="Enter city name">
+			<button id="city-input-btn"
+					onclick="weatherFn($('#city-input').val())">
+					Get Weather
+			</button>
+			<div id="weather-info"
+				class="animate__animated animate__fadeIn">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<img id="weather-icon" src="" alt="Weather Icon">
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="script2.js"></script>
+</body>
+</html>
+```
+
+<!--~~~~~~~~~~~~~~~ style.css ~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>style.css</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+}
+
+.container {
+    text-align: center;
+}
+
+.weather-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 450px;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #2196F3;
+}
+
+#city-input::placeholder {
+    color: #aaa;
+}
+
+#city-input-btn {
+    padding: 10px;
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#city-input-btn:hover {
+    background-color: #1565C0;
+}
+
+#weather-info {
+    display: none;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed {
+    font-size: 16px;
+    color: rgb(255, 0, 0);
+}
+
+#date {
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
+</pre>
+</details>
+
+<!--~~~~~~~~~~~~~~ script.js ~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>script.js</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+const url =
+	'https://api.openweathermap.org/data/2.5/weather';
+const apiKey =
+	'f00c38e0279b7bc85480c3fe775d518c';
+
+$(document).ready(function () {
+	weatherFn('Noida'); // Set Noida as the initial city
+});
+
+async function weatherFn(cName) {
+	const temp =
+		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
+	try {
+		const res = await fetch(temp);
+		const data = await res.json();
+		if (res.ok) {
+			weatherShowFn(data);
+		} else {
+			alert('City not found. Please try again.');
+		}
+	} catch (error) {
+		console.error('Error fetching weather data:', error);
+	}
+}
+
+function weatherShowFn(data) {
+	$('#city-name').text(data.name);
+	$('#date').text(moment().
+		format('MMMM Do YYYY, h:mm:ss a')); // Corrected date format to include year
+	$('#temperature').
+		html(`${Math.round(data.main.temp)}°C`); // Rounded temperature
+	$('#description').
+		text(data.weather[0].description);
+	$('#wind-speed').
+		html(`Wind Speed: ${data.wind.speed} m/s`);
+	$('#weather-icon').
+		attr('src',
+			`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`); // Corrected icon URL
+	$('#weather-info').fadeIn();
+}
+</pre>
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Step 5: Running the Application</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>Save all the files: Make sure the files index.html, styles.css, and script.js are saved properly.</li>
+  <li>Get Your API Key: Go to OpenWeatherMap, create an account, and get your free API key.</li>
+  <li>Open the app: Open index.html in your web browser. The app will initially show the weather for Pune.</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-weather-02.mp4 -->
+https://media.geeksforgeeks.org/wp-content/uploads/20250416110219309319/Output.mp4
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Conclusion</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>You've built a functional Weather App using HTML, CSS, and JavaScript, which helps you practice working with APIs and DOM manipulation. You can enhance it further by adding features like:</p>
+<ul>
+  <li>Custom city input for weather searches.</li>
+  <li>A multi-day weather forecast.</li>
+  <li>Automatic weather detection based on the user's location.</li>
+  <li>Storing and displaying previous searches using local storage.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am</h6>
 <h6>Date editted: 5/15/2025 9:00+am</h6>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
