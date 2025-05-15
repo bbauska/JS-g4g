@@ -349,7 +349,7 @@ heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. map image using iframe ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <img src="./images/image-map-01.png"
+  <img src="./images/image-map-01.jpg"
   title="Map image 1 using iframe."
   alt="Map image 1 using iframe"
   style="border: 2px solid #000000; width:35%;" />
@@ -430,7 +430,7 @@ New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. map image using leaflet.js ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <img src="./images/image-map-02.png"
+  <img src="./images/image-map-02.jpg"
   title="Map image example using leaflet.js."
   alt="Map image example using leaflet.js"
   style="border: 2px solid #000000; width:35%;" />
