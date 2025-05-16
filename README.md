@@ -2170,10 +2170,413 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250416110219309319/Output.m
   <li>Storing and displaying previous searches using local storage.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="10">10. Next project</h2>
+<h2 id="10">10. How to make own Linktree using HTML, CSS and JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>Linktree is a tool that permits you to share multiple hyperlinks of various social media into one site. It gained popularity on Instagram, as Instagram does not allow you to share web links anywhere other than Stories and the 'bio' section of your profile page, which has a strict character limit. In this article, we will how to create our own Linktree using HTML, CSS, and JavaScript.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Approach:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>The following approach will be used to implement:</p>
+
+<ul>
+  <li>Create a project folder and inside it create three more folders called "CSS" for main.css(for writing the CSS) files, "js" for links.js and main.js(for writing the js) files, and assets for logo images and create one file “index.html“(for writing the HTML).</li>
+  <li>In the HTML file, create two containers element, such as a div, to hold your logo and about(bio).</li>
+  <li>Use CSS to style the appearance of your linktree. This might include setting the font, color, and size of your links, as well as the layout and spacing of the list items.</li>
+  <li>Use JavaScript to add interactivity to your linktree. For instance, you could use JavaScript to open the links in new tabs or to add hover effects when the user moves their mouse over a link.</li>
+
+<h3>Project Structure:</h3>
+
+<pre>
+root
+|
+|
+|____assets
+     |____discord.png
+     |____facebook.png
+     |____gmail.png
+     |____instagram.png
+     |____linkedin.png
+     |____link-solid.svg
+     |____telegram.jpg
+     |____twitter.png
+     |____youtube.png
+|____css
+     |____main.css
+|____js
+     |____links.js
+     |____main.js
+|____README.md
+|____index.html
+</pre>
+
+<p>Note: If you want to change the fonts, of your web page, you just need to include the following stylesheet in your program for the fonts:</p>
+
+<pre>
+@import url(
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+</pre>
+
+<p>Example: Below example illustrates the basic implementation for creating the Linktree in a stepwise manner.</p>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 1: Add the following code to the index.html file.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>index.html</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width, 
+                         initial-scale=1.0" />
+    <title>Linktree</title>
+
+    <script type="module" defer 
+            src="main.js">
+    </script>
+
+    <link rel="stylesheet" 
+          href="main.css" />
+</head>
+
+<body>
+    <main>
+        <div class="logoContainer">
+            <img class="logo"
+                 src=
+"https://media.geeksforgeeks.org/wp-content/uploads/20221223192752/gfg_200x200-min.png"
+                 alt="click here"/>
+        </div>
+        <div class="greetings">
+            <div>GeeksforGeeks</div>
+        </div>
+        <div class="about">
+            <div>
+                We welcome you to the platform where 
+                we consistently strive to offer the 
+                best of education
+            </div>
+        </div>
+        <div class="links" 
+             id="links">
+        </div>
+    </main>
+</body>
+
+</html>
+```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 2: Create a folder "CSS", inside this "css" folder add the following code to the main.css file.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>main.css</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<pre>
+@import url(
+ "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #060c21;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.logo {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 8%;
+}
+.logoContainer {
+  margin: 1rem 0;
+  position: relative;
+  height: 225px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.link {
+  height: 2.75rem;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  margin: 0.5rem 0;
+  border-radius: 15px;
+}
+.greetings {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: white;
+}
+.about {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: white;
+}
+.link span {
+  width: 80%;
+  text-align: center;
+}
+.link img {
+  height: 2rem;
+  aspect-ratio: 1;
+}
+.linkIcon {
+  height: 2rem !important;
+  aspect-ratio: 1;
+}
+.link:nth-child(1) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #EBC7E8;
+  color: white;
+}
+.link:nth-child(2) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #BFACE0;
+  color: white;
+}
+.link:nth-child(3) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #A084CA;
+  color: white;
+}
+.link:nth-child(4) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #645CAA;
+  color: white;
+}
+.link:nth-child(5) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #4b4585;
+  color: white;
+}
+.link:nth-child(6) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #413b71;
+  color: white;
+}
+.link:nth-child(7) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #352e5c;
+  color: white;
+}
+.link:nth-child(8) {
+  background: linear-gradient(90deg,
+    rgba(241, 241, 241, 0.1) 30%,
+    rgba(113, 113, 113, 0.3) 100%),
+    #211d38;
+  color: white;
+}
+.link:hover {
+  filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
+  transform: scale(1.05);
+}
+.link>* {
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.1s;
+}
+.link:hover>* {
+  transform: scale(1.1);
+  filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.2));
+}
+@media (max-width: 600px) {
+  body {
+    background-size: 100%;
+  }
+  .logo img {
+    width: 200px;
+  }
+  .link span {
+    width: 70%;
+    text-align: center;
+  }
+  .link {
+    width: 95vw;
+  }
+  .link:hover {
+    transform: scale(1.01);
+  }
+}
+</pre>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 3: Create a folder "js", inside this "js" folder add two files "links.js" and "main.js". Add the following code to the links.js file.</h4>
+<ul>
+  <li>links.css</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+export const links = [
+    {
+        name: "Twitter",
+        link: 
+"https://twitter.com/geeksforgeeks",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+    {
+        name: "Linkedin",
+        link: 
+"https://www.linkedin.com/company/geeksforgeeks/",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+    {
+        name: "Instagram",
+        link: 
+"https://www.instagram.com/geeks_for_geeks/?hl=en",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+    {
+        name: "E-mail",
+        link: 
+"mailto:feedback@geeksforgeeks.org",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+    {
+        name: "Telegram",
+        link: 
+"https://t.me/geeksforgeeks_official",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+    {
+        name: "YouTube",
+        link: 
+"https://www.youtube.com/@GeeksforGeeksVideos/featured",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+    {
+        name: "Discord",
+        link: 
+"https://discord.com/invite/HvJvpjz27z",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+    {
+        name: "Facebook",
+        link: 
+"https://www.facebook.com/geeksforgeeks.org/",
+        image: 
+"https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
+    },
+];
+</pre>
+
+</details>
+
+<ul>
+  <li>main.js</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+import { links } from "./links.js";
+
+const linkContainer = document.getElementById("links");
+
+function addLink(name, link, image) {
+    return `
+  <a href="${link}" class="link" target="blank">
+    <img src="${image}"/>
+    <span>${name}  </span>
+    <img class="linkIcon" src="link-solid.svg" alt=""/>
+  </a>
+  `;
+}
+
+let allLinks = "";
+
+links.forEach((ele) => {
+    let link = ele.link;
+    let name = ele.name;
+    let image = ele.image;
+
+    allLinks += addLink(name, link, image);
+});
+
+linkContainer.innerHTML = allLinks;
+</pre>
+
+</details>
+<h4>Output:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-link-01.gif -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="11">11. Next project</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am</h6>
 <h6>Date editted: 5/15/2025 9:00+am</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
 
