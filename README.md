@@ -2560,13 +2560,375 @@ linkContainer.innerHTML = allLinks;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-link-01.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
+<h2 id="11">11. How to Detect Network Speed uing JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="11">11. Next project</h2>
+<p>Network speed detection in JavaScript involves measuring the time it takes to download 
+a known file or resource and calculating the download speed. To calculate the speed of 
+the network a file of known size is chosen from a server to download. The time taken to 
+start and complete the download is recorded and using the file size and the time taken, 
+the download speed is calculated.</p>
+
+<h3>Approach</h3>
+<p>Open the web page for which you want to know the connection speed. The page should be 
+the one for which you want to add the JavaScript code for detecting the speed. Assign or 
+set up the address of the image that you want to use for the speed test to the variable. 
+The variables for storing the test's start time, end time, and download size should be 
+created. Set the "download Size" equivalent to the image file size(In bytes). The end of 
+the download action is assigned to activate when the image downloading is completed. It 
+calculates the speed of the download process, and converts it to "kbps" and "mbps".</p>
+
+<details>
+  <summary>HTML</summary>
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        To detect network speed using JavaScript
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let userImageLink =
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
+        let time_start, end_time;
+
+        // The size in bytes
+        let downloadSize = 5616998;
+        let downloadImgSrc = new Image();
+
+        downloadImgSrc.onload = function () {
+            end_time = new Date().getTime();
+            displaySpeed();
+        };
+        time_start = new Date().getTime();
+        downloadImgSrc.src = userImageLink;
+
+
+        function displaySpeed() {
+            let timeDuration = (end_time - time_start) / 1000;
+            let loadedBits = downloadSize * 8;
+
+            /* Converts a number into string
+               using toFixed(2) rounding to 2 */
+            let bps = (loadedBits / timeDuration).toFixed(2);
+            let speedInKbps = (bps / 1024).toFixed(2);
+            let speedInMbps = (speedInKbps / 1024).toFixed(2);
+            alert("Your internet connection speed is: \n"
+                + bps + " bps\n" + speedInKbps
+                + " kbps\n" + speedInMbps + " Mbps\n");
+        }
+    </script>
+</body>
+
+</html>
+```
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="11">11. Recipe Finder using ReactJS</h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>In this project article, we will be creating a recipe finder application using the React library. We have given the application the name "GeeksforGeeks Recipe Finder". This application is completely developed in ReactJS and mainly focuses on the functional components and also manages the various states of the application.</p>
+<p>This application allows users to search for a wide range of recipes for different dishes. There are default recipes displayed to the user when the user visits the application for the first time. All the logic of recipe research, getting the results, and displaying them in the card format is implemented using JSX.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Preview Image</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-recipe-01.png -->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Prerequisites and Technologies</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<ul>
+  <li>ReactJS</li>
+  <li>CSS</li>
+  <li>JSX</li>
+  <li>Function Components in React</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Approach:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>For creating the Recipe Finder application using ReactJS, we have developed a search 
+bar in which the user can input the dish name for which he or she needs the recipe. Once 
+the user enters the dish name, the recipes are fetched from an Edamam API. This contains 
+a large set of food databases, along with the dishes and their recipes. So according to 
+the user's search, the matching dishes and their recipes are shown to the user in the form 
+of card elements. We are using Tailwind CSS for styling the UI components of the application.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Project Structure:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!-- image-recipe-02.png -->
+<h3>Steps to create the application:</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 1: Set up the React project using the below command in VSCode IDE.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>npx create-react-app recipe-app</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 2: Navigate to the newly created project folder by executing the below command.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>cd recipe-app</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 3: As we are using Tailwind CSS for styling, we need to install it using the npm manager. So execute the below command in the terminal, to install the tailwind CSS.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+npm install -D tailwindcss
+npx tailwindcss init
+</pre>
+<p>The updated dependencies in package.json will look like this:</p>
+<pre>
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+"devDependencies": {
+        "tailwindcss": "^3.3.3"
+      }
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 4: After executing the above command, a 'tailwind.config.js' will be generated, so paste the below content in this file for the correct configuration.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 5: Now, in the src directory create a file as RecipeCard.jsx, which will consist of the code for presenting the recipes to the user.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Example: Insert the below code in the App.js and RecipeCard.jsx file mentioned in the above directory structure.</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</pre>
+<!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
+<pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+// App.js
+import React, { useEffect, useState } from 'react';
+import RecipeCard from './RecipeCard';
+const App = () => {
+  const APP_ID = 'YOUR_API_ID';
+  const APP_KEY = 'YOUR_API_KEY';
+  const [food_recipes, setfood_recipes] = useState([]);
+  const [search_recipe, setSearch_recipe] = useState('');
+  const [search_query, setSearch_Query] = useState('chicken');
+  useEffect(() => {
+    getRecipesFunction();
+  }, [search_query]);
+  const getRecipesFunction = async () => {
+    const response = await fetch (
+      `https://api.edamam.com/search?q=${search_query}&app_id=${APP_ID}&app_key=${APP_KEY}`
+    );
+    const data = await response.json();
+    setfood_recipes(data.hits);
+  };
+  const updateSearchFunction = (e) => {
+    setSearch_recipe(e.target.value);
+  };
+  const getSearchFunction = (e) => {
+    e.preventDefault();
+    setSearch_Query(search_recipe);
+    setSearch_recipe('');
+  };
+  return (
+    <div className="bg-blue-50 min-h-screen font-sans">
+      <header className="bg-blue-500 py-4 text-white">
+        <div className="container mx-auto text-center">
+          <h1 className="text-3xl sm:text-4xl 
+            md:text-5xl lg:text-6xl
+            font-extrabold tracking-tight">
+            <span className="block">GeeksforGeeks
+              Recipe Finder</span>
+          </h1>
+        </div>
+      </header>
+      <div className="container mx-auto mt-8 p-4 
+        sm:px-6 lg:px-8">
+        <form
+          onSubmit={getSearchFunction}
+          className="bg-white p-4 sm:p-6 
+            lg:p-8 rounded-lg shadow-md 
+            flex flex-col sm:flex-row items-center 
+            justify-center space-y-4 sm:space-y-0 
+            sm:space-x-4"
+          >
+          <div className="relative justify-center flex-grow
+            w-full sm:w-1/2">
+            <input
+              type="text"
+              name="search"
+              value={search_recipe}
+              onChange={updateSearchFunction}
+              placeholder="Search for recipes..."
+              className="w-full py-3 px-4 bg-gray-100 
+                border border-blue-300 focus:ring-blue-500 
+                focus:border-blue-500 rounded-full 
+                text-gray-700 outline-none transition-colors 
+                duration-200 ease-in-out focus:ring-2 
+                focus:ring-blue-900 focus:bg-transparent 
+                focus:shadow-md"
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-600 focus:ring-2 
+            focus:ring-blue-900 text-white font-semibold py-3 px-6 
+            rounded-full transform hover:scale-105 transition-transform 
+            focus:outline-none focus:ring-offset-2 
+            focus:ring-offset-blue-700"
+            >
+            Search Recipe
+          </button>
+        </form>
+      </div>
+      <div className="container mx-auto mt-8 p-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+          lg:grid-cols-4 gap-4">
+          {food_recipes.map((recipe) => (
+            <RecipeCard key={recipe.recipe.label} recipe={recipe.recipe} />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+export default App;
+</pre>
+</details>
 
-
+<!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>More JS</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+// RecipeCard.jsx
+import React from 'react';
+const RecipeCard = ({ recipe }) => {
+  return (
+    <div className="bg-white shadow-lg rounded-lg 
+      overflow-hidden hover:shadow-xl 
+      transition-transform hover:scale-105">
+      <div className="relative">
+        <img
+          className="w-full h-48 object-cover 
+            object-center rounded-t-lg"
+          src={recipe.image}
+          alt={recipe.label}
+        />
+        <div className="absolute top-2 left-2 bg-indigo-500 
+          text-white py-1 px-2 rounded">
+          {recipe.dishType[0]}
+        </div>
+      </div>
+      <div className="p-4">
+        <h1 className="text-2xl font-semibold text-gray-800 
+          mb-2 capitalize">
+          {recipe.label}
+        </h1>
+        <div className="text-gray-600 mb-4">
+          <span className="block mb-1">
+            <b>Ingredients:</b>
+          </span>
+          {recipe.ingredientLines.map((ingredient, index) => (
+            <span key={index} className="block pl-4">
+              {ingredient}
+            </span>
+          ))}
+        </div>
+        <div className="flex items-center justify-between">
+          <a
+            href={"/"}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-indigo-500 font-semibold 
+              hover:underline"
+          >
+            View Recipe
+          </a>
+          <div className="flex items-center text-gray-600">
+            <span className="flex items-center mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 5v14m0 0V5m0 
+                                    0v14m0-14h14m-14 0H5"
+                />
+              </svg>
+              1.2K
+            </span>
+            <span className="flex items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+              6
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+export default RecipeCard;
+</pre>
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Steps to run the application:</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>Step 1: Run the application by executing the following command in the terminal.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+npm start
+or
+npm run start
+</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+Step 2: Open a web browser like Chrome or Firefox and type the following URL in the address bar.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>http://localhost:3000/</pre>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>Step 3: Change API Key and API Code in your App.js</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre>
+ const APP_ID = 'YOUR_API_ID';
+ const APP_KEY = 'YOUR_API_KEY';
+ </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am</h6>
