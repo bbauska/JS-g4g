@@ -2215,14 +2215,14 @@ root
 "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 </pre>
 
-<p>Example: Below example illustrates the basic implementation for creating the Linktree in a stepwise manner.</p>
-
+<h4>Example: Below example illustrates the basic implementation for creating the Linktree in a stepwise manner.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Add the following code to the index.html file.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>index.html</li>
 </ul>
+<br>
 <!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
@@ -2279,6 +2279,7 @@ root
 <ul>
   <li>main.css</li>
 </ul>
+<br>
 <!--~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
@@ -2455,6 +2456,7 @@ a {
 <ul>
   <li>links.css</li>
 </ul>
+<br>
 <!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
@@ -2525,6 +2527,7 @@ export const links = [
 <ul>
   <li>main.js</li>
 </ul>
+<br>
 <!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JS</summary>
