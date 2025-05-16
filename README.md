@@ -14,7 +14,8 @@
   <li><h3><a href="#08">Build an AI Image Generator Website in HTML CSS and JavaScript</a>,</h3></li>
   <li><h3><a href="#09">Build a Weather App in HTML CSS and JavaScript</a>,</h3></li>
   <li><h3><a href="#10">How to make own Linktree using HTML, CSS and JavaScript?</a>,</h3></li>
-  <li><h3><a href="#11">Recipe Finder using ReactJS</a>,</h3></li>
+  <li><h3><a href="#11">How to Detect Network Speed using JavaScript</a>,</h3></li>
+  <li><h3><a href="#12">Recipe Finder using ReactJS</a>,</h3></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="01">01. How to declare variables in different ways in JavaScript?</h2>
@@ -1290,10 +1291,10 @@ icon library like Font Awesome, Bootstrap Icons, Google Icons, and Image Icons.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Using Font Awesome Icons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Font Awesome is a popular icon library that provides scalable vector icons. To use Font Awesome, 
-you need to include a CDN link to the library in your HTML document's &lt;head&gt; section. Then, you can 
-use the appropriate class name associated with an inline element, such as the &lt;i&gt; tag, to display 
-the required icon.</p>
+<p>Font Awesome is a popular icon library that provides scalable vector icons. To use Font 
+Awesome, you need to include a CDN link to the library in your HTML document's &lt;head&gt; 
+section. Then, you can use the appropriate class name associated with an inline element, 
+such as the &lt;i&gt; tag, to display the required icon.</p>
 
 ```
 <head>
@@ -2150,9 +2151,11 @@ function weatherShowFn(data) {
 <h3>Step 5: Running the Application</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>Save all the files: Make sure the files index.html, styles.css, and script.js are saved properly.</li>
+  <li>Save all the files: Make sure the files index.html, styles.css, and script.js are 
+    saved properly.</li>
   <li>Get Your API Key: Go to OpenWeatherMap, create an account, and get your free API key.</li>
-  <li>Open the app: Open index.html in your web browser. The app will initially show the weather for Pune.</li>
+  <li>Open the app: Open index.html in your web browser. The app will initially show the 
+    weather for Pune.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -2163,7 +2166,9 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250416110219309319/Output.m
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Conclusion</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You've built a functional Weather App using HTML, CSS, and JavaScript, which helps you practice working with APIs and DOM manipulation. You can enhance it further by adding features like:</p>
+<p>You've built a functional Weather App using HTML, CSS, and JavaScript, which helps you 
+practice working with APIs and DOM manipulation. You can enhance it further by adding 
+features like:</p>
 <ul>
   <li>Custom city input for weather searches.</li>
   <li>A multi-day weather forecast.</li>
@@ -2173,16 +2178,26 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250416110219309319/Output.m
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10">10. How to make own Linktree using HTML, CSS and JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Linktree is a tool that permits you to share multiple hyperlinks of various social media into one site. It gained popularity on Instagram, as Instagram does not allow you to share web links anywhere other than Stories and the 'bio' section of your profile page, which has a strict character limit. In this article, we will how to create our own Linktree using HTML, CSS, and JavaScript.</p>
+<p>Linktree is a tool that permits you to share multiple hyperlinks of various social 
+media into one site. It gained popularity on Instagram, as Instagram does not allow you 
+to share web links anywhere other than Stories and the 'bio' section of your profile page, 
+which has a strict character limit. In this article, we will how to create our own Linktree 
+using HTML, CSS, and JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following approach will be used to implement:</p>
 <ul>
-  <li>Create a project folder and inside it create three more folders called "CSS" for main.css(for writing the CSS) files, "js" for links.js and main.js(for writing the js) files, and assets for logo images and create one file “index.html“(for writing the HTML).</li>
-  <li>In the HTML file, create two containers element, such as a div, to hold your logo and about(bio).</li>
-  <li>Use CSS to style the appearance of your linktree. This might include setting the font, color, and size of your links, as well as the layout and spacing of the list items.</li>
-  <li>Use JavaScript to add interactivity to your linktree. For instance, you could use JavaScript to open the links in new tabs or to add hover effects when the user moves their mouse over a link.</li>
+  <li>Create a project folder and inside it create three more folders called "CSS" 
+    for main.css(for writing the CSS) files, "js" for links.js and main.js(for writing the js) 
+	files, and assets for logo images and create one file “index.html“(for writing the HTML).</li>
+  <li>In the HTML file, create two containers element, such as a div, to hold your logo 
+    and about(bio).</li>
+  <li>Use CSS to style the appearance of your linktree. This might include setting the font, 
+    color, and size of your links, as well as the layout and spacing of the list items.</li>
+  <li>Use JavaScript to add interactivity to your linktree. For instance, you could use 
+    JavaScript to open the links in new tabs or to add hover effects when the user moves 
+	their mouse over a link.</li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Project Structure:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2209,14 +2224,16 @@ root
 |____index.html
 </pre>
 
-<p>Note: If you want to change the fonts, of your web page, you just need to include the following stylesheet in your program for the fonts:</p>
+<p>Note: If you want to change the fonts, of your web page, you just need to include the 
+following stylesheet in your program for the fonts:</p>
 
 <pre>
 @import url(
 "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 </pre>
 
-<h4>Example: Below example illustrates the basic implementation for creating the Linktree in a stepwise manner.</h4>
+<h4>Example: Below example illustrates the basic implementation for creating the Linktree 
+in a stepwise manner.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Add the following code to the index.html file.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2561,7 +2578,7 @@ linkContainer.innerHTML = allLinks;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-link-01.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="11">11. How to Detect Network Speed uing JavaScript?</h2>
+<h2 id="11">11. How to Detect Network Speed using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Network speed detection in JavaScript involves measuring the time it takes to download 
 a known file or resource and calculating the download speed. To calculate the speed of 
@@ -2623,7 +2640,7 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="11">11. Recipe Finder using ReactJS</h2>
+<h2 id="12">12. Recipe Finder using ReactJS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this project article, we will be creating a recipe finder application using the React library. We have given the application the name "GeeksforGeeks Recipe Finder". This application is completely developed in ReactJS and mainly focuses on the functional components and also manages the various states of the application.</p>
 <p>This application allows users to search for a wide range of recipes for different dishes. There are default recipes displayed to the user when the user visits the application for the first time. All the logic of recipe research, getting the results, and displaying them in the card format is implemented using JSX.</p>
@@ -2685,7 +2702,8 @@ npx tailwindcss init
   }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Step 4: After executing the above command, a 'tailwind.config.js' will be generated, so paste the below content in this file for the correct configuration.</h4>
+<h4>Step 4: After executing the above command, a 'tailwind.config.js' will be generated, 
+so paste the below content in this file for the correct configuration.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 /** @type {import('tailwindcss').Config} */
@@ -2700,9 +2718,11 @@ module.exports = {
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Step 5: Now, in the src directory create a file as RecipeCard.jsx, which will consist of the code for presenting the recipes to the user.</h4>
+<h4>Step 5: Now, in the src directory create a file as RecipeCard.jsx, which will consist 
+of the code for presenting the recipes to the user.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: Insert the below code in the App.js and RecipeCard.jsx file mentioned in the above directory structure.</h4>
+<h4>Example: Insert the below code in the App.js and RecipeCard.jsx file mentioned in the 
+above directory structure.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 /* index.css */
@@ -2907,9 +2927,9 @@ export default RecipeCard;
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Steps to run the application:</h4>
+<h3>Steps to run the application:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Step 1: Run the application by executing the following command in the terminal.
+<h4>Step 1: Run the application by executing the following command in the terminal.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 npm start
@@ -2917,7 +2937,7 @@ or
 npm run start
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Step 2: Open a web browser like Chrome or Firefox and type the following URL in the address bar.
+<h4>Step 2: Open a web browser like Chrome or Firefox and type the following URL in the address bar.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>http://localhost:3000/</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2927,9 +2947,8 @@ Step 2: Open a web browser like Chrome or Firefox and type the following URL in 
  const APP_ID = 'YOUR_API_ID';
  const APP_KEY = 'YOUR_API_KEY';
  </pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="12">12. </h2>
+<h2 id="13">13. </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p></p>
 
@@ -2939,6 +2958,7 @@ Step 2: Open a web browser like Chrome or Firefox and type the following URL in 
 <h6>Date editted: 5/15/2025 12:00+am</h6>
 <h6>Date editted: 5/15/2025 9:00+am</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 
 
