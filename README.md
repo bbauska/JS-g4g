@@ -1886,6 +1886,7 @@ body {
   <li>Weather details are initially hidden. When shown, they include a 100px weather icon, 
     bold and larger temperature, medium-sized description, and red wind speed and date for 
 	emphasis.</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Step 4: Add JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1952,6 +1953,7 @@ function weatherShowFn(data) {
     the weather icon (though the icon URL is missing and needs to be added).</li>
   <li>The current date and time are displayed using moment.js, formatted as "Month day, year, time" 
     (e.g., "April 16th 2025, 3:45:00 PM").</li>
+</ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Weather App - Complete Code</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
