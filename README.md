@@ -2722,6 +2722,8 @@ module.exports = {
   <summary>JavaScript</summary>
 <pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+```
 // App.js
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
@@ -2812,14 +2814,15 @@ const App = () => {
   );
 };
 export default App;
-</pre>
-</details>
+```
 
+</details>
 <!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>More JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+
+```
 // RecipeCard.jsx
 import React from 'react';
 const RecipeCard = ({ recipe }) => {
@@ -2907,7 +2910,8 @@ const RecipeCard = ({ recipe }) => {
   );
 };
 export default RecipeCard;
-</pre>
+```
+
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Steps to run the application:</h4>
@@ -2931,6 +2935,13 @@ Step 2: Open a web browser like Chrome or Firefox and type the following URL in 
  const APP_KEY = 'YOUR_API_KEY';
  </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h2 id="12">12. </h2>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p></p>
+
+
+
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am</h6>
 <h6>Date editted: 5/15/2025 9:00+am</h6>
