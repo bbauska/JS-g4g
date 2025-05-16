@@ -28,7 +28,8 @@ avoiding unintended side effects in code.</p>
   <li>JavaScript <b><mark>var</mark></b></li>
   <li>JavaScript <b><mark>let</mark></b></li>
   <li>JavaScript <b><mark>const</mark></b></li>
-  <li>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></li>
+  <li>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and 
+    <b><mark>const</mark></b></li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript <b><mark>var</mark></b></h2>
@@ -66,10 +67,9 @@ if the code gets huge.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 if (true) {
-    let geeks = "GeeksforGeeks";
-    console.log(geeks);
+  let geeks = "GeeksforGeeks";
+  console.log(geeks);
 }
-
 /* This will be error and 
    show geeks is not defined */
 console.log(geeks);
@@ -154,12 +154,12 @@ HTML and with an example.</h4>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" 
-          content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Search Bar Example&lt;/title&gt;
-    &lt;link rel="stylesheet" 
-          type="text/css" href="./style.css"&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
+    content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Search Bar Example&lt;/title&gt;
+  &lt;link rel="stylesheet" 
+    type="text/css" href="./style.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
   &lt;div class="container"&gt;
@@ -354,27 +354,24 @@ heading and a google map showing specific location.</h4>
 <!-- Using iframe -->
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Embed Google Map</title>
+  <title>Embed Google Map</title>
 </head>
-
 <body style="display: grid;
   justify-content: center">
-    <h2 style="text-align: center">
-        Add map in html using iframe</h2>
-    <iframe src="https://www.google.com/maps/embed?pb
-      =!1m18!1m12!1m3!1d4291.745453141256!2d
-      77.39914006293347!3d28.504393188935435!
-      2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
-      !3m3!1m2!1s0x390ce626851f7009%3A0x62118
-      5133cfd1ad1!2sGeeksforGeeks%20%7C%20
-      Coding%20Classes%20%7C%20Noida!5e0!3m2!1
-      sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen=""
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+  <h2 style="text-align: center">
+    Add map in html using iframe</h2>
+  <iframe src="https://www.google.com/maps/embed?pb
+    =!1m18!1m12!1m3!1d4291.745453141256!2d
+    77.39914006293347!3d28.504393188935435!
+    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+    !3m3!1m2!1s0x390ce626851f7009%3A0x62118
+    5133cfd1ad1!2sGeeksforGeeks%20%7C%20
+    Coding%20Classes%20%7C%20Noida!5e0!3m2!1
+    sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen=""
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 </body>
-
 </html>
 ```
 
@@ -505,9 +502,11 @@ to fetch the jokes and will show those jokes on the screen.</p>
 Once we design the structure of the application, then we can style the elements and the 
 application using CSS properties for a responsive and attractive layout with different 
 properties like width, padding, height, etc.</p>
+
 <p>In the JavaScript code, as we are fetching the Joke from the external API, we need to 
 define the function jokeFn() which requests the External API for the joke and once the 
 joke is received, it is displayed in the Application's UI.</p>
+
 <p>The cpyFn() allows us to copy the generated Joke to the clipboard for further use.
 Example: This example describes the basic implementation for a Joke generator App in 
 HTML, CSS & JavaScript.</p>
@@ -664,7 +663,6 @@ Javascript, along with understanding its implementation through the illustration
 
 <p>Stack is a well-known linear data structure that may follow the order LIFO(Last In 
 First Out) or FILO(First In Last Out).</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-stack-01.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
@@ -745,7 +743,6 @@ stack then the stack underflow message will be displayed in the message box.</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -1335,8 +1332,8 @@ display the icon.</p>
 <head>
   <!-- Include Bootstrap Icons library -->
   <link href=
-"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
-  rel="stylesheet" />
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
+    rel="stylesheet" />
 </head>
 <body>
   <!-- Bootstrap Icon -->
@@ -1369,7 +1366,7 @@ the icon name.</p>
 <head>
   <!-- Include Google Icons library -->
   <link href=
-"https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
@@ -1728,49 +1725,49 @@ application which consists of weather, wind speed, description, etc.</p>
 ```
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" href="style2.css">
-	<link rel="stylesheet" href=
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="stylesheet" href=
+    <link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	<link rel="stylesheet" href=
+    <link rel="stylesheet" href=
 "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-	<title>GFG App</title>
+    <title>GFG App</title>
 </head>
 
 <body>
-	<div class="container">
-		<div class="weather-card">
-			<h1 style="color: green;">
-				GeeksforGeeks
-			</h1>
-			<h3>
-				Weather App
-			</h3>
-			<input type="text" id="city-input"
-				placeholder="Enter city name">
-			<button id="city-input-btn"
-					onclick="weatherFn($('#city-input').val())">
-					Get Weather
-			</button>
-			<div id="weather-info"
-				class="animate__animated animate__fadeIn">
-				<h3 id="city-name"></h3>
-				<p id="date"></p>
-				<img id="weather-icon" src="" alt="Weather Icon">
-				<p id="temperature"></p>
-				<p id="description"></p>
-				<p id="wind-speed"></p>
-			</div>
-		</div>
-	</div>
-	<script src=
-"https://code.jquery.com/jquery-3.6.0.min.js">
-	</script>
-	<script src=
-"https://momentjs.com/downloads/moment.min.js">
-	</script>
-	<script src="script2.js"></script>
+  <div class="container">
+    <div class="weather-card">
+      <h1 style="color: green;">
+        GeeksforGeeks
+      </h1>
+      <h3>
+        Weather App
+      </h3>
+      <input type="text" id="city-input"
+        placeholder="Enter city name">
+      <button id="city-input-btn"
+        onclick="weatherFn($('#city-input').val())">
+        Get Weather
+      </button>
+      <div id="weather-info"
+        class="animate__animated animate__fadeIn">
+        <h3 id="city-name"></h3>
+        <p id="date"></p>
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="wind-speed"></p>
+      </div>
+    </div>
+  </div>
+  <script src=
+    "https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script src=
+    "https://momentjs.com/downloads/moment.min.js">
+  </script>
+  <script src="script2.js"></script>
 </body>
 </html>
 ```
@@ -1781,106 +1778,96 @@ application which consists of weather, wind speed, description, etc.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li><b>&lt;input&gt;</b>: This input field allows the user to type in the city name.</li>
-  <li><b>&lt;button&gt;</b>: When clicked, this button will trigger the weather fetching logic.</li>
-  <li><b>&#35;weather-info</b>: A container that holds the weather details, such as temperature, description, and wind speed. Initially hidden.</li>
-  <li><b>&#35;error-message</b>: This element displays an error message when the city is invalid or not found. It is also hidden initially.
+  <li><b>&lt;button&gt;</b>: When clicked, this button will trigger the weather fetching 
+    logic.</li>
+  <li><b>&#35;weather-info</b>: A container that holds the weather details, such as 
+    temperature, description, and wind speed. Initially hidden.</li>
+  <li><b>&#35;error-message</b>: This element displays an error message when the city 
+    is invalid or not found. It is also hidden initially.
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Step 3: Styling with CSS</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Next, add some basic styling to make the Weather app visually appealing. Open the styles.css file and add the following CSS code:</p>
+<p>Next, add some basic styling to make the Weather app visually appealing. Open the 
+styles.css file and add the following CSS code:</p>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #4CAF50, #2196F3);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4CAF50, #2196F3);
 }
-
 .container {
-    text-align: center;
+  text-align: center;
 }
-
 .weather-card {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    width: 450px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 450px;
 }
-
 .weather-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-
 #city-input {
-    padding: 15px;
-    margin: 10px 0;
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  padding: 15px;
+  margin: 10px 0;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
-
 #city-input:focus {
-    outline: none;
-    border-color: #2196F3;
+  outline: none;
+  border-color: #2196F3;
 }
-
 #city-input::placeholder {
-    color: #aaa;
+  color: #aaa;
 }
-
 #city-input-btn {
-    padding: 10px;
-    background-color: #2196F3;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px;
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
-
 #city-input-btn:hover {
-    background-color: #1565C0;
+  background-color: #1565C0;
 }
-
 #weather-info {
-    display: none;
+  display: none;
 }
-
 #weather-icon {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
-
 #temperature {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 8px 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 0;
 }
-
 #description {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-
 #wind-speed {
-    font-size: 16px;
-    color: rgb(255, 0, 0);
+  font-size: 16px;
+  color: rgb(255, 0, 0);
 }
-
 #date {
-    font-size: 14px;
-    color: rgb(255, 0, 0);
+  font-size: 14px;
+  color: rgb(255, 0, 0);
 }
 </pre>
 </details>
@@ -1888,15 +1875,22 @@ body {
 <h4>In this Example:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>The page is centered using Flexbox with a smooth gradient background that transitions from green to blue.</li>
-  <li>The weather details are in a card with a semi-transparent white background, rounded corners, and a shadow. It slightly enlarges when hovered.</li>
-  <li>The input field allows users to type the city name, with padding, a light border, and a blue border when focused, plus gray placeholder text.</li>
-  <li>The button triggers the weather-fetching action, has a blue background, white text, rounded corners, and changes to a darker blue on hover.</li>
-  <li>Weather details are initially hidden. When shown, they include a 100px weather icon, bold and larger temperature, medium-sized description, and red wind speed and date for emphasis.</li>
+  <li>The page is centered using Flexbox with a smooth gradient background that transitions 
+    from green to blue.</li>
+  <li>The weather details are in a card with a semi-transparent white background, rounded 
+    corners, and a shadow. It slightly enlarges when hovered.</li>
+  <li>The input field allows users to type the city name, with padding, a light border, 
+    and a blue border when focused, plus gray placeholder text.</li>
+  <li>The button triggers the weather-fetching action, has a blue background, white text, 
+    rounded corners, and changes to a darker blue on hover.</li>
+  <li>Weather details are initially hidden. When shown, they include a 100px weather icon, 
+    bold and larger temperature, medium-sized description, and red wind speed and date for 
+	emphasis.</li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Step 4: Add JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this step, we'll implement the logic that interacts with the OpenWeatherMap API to fetch weather data and display it to the user.</p>
+<p>In this step, we'll implement the logic that interacts with the OpenWeatherMap API to 
+fetch weather data and display it to the user.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~-->
 <details>
@@ -1904,41 +1898,41 @@ body {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 const url =
-	'https://api.openweathermap.org/data/2.5/weather';
+  'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
-	'f00c38e0279b7bc85480c3fe775d518c';
+  'f00c38e0279b7bc85480c3fe775d518c';
 $(document).ready(function () {
-	weatherFn('Pune');
+  weatherFn('Pune');
 });
 async function weatherFn(cName) {
-	const temp =
-		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
-	try {
-		const res = await fetch(temp);
-		const data = await res.json();
-		if (res.ok) {
-			weatherShowFn(data);
-		} else {
-			alert('City not found. Please try again.');
-		}
-	} catch (error) {
-		console.error('Error fetching weather data:', error);
-	}
+  const temp =
+    `${url}?q=${cName}&appid=${apiKey}&units=metric`;
+  try {
+    const res = await fetch(temp);
+    const data = await res.json();
+    if (res.ok) {
+      weatherShowFn(data);
+    } else {
+      alert('City not found. Please try again.');
+    }
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
+  }
 }
 function weatherShowFn(data) {
-	$('#city-name').text(data.name);
-	$('#date').text(moment().
-		format('MMMM Do YYYY, h:mm:ss a'));
-	$('#temperature').
-		html(`${data.main.temp}°C`);
-	$('#description').
-		text(data.weather[0].description);
-	$('#wind-speed').
-		html(`Wind Speed: ${data.wind.speed} m/s`);
-	$('#weather-icon').
-		attr('src',
-			`...`);
-	$('#weather-info').fadeIn();
+  $('#city-name').text(data.name);
+  $('#date').text(moment().
+    format('MMMM Do YYYY, h:mm:ss a'));
+  $('#temperature').
+    html(`${data.main.temp}°C`);
+  $('#description').
+    text(data.weather[0].description);
+  $('#wind-speed').
+    html(`Wind Speed: ${data.wind.speed} m/s`);
+  $('#weather-icon').
+    attr('src',
+      `...`);
+  $('#weather-info').fadeIn();
 }
 </pre>
 </details>
@@ -1950,12 +1944,12 @@ function weatherShowFn(data) {
     data from OpenWeatherMap.</li>
   <li>The weatherFn function sends a request to the OpenWeatherMap API with the city name 
     (default is "Pune") and retrieves the weather data asynchronously. If the request is 
-	successful, it proceeds to display the data.</li>
+    successful, it proceeds to display the data.</li>
   <li>If the city is not found or an error occurs, an alert is shown to the user saying 
     "City not found. Please try again."</li>
   <li>The weatherShowFn function updates the webpage with weather details such as the 
     city name, temperature, description, wind speed, and current date/time. It also sets 
-	the weather icon (though the icon URL is missing and needs to be added).</li>
+    the weather icon (though the icon URL is missing and needs to be added).</li>
   <li>The current date and time are displayed using moment.js, formatted as "Month day, year, time" 
     (e.g., "April 16th 2025, 3:45:00 PM").</li>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1971,50 +1965,50 @@ and JavaScript.</h4>
 ```
 <!DOCTYPE html>
 <head>
-	<link rel="stylesheet" href="style2.css">
-	<link rel="stylesheet" href=
-	  "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="stylesheet" href=
-	  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	<link rel="stylesheet" href=
-	  "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-	<title>GFG App</title>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href=
+    "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <title>GFG App</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-	<div class="container">
-		<div class="weather-card">
-			<h1 style="color: green;">
-				GeeksforGeeks
-			</h1>
-			<h3>
-				Weather App
-			</h3>
-			<input type="text" id="city-input"
-				placeholder="Enter city name">
-			<button id="city-input-btn"
-					onclick="weatherFn($('#city-input').val())">
-					Get Weather
-			</button>
-			<div id="weather-info"
-				class="animate__animated animate__fadeIn">
-				<h3 id="city-name"></h3>
-				<p id="date"></p>
-				<img id="weather-icon" src="" alt="Weather Icon">
-				<p id="temperature"></p>
-				<p id="description"></p>
-				<p id="wind-speed"></p>
-			</div>
-		</div>
-	</div>
-	<script src=
-"https://code.jquery.com/jquery-3.6.0.min.js">
-	</script>
-	<script src=
-"https://momentjs.com/downloads/moment.min.js">
-	</script>
-	<script src="script2.js"></script>
+  <div class="container">
+    <div class="weather-card">
+      <h1 style="color: green;">
+        GeeksforGeeks
+      </h1>
+      <h3>
+        Weather App
+      </h3>
+      <input type="text" id="city-input"
+        placeholder="Enter city name">
+      <button id="city-input-btn"
+        onclick="weatherFn($('#city-input').val())">
+        Get Weather
+      </button>
+      <div id="weather-info"
+        class="animate__animated animate__fadeIn">
+        <h3 id="city-name"></h3>
+        <p id="date"></p>
+        <img id="weather-icon" src="" alt="Weather Icon">
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="wind-speed"></p>
+      </div>
+    </div>
+  </div>
+  <script src=
+    "https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script src=
+    "https://momentjs.com/downloads/moment.min.js">
+  </script>
+  <script src="script2.js"></script>
 </body>
 </html>
 ```
@@ -2026,92 +2020,78 @@ and JavaScript.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 body {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #4CAF50, #2196F3);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #4CAF50, #2196F3);
 }
-
 .container {
-    text-align: center;
+  text-align: center;
 }
-
 .weather-card {
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    width: 450px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 450px;
 }
-
 .weather-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-
 #city-input {
-    padding: 15px;
-    margin: 10px 0;
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  padding: 15px;
+  margin: 10px 0;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
-
 #city-input:focus {
-    outline: none;
-    border-color: #2196F3;
+  outline: none;
+  border-color: #2196F3;
 }
-
 #city-input::placeholder {
-    color: #aaa;
+  color: #aaa;
 }
-
 #city-input-btn {
-    padding: 10px;
-    background-color: #2196F3;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px;
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
-
 #city-input-btn:hover {
-    background-color: #1565C0;
+  background-color: #1565C0;
 }
-
 #weather-info {
-    display: none;
+  display: none;
 }
-
 #weather-icon {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
-
 #temperature {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 8px 0;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 0;
 }
-
 #description {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
-
 #wind-speed {
-    font-size: 16px;
-    color: rgb(255, 0, 0);
+  font-size: 16px;
+  color: rgb(255, 0, 0);
 }
-
 #date {
-    font-size: 14px;
-    color: rgb(255, 0, 0);
+  font-size: 14px;
+  color: rgb(255, 0, 0);
 }
 </pre>
 </details>
@@ -2122,44 +2102,43 @@ body {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 const url =
-	'https://api.openweathermap.org/data/2.5/weather';
+  'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
-	'f00c38e0279b7bc85480c3fe775d518c';
+  'f00c38e0279b7bc85480c3fe775d518c';
 
 $(document).ready(function () {
-	weatherFn('Noida'); // Set Noida as the initial city
+  weatherFn('Noida'); // Set Noida as the initial city
 });
 
 async function weatherFn(cName) {
-	const temp =
-		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
-	try {
-		const res = await fetch(temp);
-		const data = await res.json();
-		if (res.ok) {
-			weatherShowFn(data);
-		} else {
-			alert('City not found. Please try again.');
-		}
-	} catch (error) {
-		console.error('Error fetching weather data:', error);
-	}
+  const temp =
+    `${url}?q=${cName}&appid=${apiKey}&units=metric`;
+  try {
+    const res = await fetch(temp);
+    const data = await res.json();
+    if (res.ok) {
+      weatherShowFn(data);
+    } else {
+      alert('City not found. Please try again.');
+    }
+  } catch (error) {
+    console.error('Error fetching weather data:', error);
+  }
 }
-
 function weatherShowFn(data) {
-	$('#city-name').text(data.name);
-	$('#date').text(moment().
-		format('MMMM Do YYYY, h:mm:ss a')); // Corrected date format to include year
-	$('#temperature').
-		html(`${Math.round(data.main.temp)}°C`); // Rounded temperature
-	$('#description').
-		text(data.weather[0].description);
-	$('#wind-speed').
-		html(`Wind Speed: ${data.wind.speed} m/s`);
-	$('#weather-icon').
-		attr('src',
-			`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`); // Corrected icon URL
-	$('#weather-info').fadeIn();
+  $('#city-name').text(data.name);
+  $('#date').text(moment().
+    format('MMMM Do YYYY, h:mm:ss a')); // Corrected date format to include year
+  $('#temperature').
+    html(`${Math.round(data.main.temp)}°C`); // Rounded temperature
+  $('#description').
+    text(data.weather[0].description);
+  $('#wind-speed').
+    html(`Wind Speed: ${data.wind.speed} m/s`);
+  $('#weather-icon').
+    attr('src',
+      `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`); // Corrected icon URL
+  $('#weather-info').fadeIn();
 }
 </pre>
 </details>
