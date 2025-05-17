@@ -292,7 +292,7 @@ and web apps. You can learn <b><mark>CSS</mark></b> from the ground up by follow
 <a href="https://www.geeksforgeeks.org/css-tutorials/">this CSS Tutorial</a> and 
 <a href="https://www.geeksforgeeks.org/css-examples/">CSS Examples</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="03">03. How to Add Map in HTML?</h2>
+<h2 id="03">03. How to Add <b><mark>Map</mark></b> in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When building websites, including a <b><mark>map</mark></b> is often necessary to display 
 important locations, such as office addresses, at the footer or on dedicated pages. Adding a 
@@ -484,7 +484,7 @@ India Gate, New Delhi and displays it with marker.</h4>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="04">04. Design Joke Generator App in HTML CSS &amp; JavaScript</h2>
+<h2 id="04">04. Design <b><mark>Joke Generator App</mark></b> in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>We will go to learn how can we create a Joke generator app using HTML, CSS, and 
 JavaScript. We will also add a feature to copy the generated joke. We will use API 
@@ -659,7 +659,7 @@ function cpyFn() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="05">05. Create a Stack Visualizer using HTML CSS and Javascript</h2>
+<h2 id="05">05. Create a <b><mark>Stack Visualizer</mark></b> using HTML CSS and Javascript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this article, we will see how to create a stack visualizer using HTML, CSS & 
 Javascript, along with understanding its implementation through the illustration.</p>
@@ -951,7 +951,7 @@ header {
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="06">06. Create a Bookmark Landing Page using HTML CSS and JavaScript</h2>
+<h2 id="06">06. Create a <b><mark>Bookmark Landing Page</mark></b> using HTML CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this article, we are going to implement a Bookmark Landing Page using HTML, CSS, and 
 JavaScript. Users can effortlessly add, manage, and remove bookmarks, resulting in a tidy 
@@ -1283,7 +1283,7 @@ function addDeleteBookmarkListener(
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="07">07. How to Add Icons in HTML?</h2>
+<h2 id="07">07. How to <b><mark>Add Icons</mark></b> in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Icons in HTML are small images that show actions or items on a website, like a "home" button 
 or a "search" symbol. They help people find things easily. To add icons in HTML, you can use an 
@@ -1417,7 +1417,7 @@ needed.</p>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="08">08. Build an AI Image Generator Website in HTML CSS and JavaScript</h2>
+<h2 id="08">08. Build an <b><mark>AI Image Generator</mark></b> Website in HTML CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Create an AI image generator website using HTML, CSS, and JavaScript by developing a 
 user interface that lets users input text prompts and generate images by AI.</p>
@@ -1686,7 +1686,7 @@ generateImageForm.addEventListener('submit', (e) => {
 -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="09">09. Build A Weather App in HTML CSS &amp; JavaScript</h2>
+<h2 id="09">09. Build A <b><mark>Weather App</mark></b> in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A weather app contains a user input field for the user, which takes the input of the 
 city name. Once the user enters the city name and clicks on the button, then the API 
@@ -2176,7 +2176,7 @@ features like:</p>
   <li>Storing and displaying previous searches using local storage.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="10">10. How to make own Linktree using HTML, CSS and JavaScript?</h2>
+<h2 id="10">10. How to make own <b><mark>Linktree</mark></b> using HTML, CSS and JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Linktree is a tool that permits you to share multiple hyperlinks of various social 
 media into one site. It gained popularity on Instagram, as Instagram does not allow you 
@@ -2578,7 +2578,7 @@ linkContainer.innerHTML = allLinks;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-link-01.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="11">11. How to Detect Network Speed using JavaScript?</h2>
+<h2 id="11">11. How to <b><mark>Detect Network Speed</mark></b> using JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Network speed detection in JavaScript involves measuring the time it takes to download 
 a known file or resource and calculating the download speed. To calculate the speed of 
@@ -2640,7 +2640,7 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="12">12. Recipe Finder using ReactJS</h2>
+<h2 id="12">12. <b><mark>Recipe Finder</mark></b> using ReactJS</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In this project article, we will be creating a recipe finder application using the React library. We have given the application the name "GeeksforGeeks Recipe Finder". This application is completely developed in ReactJS and mainly focuses on the functional components and also manages the various states of the application.</p>
 <p>This application allows users to search for a wide range of recipes for different dishes. There are default recipes displayed to the user when the user visits the application for the first time. All the logic of recipe research, getting the results, and displaying them in the card format is implemented using JSX.</p>
