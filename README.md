@@ -1,21 +1,21 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>webdev with help from Geeks4Geeks</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="#toc">Web Development with Geeks 4 Geeks</h2>
+<h2 id="#toc">Web Development with help from Geeks 4 Geeks</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
   <li><h3><a href="#01">What are var, let, const?</a>,</h3></li>
-  <li><h3><a href="#02">Create Web Search utility</a>,</h3></li>
-  <li><h3><a href="#03">Make a map in HTML</a>,</h3></li>
-  <li><h3><a href="#04">Design Joke Generator App in HTML CSS &amp; JavaScript</a>,</h3></li>
-  <li><h3><a href="#05">Create a Create a Stack Visualizer using HTML CSS and Javascript</a>,</h3></li>
-  <li><h3><a href="#06">Create a Bookmark Landing Page using HTML CSS and JavaScript</a>,</h3></li>
-  <li><h3><a href="#07">How to Add Icons in HTML?</a>,</h3></li>
-  <li><h3><a href="#08">Build an AI Image Generator Website in HTML CSS and JavaScript</a>,</h3></li>
-  <li><h3><a href="#09">Build a Weather App in HTML CSS and JavaScript</a>,</h3></li>
-  <li><h3><a href="#10">How to make own Linktree using HTML, CSS and JavaScript?</a>,</h3></li>
-  <li><h3><a href="#11">How to Detect Network Speed using JavaScript</a>,</h3></li>
-  <li><h3><a href="#12">Recipe Finder using ReactJS</a>,</h3></li>
+  <li><h3><a href="#02">Create <b><mark>Web Search</mark></b> utility</a>,</h3></li>
+  <li><h3><a href="#03">Make a <b><mark>Map</mark></b> in HTML</a>,</h3></li>
+  <li><h3><a href="#04">Design <b><mark>Joke Generator App</mark></b> in HTML CSS &amp; JavaScript</a>,</h3></li>
+  <li><h3><a href="#05">Create a Create a <b><mark>Stack Visualizer</mark></b> using HTML CSS and Javascript</a>,</h3></li>
+  <li><h3><a href="#06">Create a <b><mark>Bookmark Landing Page</mark></b> using HTML CSS and JavaScript</a>,</h3></li>
+  <li><h3><a href="#07">How to <b><mark>Add Icons</mark></b> in HTML?</a>,</h3></li>
+  <li><h3><a href="#08">Build an <b><mark>AI Image Generator Website</mark></b> in HTML CSS and JavaScript</a>,</h3></li>
+  <li><h3><a href="#09">Build a <b><mark>Weather App</mark></b> in HTML CSS and JavaScript</a>,</h3></li>
+  <li><h3><a href="#10">How to make own <b><mark>Linktree</mark></b> using HTML, CSS and JavaScript?</a>,</h3></li>
+  <li><h3><a href="#11">How to <b><mark>Detect Network Speed</mark></b> using JavaScript</a>,</h3></li>
+  <li><h3><a href="#12"><b><mark>Recipe Finder</mark></b> using ReactJS</a>,</h3></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="01">01. How to declare variables in different ways in JavaScript?</h2>
@@ -87,7 +87,7 @@ console.log(geeks);
 <p>This keyword is used to declare variable locally. If you use this keyword to declare a variable 
 then the variable will only be accessible within that block similar to the variable defined by 
 using let and difference between let and const is that the variables declared using const values 
-can’t be reassigned. So we should assign the value while declaring the variable.</p>
+<b><mark>can’t be reassigned</mark></b>. So we should assign the value while declaring the variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -278,26 +278,26 @@ function search_animal() {
   </figure>
 </p>
 <p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
-environments. You can learn JavaScript from the ground up by following this 
-<a href="https://www.geeksforgeeks.org/javascript-tutorial/">JavaScript Tutorial</a> and 
+environments. You can learn <b><mark>JavaScript</mark></b> from the ground up by following;<br>
+<a href="https://www.geeksforgeeks.org/javascript-tutorial/">this JavaScript Tutorial</a> and 
 <a href="https://www.geeksforgeeks.org/javascript-examples/">JavaScript Examples</a>.</p>
 
 <p>HTML is the foundation of webpages, is used for webpage development by structuring websites 
-and web apps. You can learn HTML from the ground up by following 
+and web apps. You can learn <b><mark>HTML</mark></b> from the ground up by following;<br> 
 <a href="https://www.geeksforgeeks.org/html-tutorials/">this HTML Tutorial</a> and 
-<a href="">HTML Examples</a>.</p>
+<a href="https://www.geeksforgeeks.org/html-examples/">HTML Examples</a>.</p>
 
 <p>CSS is the foundation of webpages, is used for webpage development by styling websites 
-and web apps. You can learn CSS from the ground up by following 
+and web apps. You can learn <b><mark>CSS</mark></b> from the ground up by following;<br>
 <a href="https://www.geeksforgeeks.org/css-tutorials/">this CSS Tutorial</a> and 
 <a href="https://www.geeksforgeeks.org/css-examples/">CSS Examples</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="03">03. How to Add Map in HTML?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>When building websites, including a map is often necessary to display important locations, 
-such as office addresses, at the footer or on dedicated pages. Adding a map enhances user 
-experience, making it easier for users to locate your business or other important points 
-of interest.</p>
+<p>When building websites, including a <b><mark>map</mark></b> is often necessary to display 
+important locations, such as office addresses, at the footer or on dedicated pages. Adding a 
+map enhances user experience, making it easier for users to locate your business or other 
+important points of interest.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Prerequisites</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -416,7 +416,7 @@ it with variety of additional plugins.</p>
 let map = L.map('map').setView([Latitude, Longitude], ZoomLevel);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  attribution: '&copy; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt; contributors'
 }).addTo(map);
 
 L.marker([Latitude, Longitude]).addTo(map)
@@ -2472,12 +2472,12 @@ a {
 <h4>Step 3: Create a folder "js", inside this "js" folder add two files "links.js" and "main.js". Add the following code to the links.js file.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
-  <li>links.css</li>
+  <li>links.js</li>
 </ul>
 <br>
 <!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 export const links = [
@@ -2555,15 +2555,15 @@ import { links } from "./links.js";
 const linkContainer = document.getElementById("links");
 function addLink(name, link, image) {
   return `
-  <a href="${link}" class="link" target="blank">
-    <img src="${image}"/>
-    <span>${name}  </span>
-    <img class="linkIcon" src="link-solid.svg" alt=""/>
-  </a>
+  &lt;a href="${link}" class="link" target="blank"&gt;
+    &lt;img src="&dollar;{image}"/&gt;
+    &lt;span&gt;&dollar;{name}  &lt;/span&gt;
+    &lt;img class="linkIcon" src="link-solid.svg" alt=""/&gt;
+  &lt;/a&gt;
   `;
 }
 let allLinks = "";
-links.forEach((ele) => {
+links.forEach((ele) =&gt; {
   let link = ele.link;
   let name = ele.name;
   let image = ele.image;
@@ -2955,10 +2955,8 @@ npm run start
 
 
 <h6>Date created: 5/14/2025 9+pm</h6>
-<h6>Date editted: 5/15/2025 12:00+am</h6>
-<h6>Date editted: 5/15/2025 9:00+am</h6>
+<h6>Date editted: 5/15/2025 12:00+am<br>
+Date editted: 5/15/2025 9:00+am<br>
+Date editted: 5/17/2025 3:00+pm</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-
-
