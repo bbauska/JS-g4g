@@ -297,16 +297,16 @@ and web apps. You can learn <b><mark>CSS</mark></b> from the ground up by follow
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When building websites, including a <b><mark>map</mark></b> is often necessary to display 
 important locations, such as office addresses, at the footer or on dedicated pages. Adding a 
-map enhances user experience, making it easier for users to locate your business or other 
-important points of interest.</p>
+<b><mark>map</mark></b> enhances user experience, making it easier for users to locate your 
+business or other important points of interest.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Prerequisites</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Basic knowledge of HTML and CSS is required to follow along with the examples.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Methods to Add a Map in HTML</h3>
+<h3>Methods to Add a <b><mark>Map</mark></b> in HTML</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Now, let's explore two popular approaches for adding maps to a webpage:</p>
+<p>Now, let's explore two popular approaches for adding <b><mark>maps</mark></b> to a webpage:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Table of Contents</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -322,14 +322,15 @@ important points of interest.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. Using <b><mark>&lt;iframe&gt;</mark></b> to Embed Google Maps</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The easiest and most commonly used method to add a map in HTML is by embedding a Google 
-Map using the <b><mark>&lt;iframe&gt;</mark></b> tag. Google Maps provides an option to 
-generate an embed code that you can copy and paste directly into your HTML document.</p>
+<p>The easiest and most commonly used method to add a <b><mark>map</mark></b> in HTML is 
+by embedding a <b><mark>Google Map</mark></b> using the <b><mark>&lt;iframe&gt;</mark></b> 
+tag. <b><mark>Google Maps</mark></b> provides an option to generate an embed code that 
+you can copy and paste directly into your HTML document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Steps to Embed Google Maps:</h4>
+<h4>Steps to Embed <b><mark>Google Maps</mark></b>:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ol>
-  <li>Go to Google Maps.</li>
+  <li>Go to <b><mark>Google Maps</mark></b>.</li>
   <li>Search for the location you want to display.</li>
   <li>Click the Share option and choose Embed a Map.</li>
   <li>Copy the provided <b><mark>&lt;iframe&gt;</mark></b> code and paste it into your HTML 
@@ -340,13 +341,13 @@ generate an embed code that you can copy and paste directly into your HTML docum
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 &lt;iframe src="https://www.google.com/maps/embed?pb=YourMapURL"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;
 &lt;/iframe&gt;
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: Below given example demonstrates how to embed a goggle map into a webpage 
-using an <b><mark>&lt;iframe&gt;</mark></b> element. It shows a webpage with centered 
-heading and a google map showing specific location.</h4>
+<h4>Example: Below given example demonstrates how to embed a <b><mark>goggle map</mark></b> 
+into a webpage using an <b><mark>&lt;iframe&gt;</mark></b> element. It shows a webpage with 
+centered heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
@@ -487,9 +488,9 @@ India Gate, New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. Design <b><mark>Joke Generator App</mark></b> in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>We will go to learn how can we create a Joke generator app using HTML, CSS, and 
-JavaScript. We will also add a feature to copy the generated joke. We will use API 
-to fetch the jokes and will show those jokes on the screen.</p>
+<p>We will go to learn how can we create a <b><mark>Joke generator app</mark></b> using 
+HTML, CSS, and JavaScript. We will also add a feature to copy the generated joke. We will 
+use API to fetch the jokes and will show those jokes on the screen.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Prerequisites</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -501,19 +502,19 @@ to fetch the jokes and will show those jokes on the screen.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Create the Joke Generator Application UI Structure using HTML Elements like &lt;div&gt;, 
-&lt;h1&gt;, &lt;button&gt;. Then link all the required CDNs for external fonts and icons. 
-Once we design the structure of the application, then we can style the elements and the 
-application using CSS properties for a responsive and attractive layout with different 
-properties like width, padding, height, etc.</p>
+<p>Create the <b><mark>Joke Generator Application</mark></b> UI Structure using HTML 
+Elements like &lt;div&gt;, &lt;h1&gt;, &lt;button&gt;. Then link all the required CDNs 
+for external fonts and icons. Once we design the structure of the application, then we 
+can style the elements and the application using CSS properties for a responsive and 
+attractive layout with different properties like width, padding, height, etc.</p>
 
 <p>In the JavaScript code, as we are fetching the Joke from the external API, we need to 
 define the function jokeFn() which requests the External API for the joke and once the 
 joke is received, it is displayed in the Application's UI.</p>
 
-<p>The cpyFn() allows us to copy the generated Joke to the clipboard for further use.
-Example: This example describes the basic implementation for a Joke generator App in 
-HTML, CSS & JavaScript.</p>
+<p>The cpyFn() allows us to copy the generated Joke to the clipboard for further use.</p>
+<p><b>Example</b>: This example describes the basic implementation for a 
+<b><mark>Joke generator App</mark></b> in HTML, CSS & JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
@@ -662,11 +663,12 @@ function cpyFn() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="05">05. Create a <b><mark>Stack Visualizer</mark></b> using HTML CSS and Javascript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this article, we will see how to create a stack visualizer using HTML, CSS & 
-Javascript, along with understanding its implementation through the illustration.</p>
+<p>In this article, we will see how to create a <b><mark>stack visualizer</mark></b> 
+using HTML, CSS &amp; Javascript, along with understanding its implementation through 
+the illustration.</p>
 
-<p>Stack is a well-known linear data structure that may follow the order LIFO(Last In 
-First Out) or FILO(First In Last Out).</p>
+<p>Stack is a well-known linear data structure that may follow the order LIFO (Last In 
+First Out) or FILO (First In Last Out).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-stack-01.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
@@ -678,23 +680,23 @@ First Out) or FILO(First In Last Out).</p>
     <figcaption>Stack.</figcaption>
   </figure>
 </p>
-<p>There are many real-life examples of a stack. Like, the stack of books in a library is 
-a good real-life example of a stack. If we want to clear the stack then we have to remove 
-the first book or the top book of the stack, i.e. the book which has been placed at the 
-bottommost position remains in the stack for the longest period of time. So, it follows 
-the order LIFO(Last In First Out)/FILO(First In Last Out) order.</p>
+<p>There are many real-life examples of a <b><mark>stack</mark></b>. Like, the stack of 
+books in a library is a good real-life example of a stack. If we want to clear the stack 
+then we have to remove the first book or the top book of the stack, i.e. the book which 
+has been placed at the bottommost position remains in the stack for the longest period 
+of time. So, it follows the order LIFO(Last In First Out)/FILO(First In Last Out) order.</p>
 
-<p>In this article, we are going to tell how to build the stack visualizer from the 
-scratch using HTML, CSS and Javascript. In this stack visualizer, we have a bucket in 
-which we can put the elements and the bucket has a limit of containing a certain number 
-of elements. When the limit is crossed, but we try to put an element the stack overflow 
-message will be displayed in the message box and then we need to pop the element from 
-the stack to insert new elements. Also when we want to pop an element from an empty 
+<p>In this article, we are going to tell you how to build the <b><mark>stack visualizer</mark></b> 
+from the scratch using HTML, CSS and Javascript. In this stack visualizer, we have a 
+bucket in which we can put the elements and the bucket has a limit of containing a certain 
+number of elements. When the limit is crossed, but we try to put an element the stack 
+overflow message will be displayed in the message box and then we need to pop the element 
+from the stack to insert new elements. Also when we want to pop an element from an empty 
 stack then the stack underflow message will be displayed in the message box.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The following approach will be utilized to create the Stack Visualizer:</p>
+<p>The following approach will be utilized to create the <b><mark>Stack Visualizer</mark></b>:</p>
 <ul>
   <li>Create a project folder and inside it create three files "index.html"(for writing 
     the HTML), "style.css"(for writing the CSS), and "index.js"(for writing the js). You 
@@ -716,31 +718,31 @@ stack then the stack underflow message will be displayed in the message box.</p>
     store them inside variables. Also, declare an empty array which we use and maintain 
     as an internal stack.</li>
   <li>Now make two functions, one to disable the three buttons and the second one to 
-    enable three buttons. Use the "button.disabled = true" to disable the button and 
-    "button.disabled = false". You can also add any style for disabled buttons by 
-    "classList.add" if needed.</li>
+    enable three buttons. Use the <b><mark>"button.disabled = true"</mark></b> to disable 
+	the button and <b><mark>"button.disabled = false"</mark></b>. You can also add any 
+	style for disabled buttons by <b><mark>"classList.add"</mark></b> if needed.</li>
   <li>Now write the function for the push button. First, add a click "eventListener" to 
     the push button. Then add a call-back function to the event listener. In this 
     function, first, add an if condition for blank input and show an error message and 
     return. After that add another if condition for checking the stack overflow 
     condition. At last, write the code to a new element in the bucket. Use 
     <b><mark>document.createElement("div")</mark></b> to create a new element and add 
-    this element to the bucket using the "bucket.appendChild( )" function. Also, update 
-    the internal stack or the array. You can also add the setTimeout function to show 
-    the adding element delay. Also, disable the three buttons during the element pushing 
-    time. After pushing the element, update the value of the top, recently pushed element 
-    details and show a successful message in the message box.</li>
+    this element to the bucket using the <b><mark>"bucket.appendChild( )"</mark></b> 
+	function. Also, update the internal stack or the array. You can also add the 
+	<b><mark>setTimeout</mark></b> function to show the adding element delay. Also, 
+	disable the three buttons during the element pushing time. After pushing the element, 
+	update the value of the top, recently pushed element details and show a successful 
+	message in the message box.</li>
   <li>Now write the function for the Pop button. first, check the stack underflow condition 
     using the if statement. If the stack has no element then show a message of stack 
-    underflow. If not, then pop the last element by using "bucket.removeChild" and also 
-    delete the last element of the internal stack. At last update the top and the 
+    underflow. If not, then pop the last element by using <b><mark>"bucket.removeChild"</mark></b> 
+	and also delete the last element of the internal stack. At last update the top and the 
     recently popped element. You can also add the setTimeout function to show the popping 
     element delay with animation.</li>
   <li>At last, write the function of the reset button. First, clear the internal stack. 
     Then make all info content blank by using ".innerHTML" and delete all elements from the 
-    bucket by using "bucket.removeChild".</li>
+    bucket by using <b><mark>"bucket.removeChild"</mark></b>.</li>
 </ul>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example illustrates how to build a stack visualizer using HTML CSS & Javascript.</h4>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
@@ -953,11 +955,11 @@ header {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="06">06. Create a <b><mark>Bookmark Landing Page</mark></b> using HTML CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this article, we are going to implement a Bookmark Landing Page using HTML, CSS, and 
-JavaScript. Users can effortlessly add, manage, and remove bookmarks, resulting in a tidy 
-digital library for their favorite websites. Bookmarking the Landing Page refers to a web 
-page or website where the users bookmark the website, in order to save it in their web 
-browser for easy and quick access.</p>
+<p>In this article, we are going to implement a <b><mark>Bookmark Landing Page</mark></b> 
+using HTML, CSS, and JavaScript. Users can effortlessly add, manage, and remove bookmarks, 
+resulting in a tidy digital library for their favorite websites. Bookmarking the Landing 
+Page refers to a web page or website where the users bookmark the website, in order to 
+save it in their web browser for easy and quick access.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Final Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -986,10 +988,12 @@ browser for easy and quick access.</p>
     and a "Delete" button.</li>
   <li>It appends the newly created list item to the list of bookmarks.</li>
   <li>It clears the input field for the next bookmark entry.</li>
-  <li>It calls the addDeleteBookmarkListener function to add an event listener to the "Delete" button.</li>
-  <li>When the "Delete" button is clicked, the associated bookmark item is removed from the list of bookmarks.</li>
-  <li>In the styles.css file, add CSS rules to style your page. Use classes and IDs to target specific 
-    elements and make the design visually appealing.</li>
+  <li>It calls the addDeleteBookmarkListener function to add an event listener to the 
+    "Delete" button.</li>
+  <li>When the "Delete" button is clicked, the associated bookmark item is removed from 
+    the list of bookmarks.</li>
+  <li>In the styles.css file, add CSS rules to style your page. Use classes and IDs to 
+    target specific elements and make the design visually appealing.</li>
   <li>In the script.js file, start by adding an event listener to handle adding bookmarks.</li>
 </ul>
 <p>Example: Below is the implementation of the Bookmark Landing Page using HTML, CSS, and JavaScript.</p>
@@ -1289,12 +1293,13 @@ function addDeleteBookmarkListener(
 or a "search" symbol. They help people find things easily. To add icons in HTML, you can use an 
 icon library like Font Awesome, Bootstrap Icons, Google Icons, and Image Icons.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>1. Using Font Awesome Icons</h3>
+<h3>1. Using <b><mark>Font Awesome Icons</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Font Awesome is a popular icon library that provides scalable vector icons. To use Font 
-Awesome, you need to include a CDN link to the library in your HTML document's &lt;head&gt; 
-section. Then, you can use the appropriate class name associated with an inline element, 
-such as the &lt;i&gt; tag, to display the required icon.</p>
+<p><b><mark>Font Awesome</mark></b> is a popular icon library that provides scalable 
+vector icons. To use <b><mark>Font Awesome</mark></b>, you need to include a CDN link to 
+the library in your HTML document's &lt;head&gt; section. Then, you can use the appropriate 
+class name associated with an inline element, such as the &lt;i&gt; tag, to display the 
+required icon.</p>
 
 ```
 <head>
@@ -1326,10 +1331,10 @@ such as the &lt;i&gt; tag, to display the required icon.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using Bootstrap Icons</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Bootstrap Icons are a collection of icons designed to be used with Bootstrap framework. 
-To use Bootstrap Icons, include the Bootstrap Icons library using a CDN link in the &lt;head&gt; 
-section of your HTML document. Then, use the &lt;i&gt; tag with the appropriate class name to 
-display the icon.</p>
+<p><b><mark>Bootstrap Icons</mark></b> are a collection of icons designed to be used with 
+Bootstrap framework. To use <b><mark>Bootstrap Icons</mark></b>, include the <b><mark>Bootstrap 
+Icons</mark></b> library using a CDN link in the &lt;head&gt; section of your HTML document. 
+Then, use the &lt;i&gt; tag with the appropriate class name to display the icon.</p>
 
 ```
 <head>
@@ -1358,10 +1363,11 @@ display the icon.</p>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>3. Using Google Icons (Material Icons)</h3>
+<h3>3. Using <b><mark>Google Icons</mark></b> (Material Icons)</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Google Icons, also known as Material Icons, provide a wide range of icons that follow Material 
-Design guidelines. To use Google Icons, include the Google Icons library using a CDN link in the 
+<p><b><mark>Google Icons</mark></b>, also known as <b><mark>Material Icons</mark></b>, 
+provide a wide range of icons that follow Material Design guidelines. To use <b><mark>Google 
+Icons</mark></b>, include the <b><mark>Google Icons</mark></b> library using a CDN link in the 
 &lt;head&gt; section. Then, use the &lt;span&gt; tag with the class material-icons and specify 
 the icon name.</p>
 
@@ -1392,7 +1398,7 @@ the icon name.</p>
   </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>4. Using Image Icons</h3>
+<h3>4. Using <b><mark>Image Icons</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>You can also use image files as icons by utilizing the &lt;img&gt; tag . This method allows 
 you to use custom images as icons. You can apply CSS to adjust the size of the icon as 
@@ -1419,8 +1425,9 @@ needed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="08">08. Build an <b><mark>AI Image Generator</mark></b> Website in HTML CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Create an AI image generator website using HTML, CSS, and JavaScript by developing a 
-user interface that lets users input text prompts and generate images by AI.</p>
+<p>Create an <b><mark>AI image generator</mark></b> website using HTML, CSS, and 
+JavaScript by developing a user interface that lets users input text prompts and 
+generate images by AI.</p>
 
 <p>We incorporated API integration to fetch data, providing users with an effortless and 
 dynamic experience in generating AI-driven images. An AI image generator website should 
@@ -1457,8 +1464,9 @@ CSS and JavaScript:</p>
   <li>Provides error messages for failed image fetch requests and empty input fields.</li>
 </ul>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Example: The below example will explain you the process and the practical implementation 
-of creating an AI Image generator website with the help of HTML, CSS, and JavaScript:</h4>
+<h4><b>Example</b>: The below example will explain you the process and the practical 
+implementation of creating an AI Image generator website with the help of HTML, CSS, 
+and JavaScript:</h4>
 <!--~~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
@@ -1686,17 +1694,18 @@ generateImageForm.addEventListener('submit', (e) => {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="09">09. Build A <b><mark>Weather App</mark></b> in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A weather app contains a user input field for the user, which takes the input of the 
-city name. Once the user enters the city name and clicks on the button, then the API 
-Request is been sent to the OpenWeatherMap and the response is been retrieved in the 
-application which consists of weather, wind speed, description, etc.</p>
+<p>A <b><mark>weather app</mark></b> contains a user input field for the user, which 
+takes the input of the city name. Once the user enters the city name and clicks on the 
+button, then the API Request is been sent to the OpenWeatherMap and the response is been 
+retrieved in the application which consists of weather, wind speed, description, etc.</p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Preview Image</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- image-weather-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Project Overview</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Our weather app will have the following features:</p>
+<p>Our <b><mark>weather app</mark></b> will have the following features:</p>
 <ul>
   <li>City Name Input: Users can enter a city name.</li>
   <li>Weather Data Fetching: The app fetches weather data from the OpenWeatherMap API.</li>
@@ -1891,8 +1900,8 @@ body {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Step 4: Add JavaScript</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>In this step, we'll implement the logic that interacts with the OpenWeatherMap API to 
-fetch weather data and display it to the user.</p>
+<p>In this step, we'll implement the logic that interacts with the <b><mark>OpenWeatherMap API</mark></b> 
+to fetch weather data and display it to the user.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~-->
 <details>
@@ -2162,9 +2171,9 @@ https://media.geeksforgeeks.org/wp-content/uploads/20250416110219309319/Output.m
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Conclusion</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>You've built a functional Weather App using HTML, CSS, and JavaScript, which helps you 
-practice working with APIs and DOM manipulation. You can enhance it further by adding 
-features like:</p>
+<p>You've built a functional <b><mark>Weather App</mark></b> using HTML, CSS, and 
+JavaScript, which helps you practice working with APIs and DOM manipulation. You can 
+enhance it further by adding features like:</p>
 <ul>
   <li>Custom city input for weather searches.</li>
   <li>A multi-day weather forecast.</li>
@@ -2174,11 +2183,11 @@ features like:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="10">10. How to make own <b><mark>Linktree</mark></b> using HTML, CSS and JavaScript?</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Linktree is a tool that permits you to share multiple hyperlinks of various social 
-media into one site. It gained popularity on Instagram, as Instagram does not allow you 
-to share web links anywhere other than Stories and the 'bio' section of your profile page, 
-which has a strict character limit. In this article, we will how to create our own Linktree 
-using HTML, CSS, and JavaScript.</p>
+<p><b><mark>Linktree</mark></b> is a tool that permits you to share multiple hyperlinks 
+of various social media into one site. It gained popularity on Instagram, as Instagram 
+does not allow you to share web links anywhere other than Stories and the 'bio' section 
+of your profile page, which has a strict character limit. In this article, we will how 
+to create our own <b><mark>Linktree</mark></b> using HTML, CSS, and JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2228,8 +2237,8 @@ following stylesheet in your program for the fonts:</p>
 "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 </pre>
 
-<h4>Example: Below example illustrates the basic implementation for creating the Linktree 
-in a stepwise manner.</h4>
+<h4><b>Example</b>: Below example illustrates the basic implementation for creating the 
+<b><mark>Linktree</mark></b> in a stepwise manner.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Add the following code to the index.html file.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2465,7 +2474,8 @@ a {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Step 3: Create a folder "js", inside this "js" folder add two files "links.js" and "main.js". Add the following code to the links.js file.</h4>
+<h4>Step 3: Create a folder "js", inside this "js" folder add two files "links.js" and 
+"main.js". Add the following code to the links.js file.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>links.js</li>
