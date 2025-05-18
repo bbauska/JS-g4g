@@ -359,6 +359,7 @@ centered heading and a google map showing specific location.</h4>
 &lt;head&gt;
   &lt;title&gt;Embed Google Map&lt;/title&gt;
 &lt;/head&gt;
+<br>
 &lt;body style="display: grid;
   justify-content: center"&gt;
   &lt;h2 style="text-align: center"&gt;
@@ -374,6 +375,7 @@ centered heading and a google map showing specific location.</h4>
     loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt;
   &lt;/iframe&gt;
 &lt;/body&gt;
+<br>
 &lt;/html&gt;
 </code></pre>
 </details>
@@ -504,17 +506,16 @@ joke is received, it is displayed in the Application's UI.</p>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
-
+<br>
 &lt;head&gt;
   &lt;link rel="stylesheet" href=
     "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"&gt;
   &lt;link rel="stylesheet" href="style.css"&gt;
   &lt;title&gt;Joke Generator&lt;/title&gt;
 &lt;/head&gt;
-
+<br>
 &lt;body&gt;
   &lt;div class="container"&gt;
     &lt;div class="joke-container animate__animated animate__fadeIn"&gt;
@@ -529,7 +530,7 @@ joke is received, it is displayed in the Application's UI.</p>
   &lt;/div&gt;
   &lt;script src="script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
-
+<br>
 &lt;/html&gt;
 </code></pre>
 </details>
@@ -539,8 +540,7 @@ joke is received, it is displayed in the Application's UI.</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-body {
+<pre><code>body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
@@ -608,13 +608,13 @@ button:hover {
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-const joke = document.getElementById('jokeText');
+<pre><code>const joke = document.getElementById('jokeText');
 const jokeBtn = document.getElementById('newJokeBtn');
 const cpyBtn = document.getElementById('copyJokeBtn');
 jokeBtn.addEventListener('click', jokeFn);
 cpyBtn.addEventListener('click', cpyFn);
 jokeFn();
+<br>
 function jokeFn() {
   fetch('...')
     .then(response =&gt; response.json())
@@ -626,6 +626,7 @@ function jokeFn() {
         joke.textContent = 'Failed to fetch joke. Please try again.';
     });
 }
+<br>
 function cpyFn() {
   const textArea = document.createElement('textarea');
   textArea.value = joke.textContent;
@@ -637,8 +638,6 @@ function cpyFn() {
 }
 </code></pre>
 </details>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="05">05. Create a <b><mark>Stack Visualizer</mark></b> using HTML CSS and Javascript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
