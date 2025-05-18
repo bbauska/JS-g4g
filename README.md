@@ -270,7 +270,7 @@ function search_animal() {
   <img src="./images/image-search-02.gif"
     title="Search Bar using HTML CSS and JavaScript."
     alt="Search Bar using HTML CSS and JavaScript"
-    style="border: 2px solid #000000; width:40%;" />
+    style="border: 2px solid #000000; width:25%;" />
 </p>
 <p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
 environments. You can learn <b><mark>JavaScript</mark></b> from the ground up by following;<br>
@@ -663,7 +663,7 @@ First Out) or FILO (First In Last Out).</p>
   <img src="./images/image-stack-01.png"
     title="Stack."
     alt="Stack"
-    style="border: 2px solid #000000; width:40%;" />
+    style="border: 2px solid #000000; width:25%;" />
 </p>
 <p>There are many real-life examples of a <b><mark>stack</mark></b>. Like, the stack of 
 books in a library is a good real-life example of a stack. If we want to clear the stack 
@@ -932,7 +932,7 @@ header {
   <img src="./images/image-stack-02.gif"
     title="Stack."
     alt="Stack"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:15%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="06">06. Create a <b><mark>Bookmark Landing Page</mark></b> using HTML CSS and JavaScript</h2>
@@ -2561,7 +2561,7 @@ linkContainer.innerHTML = allLinks;
   <img src="./images/image-link-01.gif"
     title="Image Link app example."
     alt="Image Link app example"
-    style="border: 2px solid #000000; width:40%;" />
+    style="border: 2px solid #000000; width:25%;" />
 </p>
 <!-- image-link-01.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2671,7 +2671,7 @@ of card elements. We are using Tailwind CSS for styling the UI components of the
   <img src="./images/image-recipe-02.png"
     title="Recipe app example #2."
     alt="Recipe app example #2"
-    style="border: 2px solid #000000; width:40%;" />
+    style="border: 2px solid #000000; width:25%;" />
 </p>
 <!-- image-recipe-02.png -->
 <h3>Steps to create the application:</h3>
