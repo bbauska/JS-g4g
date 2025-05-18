@@ -972,50 +972,47 @@ save it in their web browser for easy and quick access.</p>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" 
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" 
     content="width=device-width, 
-      initial-scale=1.0">
-  <title>Bookmark Landing Page</title>
-  <link rel="stylesheet" 
-       href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>My Bookmarks</h1>
-  </header>
-  <main>
-    <section class="bookmark-form">
-      <input type="url" 
+      initial-scale=1.0"&gt;
+  &lt;title&gt;Bookmark Landing Page&lt;/title&gt;
+  &lt;link rel="stylesheet" 
+       href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;h1&gt;My Bookmarks&lt;/h1&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;section class="bookmark-form"&gt;
+      &lt;input type="url" 
              name="url" 
              id="urlInput" 
              placeholder="Enter URL" 
              pattern="https://.*" 
              size="50" 
-             required>
-      <button id="addBookmark">
+             required&gt;
+      &lt;button id="addBookmark"&gt;
         Add Bookmark
-      </button>
-      <button id="deleteAll">
+      &lt;/button&gt;
+      &lt;button id="deleteAll"&gt;
         Delete All Bookmarks
-      </button>
-    </section>
-    <section class="bookmarks">
-      <ul id="bookmarkList">
-      <!-- Bookmarks will be added here dynamically -->
-      </ul>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
-```
-
+      &lt;/button&gt;
+    &lt;/section&gt;
+    &lt;section class="bookmarks"&gt;
+      &lt;ul id="bookmarkList"&gt;
+      &lt;!-- Bookmarks will be added here dynamically --&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
@@ -1023,9 +1020,7 @@ save it in their web browser for easy and quick access.</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<pre>
-/* styles.css */
+<pre><code>/* styles.css */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -1164,8 +1159,7 @@ a:hover {
     margin-left: 0;
   }
 }
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
