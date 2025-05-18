@@ -724,8 +724,7 @@ stack then the stack underflow message will be displayed in the message box.</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+<pre><code>@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 <br>
 * {
   margin: 0;
@@ -924,7 +923,7 @@ header {
   <img src="./images/image-stack-02.gif"
     title="Stack."
     alt="Stack"
-    style="border: 2px solid #000000; width:15%;" />
+    style="border: 2px solid #000000; width:50%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="06">06. Create a <b><mark>Bookmark Landing Page</mark></b> using HTML CSS and JavaScript</h2>
@@ -1399,7 +1398,7 @@ the form or clicks the button to generate the image.</p>
   <img src="./images/image-ai-01.png"
     title="AI Image Generator website preview."
     alt="AI Image Generator website preview"
-    style="border: 2px solid #000000; width:40%;" />
+    style="border: 2px solid #000000; width:60%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -2535,7 +2534,7 @@ linkContainer.innerHTML = allLinks;
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. image-link-01 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p align="center" width="100%">
+<p align="center" width="50%">
   <img src="./images/image-link-01.gif"
     title="Image Link app example."
     alt="Image Link app example"
@@ -2618,7 +2617,7 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
   <img src="./images/image-recipe-01.png"
     title="Recipe app example."
     alt="Recipe app example"
-    style="border: 2px solid #000000; width:40%;" />
+    style="border: 2px solid #000000; width:60%;" />
 </p>
 <!-- image-recipe-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2686,10 +2685,10 @@ npx tailwindcss init
 so paste the below content in this file for the correct configuration.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-/** @type {import('tailwindcss').Config} */
+/*&ast; @type {import('tailwindcss').Config} */
 module.exports = {
   content: &lbrack;
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/*&ast;/*.{js,jsx,ts,tsx}",
   &rbrack;,
   theme: {
     extend: {},
@@ -2704,8 +2703,7 @@ of the code for presenting the recipes to the user.</h4>
 <h4>Example: Insert the below code in the App.js and RecipeCard.jsx file mentioned in the 
 above directory structure.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-/* index.css */
+<pre>/* index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
