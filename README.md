@@ -945,7 +945,7 @@ header {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-stack-02.gif ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
   <figure>
-    <img src="./images/image-stack-02.gif.jpg"
+    <img src="./images/image-stack-02.gif"
     title="Stack."
     alt="Stack"
     style="border: 2px solid #000000; width:25%;" />
