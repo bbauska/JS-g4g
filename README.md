@@ -1,3 +1,4 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ readme.md ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>webdev with help from Geeks4Geeks</h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -635,11 +636,11 @@ cpyBtn.addEventListener('click', cpyFn);
 jokeFn();
 function jokeFn() {
   fetch('...')
-    .then(response => response.json())
+    .then(response =&gt; response.json())
     .then(data => {
       joke.textContent = data.joke;
     })
-    .catch(error => {
+    .catch(error =&gt; {
       console.error('Error fetching joke:', error);
         joke.textContent = 'Failed to fetch joke. Please try again.';
     });
@@ -748,7 +749,6 @@ stack then the stack underflow message will be displayed in the message box.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -1663,7 +1663,7 @@ generateImageForm.addEventListener('submit', (e) => {
 <!--
 <p align="center" width="100%">
   <figure>
-    <img src="./images/image-ai-01.png"
+    <img src="./images/image-ai-02.mp4"
     title="Image AI."
     alt="Image AI"
     style="border: 2px solid #000000; width:25%;" />
@@ -1671,7 +1671,6 @@ generateImageForm.addEventListener('submit', (e) => {
   </figure>
 </p>
 -->
-
 <!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fxKnmW0QxHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -1684,7 +1683,6 @@ generateImageForm.addEventListener('submit', (e) => {
 
 <iframe src="./image/image-ai-02.mp4" width="600" height="450" frameborder="0" style="border:0"></iframe>
 -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="09">09. Build A <b><mark>Weather App</mark></b> in HTML CSS &amp; JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2110,11 +2108,9 @@ const url =
   'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
   'f00c38e0279b7bc85480c3fe775d518c';
-
 $(document).ready(function () {
   weatherFn('Noida'); // Set Noida as the initial city
 });
-
 async function weatherFn(cName) {
   const temp =
     `${url}?q=${cName}&appid=${apiKey}&units=metric`;
@@ -2188,9 +2184,9 @@ using HTML, CSS, and JavaScript.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The following approach will be used to implement:</p>
 <ul>
-  <li>Create a project folder and inside it create three more folders called "CSS" 
-    for main.css(for writing the CSS) files, "js" for links.js and main.js(for writing the js) 
-	files, and assets for logo images and create one file “index.html“(for writing the HTML).</li>
+  <li>Create a project folder and inside it create three more folders called "css" 
+    for main.css (for writing the CSS) files, "js" for links.js and main.js (for writing the js) 
+	files, and assets for logo images and create one file “index.html“ (for writing the HTML).</li>
   <li>In the HTML file, create two containers element, such as a div, to hold your logo 
     and about(bio).</li>
   <li>Use CSS to style the appearance of your linktree. This might include setting the font, 
@@ -2285,14 +2281,15 @@ in a stepwise manner.</h4>
       id="links">
     </div>
   </main>
-</body>
 
+</body>
 </html>
 ```
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>Step 2: Create a folder "CSS", inside this "css" folder add the following code to the main.css file.</h4>
+<h4>Step 2: Create a folder <b>"CSS"</b>, inside this "css" folder add the following code 
+to the <b>main.css</b> file.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>main.css</li>
@@ -2305,7 +2302,6 @@ in a stepwise manner.</h4>
 <pre>
 @import url(
  "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -2585,8 +2581,9 @@ a known file or resource and calculating the download speed. To calculate the sp
 the network a file of known size is chosen from a server to download. The time taken to 
 start and complete the download is recorded and using the file size and the time taken, 
 the download speed is calculated.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Open the web page for which you want to know the connection speed. The page should be 
 the one for which you want to add the JavaScript code for detecting the speed. Assign or 
 set up the address of the image that you want to use for the speed test to the variable. 
@@ -2594,9 +2591,10 @@ The variables for storing the test's start time, end time, and download size sho
 created. Set the "download Size" equivalent to the image file size(In bytes). The end of 
 the download action is assigned to activate when the image downloading is completed. It 
 calculates the speed of the download process, and converts it to "kbps" and "mbps".</p>
-
+<!--~~~~~~~~~~~~~~~~~ HTML ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML</summary>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 ```
 <!DOCTYPE html>
@@ -2830,7 +2828,7 @@ export default App;
 ```
 
 </details>
-<!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~ JSX ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>More JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
