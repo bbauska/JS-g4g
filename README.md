@@ -107,15 +107,27 @@ using let and difference between let and const is that the variables declared us
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-|  <b><mark>var</mark></b>  |  <b><mark>let</mark></b> |  <b><mark>const</mark></b> |
-|:-----------------:|:--------------------:|:-------------------:|
-|Can be redeclared    | Cannot be redeclared    | Cannot be redeclared |
-|Can be reassigned a value |Can be reassigned a value|Cannot reassign the value |
-|Only have global and function <b><mark>scope</mark></b> |Can have a <b><mark>block scope</mark></b> |Can have a <b><mark>block scope</mark></b> |
-|Variables are <b><mark>hoisted</mark></b> on top and can be used anywhere | Variables must be initialized before use | Variables must be initialized before use |
-|Can be redeclared anywhere in the program |    Cannot be redeclared inside a block    | Cannot be redeclared inside a block |
-
+<table style="width: 75%;" border="1" cellpadding="1">
+<thead>
+<tr>
+  <th><b><mark>var</mark></b></th>
+  <th><b><mark>let</mark></b></th>
+  <th><b><mark>const</mark></b></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Can be redeclared</td><td>Cannot be redeclared</td><td>Cannot be redeclared</td></tr>
+<tr>
+<td>Can be reassigned a value</td><td>Can be reassigned a value</td><td>Cannot reassign the value</td></tr>
+<tr>
+<td>Only have global and function <b><mark>scope</mark></b></td><td>Can have a <b><mark>block scope</mark></b></td><td>Can have a <b><mark>block scope</mark></b></td></tr>
+<tr>
+<td>Variables are <b><mark>hoisted</mark></b> on top and can be used anywhere</td><td>Variables must be initialized before use</td><td>Variables must be initialized before use</td></tr>
+<tr>
+<td>Can be redeclared anywhere in the program</td><td>Cannot be redeclared inside a block</td><td>Cannot be redeclared inside a block</td></tr>
+</tbody>
+</table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="02">02. Search Bar using HTML, CSS and JavaScript</h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
