@@ -129,7 +129,7 @@ focus on a basic task—searching for specific words or phrases within text.</p>
   <img src="./images/image-search-01.png"
     title="Search Bar example with animals."
     alt="Search Bar example with animals"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -270,7 +270,7 @@ function search_animal() {
   <img src="./images/image-search-02.gif"
     title="Search Bar using HTML CSS and JavaScript."
     alt="Search Bar using HTML CSS and JavaScript"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
 environments. You can learn <b><mark>JavaScript</mark></b> from the ground up by following;<br>
@@ -383,7 +383,7 @@ centered heading and a google map showing specific location.</h4>
   <img src="./images/image-map-01.jpg"
     title="Add map in HTML using iframe."
     alt="Add map in HTML using iframe"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using <b><mark>Leaflet.js</mark></b> to Add Interactive Maps</h3>
@@ -471,7 +471,7 @@ India Gate, New Delhi and displays it with marker.</h4>
   <img src="./images/image-map-02.jpg"
     title="Add Map in HTML using leaflet.js."
     alt="Add Map in HTML using leaflet.js"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. Design <b><mark>Joke Generator App</mark></b> in HTML CSS &amp; JavaScript</h2>
@@ -932,7 +932,7 @@ header {
   <img src="./images/image-stack-02.gif"
     title="Stack."
     alt="Stack"
-    style="border: 2px solid #000000; width:40%;" />
+    style="border: 2px solid #000000; width:25%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="06">06. Create a <b><mark>Bookmark Landing Page</mark></b> using HTML CSS and JavaScript</h2>
@@ -950,7 +950,7 @@ save it in their web browser for easy and quick access.</p>
   <img src="./images/image-bookmark-01.jpg"
     title="Bookmark."
     alt="Bookmark"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -1302,7 +1302,7 @@ required icon.</p>
   <img src="./images/image-fonticons-01.png"
     title="Font-Awesome Icons (1)."
     alt="Font-Awesome Icons (1)"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:15%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using Bootstrap Icons</h3>
@@ -1333,7 +1333,7 @@ Then, use the &lt;i&gt; tag with the appropriate class name to display the icon.
   <img src="./images/image-fonticons-02.png"
     title="Bootstrap Icons (2)."
     alt="Bootstrap Icons (2)"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:15%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using <b><mark>Google Icons</mark></b> (Material Icons)</h3>
@@ -1365,7 +1365,7 @@ the icon name.</p>
   <img src="./images/image-fonticons-03.png"
     title="Google Icons (3)."
     alt="Google Icons (3)"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:15%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>4. Using <b><mark>Image Icons</mark></b></h3>
@@ -1387,7 +1387,7 @@ needed.</p>
   <img src="./images/image-fonticons-04.png"
     title="Image Icons (4)."
     alt="Image Icons (4)"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:15%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="08">08. Build an <b><mark>AI Image Generator</mark></b> Website in HTML CSS and JavaScript</h2>
@@ -1409,7 +1409,7 @@ the form or clicks the button to generate the image.</p>
   <img src="./images/image-ai-01.png"
     title="AI Image Generator website preview."
     alt="AI Image Generator website preview"
-    style="border: 2px solid #000000; width:25%;" />
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -1632,17 +1632,13 @@ generateImageForm.addEventListener('submit', (e) => {
 <p><a href="https://media.geeksforgeeks.org/wp-content/uploads/20240725151806/qa.mp4">Image AI</a>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-ai-02.mp4 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!--
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-ai-02.mp4"
+  <iframe src="./images/image-ai-02.mp4"
     title="Image AI."
     alt="Image AI"
-    style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Image AI.</figcaption>
-  </figure>
+    style="border: 2px solid #000000; width:40%;" />
 </p>
--->
+
 <!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fxKnmW0QxHQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -1665,6 +1661,13 @@ retrieved in the application which consists of weather, wind speed, description,
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Preview Image</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. image-weather-01 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+  <img src="./images/image-weather-01.png"
+    title="Weather app example."
+    alt="Weather app example"
+    style="border: 2px solid #000000; width:40%;" />
+</p>
 <!-- image-weather-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Project Overview</h3>
@@ -2129,8 +2132,15 @@ function weatherShowFn(data) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. image-weather-02 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+  <iframe src="./images/image-weather-02.mp4"
+    title="Weather app example."
+    alt="Weather app example"
+    style="border: 2px solid #000000; width:40%;" />
+</p>
 <!-- image-weather-02.mp4 -->
-https://media.geeksforgeeks.org/wp-content/uploads/20250416110219309319/Output.mp4
+<!-- https://media.geeksforgeeks.org/wp-content/uploads/20250416110219309319/Output.mp4 -->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Conclusion</h4>
@@ -2546,6 +2556,13 @@ linkContainer.innerHTML = allLinks;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. image-link-01 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+  <img src="./images/image-link-01.gif"
+    title="Image Link app example."
+    alt="Image Link app example"
+    style="border: 2px solid #000000; width:40%;" />
+</p>
 <!-- image-link-01.gif -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="11">11. How to <b><mark>Detect Network Speed</mark></b> using JavaScript?</h2>
@@ -2619,6 +2636,14 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Preview Image</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. image-recipe-01 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+  <img src="./images/image-recipe-01.png"
+    title="Recipe app example."
+    alt="Recipe app example"
+    style="border: 2px solid #000000; width:40%;" />
+</p>
 <!-- image-recipe-01.png -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Prerequisites and Technologies</h3>
@@ -2640,7 +2665,14 @@ the user's search, the matching dishes and their recipes are shown to the user i
 of card elements. We are using Tailwind CSS for styling the UI components of the application.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Project Structure:</h3>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. image-recipe-02 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p align="center" width="100%">
+  <img src="./images/image-recipe-02.png"
+    title="Recipe app example #2."
+    alt="Recipe app example #2"
+    style="border: 2px solid #000000; width:40%;" />
+</p>
 <!-- image-recipe-02.png -->
 <h3>Steps to create the application:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
