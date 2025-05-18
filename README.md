@@ -163,7 +163,7 @@ HTML and with an example.</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
@@ -197,8 +197,7 @@ HTML and with an example.</h4>
   &lt;script src="./script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
@@ -206,7 +205,7 @@ HTML and with an example.</h4>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 * {
   margin: 0;
   padding: 0;
@@ -249,7 +248,7 @@ HTML and with an example.</h4>
     transform: translateY(0);
   }
 }
-</pre>
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
@@ -257,7 +256,7 @@ HTML and with an example.</h4>
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 // JavaScript code
 function search_animal() {
   let input = document.getElementById('searchbar').value
@@ -272,7 +271,7 @@ function search_animal() {
     }
   }
 }
-</pre>
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -284,17 +283,17 @@ function search_animal() {
     alt="Search Bar using HTML CSS and JavaScript"
     style="border: 2px solid #000000; width:25%;" />
 </p>
-<p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
+<p><b><mark>JavaScript</mark></b> is best known for web page development but it is also used in a variety of non-browser 
 environments. You can learn <b><mark>JavaScript</mark></b> from the ground up by following;<br>
 <a href="https://www.geeksforgeeks.org/javascript-tutorial/">this JavaScript Tutorial</a> and 
 <a href="https://www.geeksforgeeks.org/javascript-examples/">JavaScript Examples</a>.</p>
 
-<p>HTML is the foundation of webpages, is used for webpage development by structuring websites 
+<p><b><mark>HTML</mark></b> is the foundation of webpages, is used for webpage development by structuring websites 
 and web apps. You can learn <b><mark>HTML</mark></b> from the ground up by following;<br> 
 <a href="https://www.geeksforgeeks.org/html-tutorials/">this HTML Tutorial</a> and 
 <a href="https://www.geeksforgeeks.org/html-examples/">HTML Examples</a>.</p>
 
-<p>CSS is the foundation of webpages, is used for webpage development by styling websites 
+<p><b><mark>CSS</mark></b> is the foundation of webpages, is used for webpage development by styling websites 
 and web apps. You can learn <b><mark>CSS</mark></b> from the ground up by following;<br>
 <a href="https://www.geeksforgeeks.org/css-tutorials/">this CSS Tutorial</a> and 
 <a href="https://www.geeksforgeeks.org/css-examples/">CSS Examples</a>.</p>
@@ -319,8 +318,8 @@ business or other important points of interest.</p>
 <ul>
   <li>Methods to Add a Map in HTML
     <ul>
-      <li>Using &lt;iframe&gt; to Embed Google Maps</li>
-      <li>Using Leaflet.js to Add Interactive Maps</li>
+      <li>Using <b><mark>&lt;iframe&gt;</mark></b> to Embed Google Maps</li>
+      <li>Using <b><mark>Leaflet.js</mark></b> to Add Interactive Maps</li>
     </ul>
   </li>
 </ul>
@@ -360,8 +359,7 @@ centered heading and a google map showing specific location.</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<pre>
+<pre><code>
 &lt;!-- Using iframe --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -384,8 +382,7 @@ centered heading and a google map showing specific location.</h4>
   &lt;/iframe&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -417,17 +414,15 @@ it with variety of additional plugins.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 let map = L.map('map').setView([Latitude, Longitude], ZoomLevel);
-
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt; contributors'
 }).addTo(map);
-
 L.marker([Latitude, Longitude]).addTo(map)
   .bindPopup('Popup Text Here.')
   .openPopup();
-</pre>
+</code></pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: Below is the example for creating interactive map in our website using 
 <b><mark>leaflet.js</mark></b>, it is a open-source javascript library. The map centers on 
@@ -438,9 +433,7 @@ India Gate, New Delhi and displays it with marker.</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-<pre><code>
-&lt;!-- Using leaflet Map --&gt;
+<pre><code>&lt;!-- Using leaflet Map --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
@@ -473,7 +466,6 @@ India Gate, New Delhi and displays it with marker.</h4>
 
 &lt;/html&gt;
 </code></pre>
-
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -521,36 +513,34 @@ joke is received, it is displayed in the Application's UI.</p>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-```
-<!DOCTYPE html>
-<html lang="en">
+&lt;head&gt;
+  &lt;link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+  &lt;title&gt;Joke Generator&lt;/title&gt;
+&lt;/head&gt;
 
-<head>
-  <link rel="stylesheet" href=
-    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Joke Generator</title>
-</head>
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="joke-container animate__animated animate__fadeIn"&gt;
+      &lt;h1 class="app-title"&gt;GeeksforGeeks Joke Generator&lt;/h1&gt;
+      &lt;i class="laugh-icon"&gt;&lt;/i&gt;
+      &lt;p id="jokeText"&gt;Loading joke...&lt;/p&gt;
+      &lt;button id="newJokeBtn"&gt;&lt;i class="random-icon"&gt;
+      &lt;/i&gt; New Joke&lt;/button&gt;
+      &lt;button id="copyJokeBtn"&gt;&lt;i class="copy-icon"&gt;
+      &lt;/i&gt; Copy Joke&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
 
-<body>
-  <div class="container">
-    <div class="joke-container animate__animated animate__fadeIn">
-      <h1 class="app-title">GeeksforGeeks Joke Generator</h1>
-      <i class="laugh-icon"></i>
-      <p id="jokeText">Loading joke...</p>
-      <button id="newJokeBtn"><i class="random-icon">
-      </i> New Joke</button>
-      <button id="copyJokeBtn"><i class="copy-icon">
-      </i> Copy Joke</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
-</html>
-```
-
+&lt;/html&gt;
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
@@ -558,7 +548,7 @@ joke is received, it is displayed in the Application's UI.</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 body {
   margin: 0;
   padding: 0;
@@ -619,8 +609,7 @@ button:hover {
     width: 90%;
   }
 }
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
@@ -628,7 +617,7 @@ button:hover {
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 const joke = document.getElementById('jokeText');
 const jokeBtn = document.getElementById('newJokeBtn');
 const cpyBtn = document.getElementById('copyJokeBtn');
@@ -655,8 +644,7 @@ function cpyFn() {
   document.body.removeChild(textArea);
   alert('Joke copied to clipboard!');
 }
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
