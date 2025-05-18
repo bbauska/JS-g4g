@@ -126,13 +126,10 @@ focus on a basic task—searching for specific words or phrases within text.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. image-search-01 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-search-01.png"
+  <img src="./images/image-search-01.png"
     title="Search Bar example with animals."
     alt="Search Bar example with animals"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Search Bar example with animals.</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -270,13 +267,10 @@ function search_animal() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. image-search02.gif ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-search-02.gif"
+  <img src="./images/image-search-02.gif"
     title="Search Bar using HTML CSS and JavaScript."
     alt="Search Bar using HTML CSS and JavaScript"
     style="border: 2px solid #000000; width:25%;" />
-      <figcaption>Search Bar using HTML CSS and JavaScript.</figcaption>
-  </figure>
 </p>
 <p>JavaScript is best known for web page development but it is also used in a variety of non-browser 
 environments. You can learn <b><mark>JavaScript</mark></b> from the ground up by following;<br>
@@ -386,13 +380,10 @@ centered heading and a google map showing specific location.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 01. image-map-01.jpg ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-map-01.jpg"
+  <img src="./images/image-map-01.jpg"
     title="Add map in HTML using iframe."
     alt="Add map in HTML using iframe"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Add map in HTML using iframe.</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using <b><mark>Leaflet.js</mark></b> to Add Interactive Maps</h3>
@@ -477,13 +468,10 @@ India Gate, New Delhi and displays it with marker.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 02. image-map-02.jpg ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-map-02.jpg"
+  <img src="./images/image-map-02.jpg"
     title="Add Map in HTML using leaflet.js."
     alt="Add Map in HTML using leaflet.js"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Add map in HTML using leaflet.js.</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="04">04. Design <b><mark>Joke Generator App</mark></b> in HTML CSS &amp; JavaScript</h2>
@@ -672,13 +660,10 @@ First Out) or FILO (First In Last Out).</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-stack-01.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-stack-01.png"
+  <img src="./images/image-stack-01.png"
     title="Stack."
     alt="Stack"
-    style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Stack.</figcaption>
-  </figure>
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <p>There are many real-life examples of a <b><mark>stack</mark></b>. Like, the stack of 
 books in a library is a good real-life example of a stack. If we want to clear the stack 
@@ -944,13 +929,10 @@ header {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-stack-02.gif ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-stack-02.gif"
+  <img src="./images/image-stack-02.gif"
     title="Stack."
     alt="Stack"
-    style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Stack.</figcaption>
-  </figure>
+    style="border: 2px solid #000000; width:40%;" />
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="06">06. Create a <b><mark>Bookmark Landing Page</mark></b> using HTML CSS and JavaScript</h2>
@@ -965,13 +947,10 @@ save it in their web browser for easy and quick access.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-bookmark-01.jpg ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-bookmark-01.jpg"
+  <img src="./images/image-bookmark-01.jpg"
     title="Bookmark."
     alt="Bookmark"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Bookmark.</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
@@ -1320,13 +1299,10 @@ required icon.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-fonticons-01.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-fonticons-01.png"
+  <img src="./images/image-fonticons-01.png"
     title="Font-Awesome Icons (1)."
     alt="Font-Awesome Icons (1)"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Font-Awesome Icons (1).</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>2. Using Bootstrap Icons</h3>
@@ -1354,13 +1330,10 @@ Then, use the &lt;i&gt; tag with the appropriate class name to display the icon.
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-fonticons-02.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-fonticons-02.png"
+  <img src="./images/image-fonticons-02.png"
     title="Bootstrap Icons (2)."
     alt="Bootstrap Icons (2)"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Bootstrap Icons (2).</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Using <b><mark>Google Icons</mark></b> (Material Icons)</h3>
@@ -1389,13 +1362,10 @@ the icon name.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-fonticons-03.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-fonticons-03.png"
+  <img src="./images/image-fonticons-03.png"
     title="Google Icons (3)."
     alt="Google Icons (3)"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Google Icons (3).</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>4. Using <b><mark>Image Icons</mark></b></h3>
@@ -1414,13 +1384,10 @@ needed.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-fonticons-04.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-fonticons-04.png"
+  <img src="./images/image-fonticons-04.png"
     title="Image Icons (4)."
     alt="Image Icons (4)"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>Image Icons (4).</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="08">08. Build an <b><mark>AI Image Generator</mark></b> Website in HTML CSS and JavaScript</h2>
@@ -1439,13 +1406,10 @@ the form or clicks the button to generate the image.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ image-ai-01.png ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p align="center" width="100%">
-  <figure>
-    <img src="./images/image-ai-01.png"
+  <img src="./images/image-ai-01.png"
     title="AI Image Generator website preview."
     alt="AI Image Generator website preview"
     style="border: 2px solid #000000; width:25%;" />
-    <figcaption>AI Image Generator website preview.</figcaption>
-  </figure>
 </p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Approach</h3>
