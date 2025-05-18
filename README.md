@@ -26,7 +26,7 @@
 conditions. Understanding these declarations is crucial for managing variable lifetimes and 
 avoiding unintended side effects in code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>Table of Content</h3>
+<h3>Table of Contents</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <ul>
   <li>JavaScript <b><mark>var</mark></b></li>
@@ -107,7 +107,7 @@ using let and difference between let and const is that the variables declared us
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table style="width: 75%;" border="1" cellpadding="1">
+<table style="width: 65%;" border="1" cellpadding="1">
 <thead>
 <tr>
   <th><b><mark>var</mark></b></th>
@@ -258,11 +258,11 @@ function search_animal() {
   input = input.toLowerCase();
   let x = document.getElementsByClassName('animals');
   for (i = 0; i < x.length; i++) {
-    if (!x[i].innerHTML.toLowerCase().includes(input)) {
-      x[i].style.display = "none";
+    if (!x&lbrack;i&rbrack;.innerHTML.toLowerCase().includes(input)) {
+      x&lbrack;i&rbrack;.style.display = "none";
     }
     else {
-      x[i].style.display = "list-item";
+      x&lbrack;i&rbrack;.style.display = "list-item";
     }
   }
 }</code></pre>
@@ -409,11 +409,11 @@ it with variety of additional plugins.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>let map = L.map('map').setView([Latitude, Longitude], ZoomLevel);
+<pre><code>let map = L.map('map').setView(&lbrack;Latitude, Longitude&rbrack;, ZoomLevel);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt; contributors'
 }).addTo(map);
-L.marker([Latitude, Longitude]).addTo(map)
+L.marker(&lbrack;Latitude, Longitude&rbrack;).addTo(map)
   .bindPopup('Popup Text Here.')
   .openPopup();
 </code></pre>
@@ -446,11 +446,11 @@ India Gate, New Delhi and displays it with marker.</h4>
     margin-left: 25%;"&gt;&lt;/div&gt;
   &lt;script&gt;
     var map = L.map("mapid").setView
-      ([28.612894, 77.229446], 13); L.tileLayer
+      (&lbrack;28.612894, 77.229446&rbrack;, 13); L.tileLayer
       ("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: "&copy; OpenStreetMap contributors",
       }).addTo(map);
-    L.marker([28.612894, 77.229446])
+    L.marker(&lbrack;28.612894, 77.229446&rbrack;)
       .addTo(map)
       .bindPopup("India Gate, New Delhi")
       .openPopup();
@@ -872,7 +872,7 @@ header {
   width: 500px;
   padding-left: 20px;
 }
-[class^="sec"] {
+&lbrack;class^="sec"&rbrack; {
   display: flex;
   width: 350px;
   align-items: center;
@@ -1047,7 +1047,7 @@ main {
   display: flex;
   margin-bottom: 10px;
 }
-input[type="url"] {
+input&lbrack;type="url"&rbrack; {
   flex: 1;
   padding: 10px;
 }
@@ -1096,8 +1096,8 @@ button#deleteAll:hover {
 <br>
 /* Style the "Delete" button */
 .delete {
-  background-color: #ff6347; /* Red color */
-  color: #fff; /* White text color */
+  background-color: #ff6347;  /* Red color */
+  color: #fff;  /* White text color */
   border: none;
   padding: 5px 5px;
   border-radius: 5px;
@@ -1109,8 +1109,8 @@ button#deleteAll:hover {
   background-color: #f80404;
 }
 .edit {
-  background-color: #6947ff; /* Red color */
-  color: #fff; /* White text color */
+  background-color: #6947ff;  /* Red color */
+  color: #fff;  /* White text color */
   border: none;
   padding: 5px 15px;
   border-radius: 5px;
@@ -1145,7 +1145,7 @@ a:hover {
   .bookmark-form {
     flex-direction: column;
   }
-  input[type="url"],
+  input&lbrack;type="url"&rbrack;,
   button#addBookmark,
   button#deleteAll {
     margin-left: 0;
@@ -1159,7 +1159,7 @@ a:hover {
   .bookmark-form {
     flex-direction: column;
   }
-  input[type="url"],
+  input&lbrack;type="url"&rbrack;,
   button#addBookmark,
   button#deleteAll {
     margin-left: 0;
@@ -1273,20 +1273,19 @@ the library in your HTML document's &lt;head&gt; section. Then, you can use the 
 class name associated with an inline element, such as the &lt;i&gt; tag, to display the 
 required icon.</p>
 
-```
-<head>
-  <!-- Include Font Awesome icon library -->
-  <link href=
+<pre>
+&lt;head&gt;
+  &lt;!-- Include Font Awesome icon library --&gt;
+  &lt;link href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-    rel="stylesheet" />
-</head>
-
-<body>
-  <!-- Font Awesome Icon -->
-  <i class="fas fa-home"></i>
-</body>
-```
-
+    rel="stylesheet" /&gt;
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+  &lt;!-- Font Awesome Icon --&gt;
+  &lt;i class="fas fa-home"&gt;&lt;/i&gt;
+&lt;/body&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1305,18 +1304,18 @@ Bootstrap framework. To use <b><mark>Bootstrap Icons</mark></b>, include the <b>
 Icons</mark></b> library using a CDN link in the &lt;head&gt; section of your HTML document. 
 Then, use the &lt;i&gt; tag with the appropriate class name to display the icon.</p>
 
-```
-<head>
-  <!-- Include Bootstrap Icons library -->
-  <link href=
+<pre>
+&lt;head&gt;
+  &lt;!-- Include Bootstrap Icons library --&gt;
+  &lt;link href=
     "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
-    rel="stylesheet" />
-</head>
-<body>
-  <!-- Bootstrap Icon -->
-  <i class="bi bi-house-fill"></i>
-</body>
-```
+    rel="stylesheet" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Bootstrap Icon --&gt;
+  &lt;i class="bi bi-house-fill"&gt;&lt;/i&gt;
+&lt;/body&gt;
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -1337,18 +1336,18 @@ Icons</mark></b>, include the <b><mark>Google Icons</mark></b> library using a C
 &lt;head&gt; section. Then, use the &lt;span&gt; tag with the class material-icons and specify 
 the icon name.</p>
 
-```
-<head>
-  <!-- Include Google Icons library -->
-  <link href=
-    "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-</head>
+<pre>
+&lt;head&gt;
+  &lt;!-- Include Google Icons library --&gt;
+  &lt;link href=
+    "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /&gt;
+&lt;/head&gt;
 
-<body>
-  <!-- Google Icon -->
-  <span class="material-icons">home</span>
-</body>
-```
+&lt;body&gt;
+  &lt;!-- Google Icon --&gt;
+  &lt;span class="material-icons"&gt;home&lt;/span&gt;
+&lt;/body&gt;
+</pre>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
@@ -1366,12 +1365,10 @@ the icon name.</p>
 <p>You can also use image files as icons by utilizing the &lt;img&gt; tag . This method allows 
 you to use custom images as icons. You can apply CSS to adjust the size of the icon as 
 needed.</p>
-
-```
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20240527124348/zi.png" 
-  alt="home icon" style="width: 24px; height: 24px;" />
-```
-
+<pre>
+&lt;img src="https://media.geeksforgeeks.org/wp-content/uploads/20240527124348/zi.png" 
+  alt="home icon" style="width: 24px; height: 24px;" /&gt;
+</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1428,83 +1425,80 @@ and JavaScript:</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  
-```
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <!-- Define the character encoding and viewport settings -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-  <!-- Page title -->
-  <title>
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+<br>
+&lt;head&gt;
+  &lt;!-- Define the character encoding and viewport settings --&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+<br>
+  &lt;!-- Page title --&gt;
+  &lt;title&gt;
     AI Image generator Website using HTML, CSS and JavaScript
-  </title>
-    
-  <!-- Link to external CSS file for styling -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-  <!-- Main container for all the content -->
-  <div class="main-container">
-    <!-- Container for the heading and form -->
-    <div class="container">
-      <!-- Section for page headings -->
-      <div class="headings-container">
-        <h1>Cellardoor</h1> <!-- Main heading -->
-        <h2 class="heading">
+  &lt;/title&gt;
+<br>
+  &lt;!-- Link to external CSS file for styling --&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+  &lt;!-- Main container for all the content --&gt;
+  &lt;div class="main-container"&gt;
+    &lt;!-- Container for the heading and form --&gt;
+    &lt;div class="container"&gt;
+      &lt;!-- Section for page headings --&gt;
+      &lt;div class="headings-container"&gt;
+        &lt;h1&gt;Cellardoor&lt;/h1&gt; &lt;!-- Main heading --&gt;
+        &lt;h2 class="heading"&gt;
           AI Image generator website using JavaScript
-        </h2> <!-- Secondary heading explaining the purpose -->
-        <h5 class="sub-heading">
+        &lt;/h2&gt; &lt;!-- Secondary heading explaining the purpose --&gt;
+        &lt;h5 class="sub-heading"&gt;
           Enter the text in the below input bar and 
-          <br />
+          &lt;br /&gt;
           get the AI generated image related to this text.
-        </h5> <!-- Subheading with instructions -->
-      </div>
-      <!-- Form container for input and submit button -->
-      <div id="generate-image-form" class="form-container">
-        <!-- Form to input text and generate image -->
-        <form class="my-form">
-          <!-- Text input for the user to enter some text -->
-          <input id="input-value" 
+        &lt;/h5&gt; &lt;!-- Subheading with instructions --&gt;
+      &lt;/div&gt;
+      &lt;!-- Form container for input and submit button --&gt;
+      &lt;div id="generate-image-form" class="form-container"&gt;
+        &lt;!-- Form to input text and generate image --&gt;
+        &lt;form class="my-form"&gt;
+          &lt;!-- Text input for the user to enter some text --&gt;
+          &lt;input id="input-value" 
             placeholder="Enter some text..." 
             type="text"
-            class="form-input form-controls">
-          <!-- Button to submit and generate image -->
-          <button type="submit" 
+            class="form-input form-controls"&gt;
+          &lt;!-- Button to submit and generate image --&gt;
+          &lt;button type="submit" 
             class="image-generate-btn 
-            form-controls">
+            form-controls"&gt;
             Generate Image
-          </button>
-        </form>
-      </div>
-      <!-- Section to display the generated image -->
-      <div id="images-visible" class="image-container">
-        <!-- Placeholder text that will be updated with the result -->
-        <p id="imageContainerText"></p>
-        <!-- Image tag to display the AI generated image -->
-        <img id="generated-image" 
+          &lt;/button&gt;
+        &lt;/form&gt;
+      &lt;/div&gt;
+      &lt;!-- Section to display the generated image --&gt;
+      &lt;div id="images-visible" class="image-container"&gt;
+        &lt;!-- Placeholder text that will be updated with the result --&gt;
+        &lt;p id="imageContainerText"&gt;&lt;/p&gt;
+        &lt;!-- Image tag to display the AI generated image --&gt;
+        &lt;img id="generated-image" 
           class="my-generated-image" 
-          src='' alt="AI Generated Image">
-      </div>
-    </div>
-  </div>
-  <script src="index.js"></script>
-</body>
-
-</html>
-```
-
+          src='' alt="AI Generated Image"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script src="index.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+<br>
+&lt;/html&gt;
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-/* style.css */
+<pre><code>/* style.css */
 body {
   padding: 0;
   margin: 0;
@@ -1549,7 +1543,7 @@ body {
   cursor: pointer;
   color: #fff;
 }
-#imageContainerText {
+&#35;imageContainerText {
   color: #000;
 }
 .image-container {
@@ -1570,15 +1564,13 @@ body {
     height: 300px;
   }
 }
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~ JavaScript ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-// index.js
+<pre><code>// index.js
 let generateImageForm = 
   document.getElementById('generate-image-form');
 let formInput = 
@@ -1617,7 +1609,7 @@ generateImageForm.addEventListener('submit', (e) => {
       "Input field can not be empty!";
   }
 })
-</pre>
+</code></pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1691,57 +1683,55 @@ retrieved in the application which consists of weather, wind speed, description,
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-```
-<!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href=
-"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <title>GFG App</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="weather-card">
-      <h1 style="color: green;">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="style2.css"&gt;
+    &lt;link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"&gt;
+    &lt;link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"&gt;
+    &lt;link rel="stylesheet" href=
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"&gt;
+    &lt;title&gt;GFG App&lt;/title&gt;
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="weather-card"&gt;
+      &lt;h1 style="color: green;"&gt;
         GeeksforGeeks
-      </h1>
-      <h3>
+      &lt;/h1&gt;
+      &lt;h3&gt;
         Weather App
-      </h3>
-      <input type="text" id="city-input"
-        placeholder="Enter city name">
-      <button id="city-input-btn"
-        onclick="weatherFn($('#city-input').val())">
+      &lt;/h3&gt;
+      &lt;input type="text" id="city-input"
+        placeholder="Enter city name"&gt;
+      &lt;button id="city-input-btn"
+        onclick="weatherFn($('#city-input').val())"&gt;
         Get Weather
-      </button>
-      <div id="weather-info"
-        class="animate__animated animate__fadeIn">
-        <h3 id="city-name"></h3>
-        <p id="date"></p>
-        <img id="weather-icon" src="" alt="Weather Icon">
-        <p id="temperature"></p>
-        <p id="description"></p>
-        <p id="wind-speed"></p>
-      </div>
-    </div>
-  </div>
-  <script src=
-    "https://code.jquery.com/jquery-3.6.0.min.js">
-  </script>
-  <script src=
-    "https://momentjs.com/downloads/moment.min.js">
-  </script>
-  <script src="script2.js"></script>
-</body>
-</html>
-```
-
+      &lt;/button&gt;
+      &lt;div id="weather-info"
+        class="animate__animated animate__fadeIn"&gt;
+        &lt;h3 id="city-name"&gt;&lt;/h3&gt;
+        &lt;p id="date"&gt;&lt;/p&gt;
+        &lt;img id="weather-icon" src="" alt="Weather Icon"&gt;
+        &lt;p id="temperature"&gt;&lt;/p&gt;
+        &lt;p id="description"&gt;&lt;/p&gt;
+        &lt;p id="wind-speed"&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script src=
+    "https://code.jquery.com/jquery-3.6.0.min.js"&gt;
+  &lt;/script&gt;
+  &lt;script src=
+    "https://momentjs.com/downloads/moment.min.js"&gt;
+  &lt;/script&gt;
+  &lt;script src="script2.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this Example:</h4>
@@ -1788,7 +1778,7 @@ body {
 .weather-card:hover {
   transform: scale(1.05);
 }
-#city-input {
+&#35;city-input {
   padding: 15px;
   margin: 10px 0;
   width: 70%;
@@ -1796,14 +1786,14 @@ body {
   border-radius: 5px;
   font-size: 16px;
 }
-#city-input:focus {
+&#35;city-input:focus {
   outline: none;
   border-color: #2196F3;
 }
-#city-input::placeholder {
+&#35;city-input::placeholder {
   color: #aaa;
 }
-#city-input-btn {
+&#35;city-input-btn {
   padding: 10px;
   background-color: #2196F3;
   color: #fff;
@@ -1812,30 +1802,30 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-#city-input-btn:hover {
+&#35;city-input-btn:hover {
   background-color: #1565C0;
 }
-#weather-info {
+&#35;weather-info {
   display: none;
 }
-#weather-icon {
+&#35;weather-icon {
   width: 100px;
   height: 100px;
 }
-#temperature {
+&#35;temperature {
   font-size: 24px;
   font-weight: bold;
   margin: 8px 0;
 }
-#description {
+&#35;description {
   font-size: 18px;
   margin-bottom: 10px;
 }
-#wind-speed {
+&#35;wind-speed {
   font-size: 16px;
   color: rgb(255, 0, 0);
 }
-#date {
+&#35;date {
   font-size: 14px;
   color: rgb(255, 0, 0);
 }
@@ -1897,7 +1887,7 @@ function weatherShowFn(data) {
   $('#temperature').
     html(`${data.main.temp}°C`);
   $('#description').
-    text(data.weather[0].description);
+    text(data.weather&lbrack;0&rbrack;.description);
   $('#wind-speed').
     html(`Wind Speed: ${data.wind.speed} m/s`);
   $('#weather-icon').
@@ -1933,64 +1923,62 @@ and JavaScript.</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-  
-```
-<!DOCTYPE html>
-<head>
-  <link rel="stylesheet" href="style2.css">
-  <link rel="stylesheet" href=
-    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href=
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href=
-    "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-  <title>GFG App</title>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <div class="weather-card">
-      <h1 style="color: green;">
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="style2.css"&gt;
+  &lt;link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"&gt;
+  &lt;link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"&gt;
+  &lt;link rel="stylesheet" href=
+    "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"&gt;
+  &lt;title&gt;GFG App&lt;/title&gt;
+  &lt;script src="https://code.jquery.com/jquery-3.6.0.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+<br>
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="weather-card"&gt;
+      &lt;h1 style="color: green;"&gt;
         GeeksforGeeks
-      </h1>
-      <h3>
+      &lt;/h1&gt;
+      &lt;h3&gt;
         Weather App
-      </h3>
-      <input type="text" id="city-input"
-        placeholder="Enter city name">
-      <button id="city-input-btn"
-        onclick="weatherFn($('#city-input').val())">
+      &lt;/h3&gt;
+      &lt;input type="text" id="city-input"
+        placeholder="Enter city name"&gt;
+      &lt;button id="city-input-btn"
+        onclick="weatherFn($('#city-input').val())"&gt;
         Get Weather
-      </button>
-      <div id="weather-info"
-        class="animate__animated animate__fadeIn">
-        <h3 id="city-name"></h3>
-        <p id="date"></p>
-        <img id="weather-icon" src="" alt="Weather Icon">
-        <p id="temperature"></p>
-        <p id="description"></p>
-        <p id="wind-speed"></p>
-      </div>
-    </div>
-  </div>
-  <script src=
-    "https://code.jquery.com/jquery-3.6.0.min.js">
-  </script>
-  <script src=
-    "https://momentjs.com/downloads/moment.min.js">
-  </script>
-  <script src="script2.js"></script>
-</body>
-</html>
-```
-
+      &lt;/button&gt;
+      &lt;div id="weather-info"
+        class="animate__animated animate__fadeIn"&gt;
+        &lt;h3 id="city-name"&gt;&lt;/h3&gt;
+        &lt;p id="date"&gt;&lt;/p&gt;
+        &lt;img id="weather-icon" src="" alt="Weather Icon"&gt;
+        &lt;p id="temperature"&gt;&lt;/p&gt;
+        &lt;p id="description"&gt;&lt;/p&gt;
+        &lt;p id="wind-speed"&gt;&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script src=
+    "https://code.jquery.com/jquery-3.6.0.min.js"&gt;
+  &lt;/script&gt;
+  &lt;script src=
+    "https://momentjs.com/downloads/moment.min.js"&gt;
+  &lt;/script&gt;
+  &lt;script src="script2.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~ style.css ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>style.css</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -2014,7 +2002,7 @@ body {
 .weather-card:hover {
   transform: scale(1.05);
 }
-#city-input {
+&#35;city-input {
   padding: 15px;
   margin: 10px 0;
   width: 70%;
@@ -2022,14 +2010,14 @@ body {
   border-radius: 5px;
   font-size: 16px;
 }
-#city-input:focus {
+&#35;city-input:focus {
   outline: none;
   border-color: #2196F3;
 }
-#city-input::placeholder {
+&#35;city-input::placeholder {
   color: #aaa;
 }
-#city-input-btn {
+&#35;city-input-btn {
   padding: 10px;
   background-color: #2196F3;
   color: #fff;
@@ -2038,36 +2026,35 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
-#city-input-btn:hover {
+&#35;city-input-btn:hover {
   background-color: #1565C0;
 }
-#weather-info {
+&#35;weather-info {
   display: none;
 }
-#weather-icon {
+&#35;weather-icon {
   width: 100px;
   height: 100px;
 }
-#temperature {
+&#35;temperature {
   font-size: 24px;
   font-weight: bold;
   margin: 8px 0;
 }
-#description {
+&#35;description {
   font-size: 18px;
   margin-bottom: 10px;
 }
-#wind-speed {
+&#35;wind-speed {
   font-size: 16px;
   color: rgb(255, 0, 0);
 }
-#date {
+&#35;date {
   font-size: 14px;
   color: rgb(255, 0, 0);
 }
-</pre>
+</code></pre>
 </details>
-
 <!--~~~~~~~~~~~~~~ script.js ~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>script.js</summary>
@@ -2102,12 +2089,12 @@ function weatherShowFn(data) {
   $('#temperature').
     html(`${Math.round(data.main.temp)}°C`); // Rounded temperature
   $('#description').
-    text(data.weather[0].description);
+    text(data.weather&lbrack;0&rbrack;.description);
   $('#wind-speed').
     html(`Wind Speed: ${data.wind.speed} m/s`);
   $('#weather-icon').
     attr('src',
-      `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`); // Corrected icon URL
+      `http://openweathermap.org/img/wn/${data.weather&lbrack;0&rbrack;.icon}@2x.png`); // Corrected icon URL
   $('#weather-info').fadeIn();
 }
 </pre>
@@ -2217,51 +2204,49 @@ following stylesheet in your program for the fonts:</p>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-```
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" 
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;meta name="viewport" 
     content="width=device-width, 
-    initial-scale=1.0" />
-  <title>Linktree</title>
-  <script type="module" defer 
-    src="main.js">
-  </script>
+    initial-scale=1.0" /&gt;
+  &lt;title&gt;Linktree&lt;/title&gt;
+  &lt;script type="module" defer 
+    src="main.js"&gt;
+  &lt;/script&gt;
 
-  <link rel="stylesheet" 
-    href="main.css" />
-</head>
-<body>
-  <main>
-    <div class="logoContainer">
-      <img class="logo"
+  &lt;link rel="stylesheet" 
+    href="main.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;main&gt;
+    &lt;div class="logoContainer"&gt;
+      &lt;img class="logo"
         src=
           "https://media.geeksforgeeks.org/wp-content/uploads/20221223192752/gfg_200x200-min.png"
-        alt="click here"/>
-    </div>
-    <div class="greetings">
-      <div>GeeksforGeeks</div>
-    </div>
-    <div class="about">
-      <div>
+        alt="click here"/&gt;
+    &lt;/div&gt;
+    &lt;div class="greetings"&gt;
+      &lt;div&gt;GeeksforGeeks&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="about"&gt;
+      &lt;div&gt;
         We welcome you to the platform where 
         we consistently strive to offer the 
         best of education
-      </div>
-    </div>
-    <div class="links" 
-      id="links">
-    </div>
-  </main>
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="links" 
+      id="links"&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
 
-</body>
-</html>
-```
-
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 2: Create a folder <b>"CSS"</b>, inside this "css" folder add the following code 
@@ -2355,56 +2340,56 @@ a {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #EBC7E8;
+    &#35;EBC7E8;
   color: white;
 }
 .link:nth-child(2) {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #BFACE0;
+    &#35;BFACE0;
   color: white;
 }
 .link:nth-child(3) {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #A084CA;
+    &#35;A084CA;
   color: white;
 }
 .link:nth-child(4) {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #645CAA;
+    &#35;645CAA;
   color: white;
 }
 .link:nth-child(5) {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #4b4585;
+    &#35;4b4585;
   color: white;
 }
 .link:nth-child(6) {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #413b71;
+    &#35;413b71;
   color: white;
 }
 .link:nth-child(7) {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #352e5c;
+    &#35;352e5c;
   color: white;
 }
 .link:nth-child(8) {
   background: linear-gradient(90deg,
     rgba(241, 241, 241, 0.1) 30%,
     rgba(113, 113, 113, 0.3) 100%),
-    #211d38;
+    &#35;211d38;
   color: white;
 }
 .link:hover {
@@ -2453,7 +2438,7 @@ a {
   <summary>JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre>
-export const links = [
+export const links = &lbrack;
   {
     name: "Twitter",
     link: 
@@ -2510,11 +2495,11 @@ export const links = [
     image: 
       "https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
   },
-];
+&rbrack;;
 </pre>
 
 </details>
-
+<br>
 <ul>
   <li>main.js</li>
 </ul>
@@ -2579,18 +2564,17 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
 
-```
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>
+&lt;head&gt;
+  &lt;title&gt;
     To detect network speed using JavaScript
-  </title>
-</head>
-<body>
-  <script type="text/javascript">
+  &lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script type="text/javascript"&gt;
     let userImageLink =
       "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200714180638/CIP_Launch-banner.png";
     let time_start, end_time;
@@ -2615,11 +2599,10 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
           + bps + " bps\n" + speedInKbps
           + " kbps\n" + speedInMbps + " Mbps\n");
       }
-  </script>
-</body>
-</html>
-```
-
+  &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12">12. <b><mark>Recipe Finder</mark></b> using ReactJS</h2>
@@ -2705,13 +2688,13 @@ so paste the below content in this file for the correct configuration.</h4>
 <pre>
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
+  content: &lbrack;
     "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  &rbrack;,
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: &lbrack;&rbrack;,
 }
 </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2732,19 +2715,18 @@ above directory structure.</h4>
   <summary>JavaScript</summary>
 <pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre><code>// App.js
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 const App = () =&gt; {
   const APP_ID = 'YOUR_API_ID';
   const APP_KEY = 'YOUR_API_KEY';
-  const [food_recipes, setfood_recipes] = useState([]);
-  const [search_recipe, setSearch_recipe] = useState('');
-  const [search_query, setSearch_Query] = useState('chicken');
+  const &lbrack;food_recipes, setfood_recipes&rbrack; = useState(&lbrack;&rbrack;);
+  const &lbrack;search_recipe, setSearch_recipe&rbrack; = useState('');
+  const &lbrack;search_query, setSearch_Query&rbrack; = useState('chicken');
   useEffect(() =&gt; {
     getRecipesFunction();
-  }, [search_query]);
+  }, &lbrack;search_query&rbrack;);
   const getRecipesFunction = async () =&gt; {
     const response = await fetch (
       `https://api.edamam.com/search?q=${search_query}&app_id=${APP_ID}&app_key=${APP_KEY}`
@@ -2824,13 +2806,11 @@ const App = () =&gt; {
 };
 export default App;
 </code></pre>
-
 </details>
 <!--~~~~~~~~~~~~~~~~~~ JSX ~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>More JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <pre><code>// RecipeCard.jsx
 import React from 'react';
 const RecipeCard = ({ recipe }) =&gt; {
@@ -2847,7 +2827,7 @@ const RecipeCard = ({ recipe }) =&gt; {
         /&gt;
         &lt;div className="absolute top-2 left-2 bg-indigo-500 
           text-white py-1 px-2 rounded"&gt;
-          {recipe.dishType[0]}
+          {recipe.dishType&lbrack;0&rbrack;}
         &lt;/div&gt;
       &lt;/div&gt;
       &lt;div className="p-4"&gt;
