@@ -439,26 +439,26 @@ India Gate, New Delhi and displays it with marker.</h4>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<!-- Using leaflet Map -->
-<!DOCTYPE html>
-<html>
+<pre><code>
+&lt;!-- Using leaflet Map --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
 
-<head>
-  <title>Leaflet Map Example</title>
-  <link rel="stylesheet" href="
+&lt;head&gt;
+  &lt;title&gt;Leaflet Map Example&lt;/title&gt;
+  &lt;link rel="stylesheet" href="
     https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZy
-    oHS5obTRR9BMY=" crossorigin="" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9V
-    M+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-</head>
+    oHS5obTRR9BMY=" crossorigin="" /&gt;
+  &lt;script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9V
+    M+kNiyxNV1lvTlZBo=" crossorigin=""&gt;&lt;/script&gt;
+&lt;/head&gt;
 
-<body>
-  <h2 style="text-align: center;">
-    India Gate Location</h2>
-  <div id="mapid" style="height: 75vh; width: 50vw;
-    margin-left: 25%;"></div>
-  <script>
+&lt;body&gt;
+  &lt;h2 style="text-align: center;"&gt;
+    India Gate Location&lt;/h2&gt;
+  &lt;div id="mapid" style="height: 75vh; width: 50vw;
+    margin-left: 25%;"&gt;&lt;/div&gt;
+  &lt;script&gt;
     var map = L.map("mapid").setView
       ([28.612894, 77.229446], 13); L.tileLayer
       ("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -468,11 +468,11 @@ India Gate, New Delhi and displays it with marker.</h4>
       .addTo(map)
       .bindPopup("India Gate, New Delhi")
       .openPopup();
-  </script>
-</body>
+  &lt;/script&gt;
+&lt;/body&gt;
 
-</html>
-```
+&lt;/html&gt;
+</code></pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2752,8 +2752,7 @@ above directory structure.</h4>
 <pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<pre><code>
-// App.js
+<pre><code>// App.js
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
 const App = () =&gt; {
@@ -2851,8 +2850,7 @@ export default App;
   <summary>More JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<pre>
-// RecipeCard.jsx
+<pre><code>// RecipeCard.jsx
 import React from 'react';
 const RecipeCard = ({ recipe }) =&gt; {
   return (
@@ -2939,7 +2937,7 @@ const RecipeCard = ({ recipe }) =&gt; {
   );
 };
 export default RecipeCard;
-</pre>
+</code></pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
