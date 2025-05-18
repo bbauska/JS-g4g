@@ -163,8 +163,7 @@ HTML and with an example.</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
   &lt;meta charset="UTF-8"&gt;
@@ -196,8 +195,7 @@ HTML and with an example.</h4>
   &lt;/div&gt;
   &lt;script src="./script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+&lt;/html&gt;</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
@@ -205,8 +203,7 @@ HTML and with an example.</h4>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-* {
+<pre><code>* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -247,8 +244,7 @@ HTML and with an example.</h4>
     opacity: 1;
     transform: translateY(0);
   }
-}
-</code></pre>
+}</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
@@ -256,8 +252,7 @@ HTML and with an example.</h4>
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-// JavaScript code
+<pre><code>// JavaScript code
 function search_animal() {
   let input = document.getElementById('searchbar').value
   input = input.toLowerCase();
@@ -270,8 +265,7 @@ function search_animal() {
       x[i].style.display = "list-item";
     }
   }
-}
-</code></pre>
+}</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
