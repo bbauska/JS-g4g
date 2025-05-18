@@ -724,8 +724,9 @@ stack then the stack underflow message will be displayed in the message box.</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+<br>
 * {
   margin: 0;
   padding: 0;
@@ -849,6 +850,7 @@ header {
 .ele-remove {
   animation: popAnimation 0.3s infinite linear;
 }
+<br>
 @keyframes pushAnimation {
   0% {
     background-color: green;
@@ -903,6 +905,7 @@ header {
 .error-massage {
   animation: errorMassage 0.4s infinite linear;
 }
+<br>
 @keyframes errorMassage {
   0% {
     background-color: bisque;
@@ -911,8 +914,7 @@ header {
     background-color: rgb(255, 15, 59);
   }
 }
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
@@ -983,6 +985,7 @@ save it in their web browser for easy and quick access.</p>
   &lt;link rel="stylesheet" 
        href="styles.css"&gt;
 &lt;/head&gt;
+<br>
 &lt;body&gt;
   &lt;header&gt;
     &lt;h1&gt;My Bookmarks&lt;/h1&gt;
@@ -1011,6 +1014,7 @@ save it in their web browser for easy and quick access.</p>
   &lt;/main&gt;
   &lt;script src="script.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
+<br>
 &lt;/html&gt;
 </code></pre>
 </details>
@@ -1089,6 +1093,7 @@ button#deleteAll:hover {
 .bookmark-item a:hover {
   text-decoration: underline;
 }
+<br>
 /* Style the "Delete" button */
 .delete {
   background-color: #ff6347; /* Red color */
@@ -1132,6 +1137,7 @@ a:hover {
   text-decoration: underline;
   color: rgb(40, 130, 189);
 }
+<br>
 @media (max-width: 768px) {
   main {
     padding: 10px;
@@ -1167,8 +1173,7 @@ a:hover {
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-// Script.js
+<pre><code>// Script.js
 // Get DOM elements
 const urlInput = 
   document.getElementById("urlInput");
@@ -1178,25 +1183,27 @@ const deleteAllButton =
   document.getElementById("deleteAll");
 const bookmarkList = 
   document.getElementById("bookmarkList");
+<br>
 // Function to validate URLs
 function isValidURL(url) {
   const pattern =
     /^(https?:\/\/)?([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?$/;
   return pattern.test(url);
 }
+<br>
 // Event listener for adding a bookmark
 addBookmarkButton.addEventListener(
-  "click", () => {
+  "click", () =&gt; {
     const url = urlInput.value.trim();
     if (isValidURL(url)) {
       const bookmarkItem = document.createElement("li");
       bookmarkItem.classList.add("bookmark-item");
       bookmarkItem.innerHTML = 
-        `<a href="${url}" taret="_blank">${url}</a>
-        <div class="buttons"> 
-          <button class="edit"g>Edit</button>
-          <button class="delete">Delete</button>
-        </div>`;
+        `&lt;a href="${url}" taret="_blank"&gt;${url}&lt;/a&gt;
+        &lt;div class="buttons"&gt; 
+          &lt;button class="edit"g&gt;Edit&lt;/button&gt;
+          &lt;button class="delete"&gt;Delete&lt;/button&gt;
+        &lt;/div&gt;`;
         bookmarkList.appendChild(bookmarkItem);
         urlInput.value = "";
         addEditBookmarkListener(bookmarkItem);
@@ -1208,15 +1215,17 @@ addBookmarkButton.addEventListener(
       );
     }
 });
+<br>
 // Event listener for deleting all bookmarks
 deleteAllButton.addEventListener(
-  "click", () => {
+  "click", () =&gt; {
     while (
       bookmarkList.firstChild) {
       bookmarkList.removeChild
       (bookmarkList.firstChild)
     }
 });
+<br>
 // Event listener for editing bookmarks
 function addEditBookmarkListener(
   bookmarkItem) {
@@ -1225,7 +1234,7 @@ function addEditBookmarkListener(
   const bookmarkLink = 
     bookmarkItem.querySelector("a");
   editButton.addEventListener(
-    "click", () => {
+    "click", () =&gt; {
       const newURL = prompt("Edit the URL:",
         bookmarkLink.getAttribute("href"));
       if (newURL && isValidURL(newURL)) {
@@ -1239,15 +1248,15 @@ function addEditBookmarkListener(
       }
   });
 }
+<br>
 // Event listener for deleting a bookmark
 function addDeleteBookmarkListener(
   bookmarkItem) {
     const deleteButton = 
       bookmarkItem.querySelector(".delete");
-    deleteButton.addEventListener("click", () => { bookmarkItem.remove(); });
+    deleteButton.addEventListener("click", () =&gt; { bookmarkItem.remove(); });
 }
-</pre>
-
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="07">07. How to <b><mark>Add Icons</mark></b> in HTML?</h2>
