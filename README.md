@@ -107,7 +107,7 @@ using let and difference between let and const is that the variables declared us
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Difference Between <b><mark>var</mark></b>, <b><mark>let</mark></b>, and <b><mark>const</mark></b></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table style="width: 65%;" border="1" cellpadding="1">
+<table style="width: 50%;" border="1" cellpadding="1">
 <thead>
 <tr>
   <th><b><mark>var</mark></b></th>
