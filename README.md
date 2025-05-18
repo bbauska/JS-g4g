@@ -39,8 +39,8 @@ avoiding unintended side effects in code.</p>
 <h2>JavaScript <b><mark>var</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This keyword is used to declare variables globally. If you use this keyword to declare a variable 
-then the variable can be accessible globally and changeable also. It is good for a short length 
-of codes, if the codes get huge then you will get confused.</p>
+then the variable can be accessible <b>globally</b> and <b>changeable</b> also. It is good for a <b>short length 
+of codes</b>, if the codes get huge then you will get confused.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -60,8 +60,8 @@ console.log(geeks);
 <h2>JavaScript <b><mark>let</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This keyword is used to declare variables locally. If you use this keyword to declare a 
-variable then the variable can be accessible locally and it is changeable as well. It is good 
-if the code gets huge.</p>
+variable then the variable can be accessible <b>locally</b> and it is <b>changeable</b> as well. It is <b>good 
+if the code gets huge</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -85,9 +85,9 @@ console.log(geeks);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript <b><mark>const</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This keyword is used to declare variable locally. If you use this keyword to declare a variable 
+<p>This keyword is used to declare variable <b>locally</b>. If you use this keyword to declare a variable 
 then the variable will only be accessible within that block similar to the variable defined by 
-using let and difference between let and const is that the variables declared using const values 
+using let and difference between let and const is that the variables declared using <b>const</b> values 
 <b><mark>can’t be reassigned</mark></b>. So we should assign the value while declaring the variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
@@ -361,18 +361,18 @@ centered heading and a google map showing specific location.</h4>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
-<!-- Using iframe -->
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Embed Google Map</title>
-</head>
-<body style="display: grid;
-  justify-content: center">
-  <h2 style="text-align: center">
-    Add map in html using iframe</h2>
-  <iframe src="https://www.google.com/maps/embed?pb
+<pre>
+&lt;!-- Using iframe --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Embed Google Map&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="display: grid;
+  justify-content: center"&gt;
+  &lt;h2 style="text-align: center"&gt;
+    Add map in html using iframe&lt;/h2&gt;
+  &lt;iframe src="https://www.google.com/maps/embed?pb
     =!1m18!1m12!1m3!1d4291.745453141256!2d
     77.39914006293347!3d28.504393188935435!
     2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
@@ -380,11 +380,11 @@ centered heading and a google map showing specific location.</h4>
     5133cfd1ad1!2sGeeksforGeeks%20%7C%20
     Coding%20Classes%20%7C%20Noida!5e0!3m2!1
     sen!2sin!4v1725395799894!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen=""
-    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</body>
-</html>
-```
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt;
+  &lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2851,95 +2851,95 @@ export default App;
   <summary>More JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-```
+<pre>
 // RecipeCard.jsx
 import React from 'react';
-const RecipeCard = ({ recipe }) => {
+const RecipeCard = ({ recipe }) =&gt; {
   return (
-    <div className="bg-white shadow-lg rounded-lg 
+    &lt;div className="bg-white shadow-lg rounded-lg 
       overflow-hidden hover:shadow-xl 
-      transition-transform hover:scale-105">
-      <div className="relative">
-        <img
+      transition-transform hover:scale-105"&gt;
+      &lt;div className="relative"&gt;
+        &lt;img
           className="w-full h-48 object-cover 
             object-center rounded-t-lg"
           src={recipe.image}
           alt={recipe.label}
-        />
-        <div className="absolute top-2 left-2 bg-indigo-500 
-          text-white py-1 px-2 rounded">
+        /&gt;
+        &lt;div className="absolute top-2 left-2 bg-indigo-500 
+          text-white py-1 px-2 rounded"&gt;
           {recipe.dishType[0]}
-        </div>
-      </div>
-      <div className="p-4">
-        <h1 className="text-2xl font-semibold text-gray-800 
-          mb-2 capitalize">
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div className="p-4"&gt;
+        &lt;h1 className="text-2xl font-semibold text-gray-800 
+          mb-2 capitalize"&gt;
           {recipe.label}
-        </h1>
-        <div className="text-gray-600 mb-4">
-          <span className="block mb-1">
-            <b>Ingredients:</b>
-          </span>
-          {recipe.ingredientLines.map((ingredient, index) => (
-            <span key={index} className="block pl-4">
+        &lt;/h1&gt;
+        &lt;div className="text-gray-600 mb-4"&gt;
+          &lt;span className="block mb-1"&gt;
+            &lt;b&gt;Ingredients:&lt;/b&gt;
+          &lt;/span&gt;
+          {recipe.ingredientLines.map((ingredient, index) =&gt; (
+            &lt;span key={index} className="block pl-4"&gt;
               {ingredient}
-            </span>
+            &lt;/span&gt;
           ))}
-        </div>
-        <div className="flex items-center justify-between">
-          <a
+        &lt;/div&gt;
+        &lt;div className="flex items-center justify-between"&gt;
+          &lt;a
             href={"/"}
             target="_blank"
             rel="noopener noreferrer"
             className="text-indigo-500 font-semibold 
               hover:underline"
-          >
+          &gt;
             View Recipe
-          </a>
-          <div className="flex items-center text-gray-600">
-            <span className="flex items-center mr-4">
-              <svg
+          &lt;/a&gt;
+          &lt;div className="flex items-center text-gray-600"&gt;
+            &lt;span className="flex items-center mr-4"&gt;
+              &lt;svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-              >
-                <path
+              &gt;
+                &lt;path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M12 5v14m0 0V5m0 
                                     0v14m0-14h14m-14 0H5"
-                />
-              </svg>
+                /&gt;
+              &lt;/svg&gt;
               1.2K
-            </span>
-            <span className="flex items-center">
-              <svg
+            &lt;/span&gt;
+            &lt;span className="flex items-center"&gt;
+              &lt;svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-4 w-4 mr-1"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-              >
-                <path
+              &gt;
+                &lt;path
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+                /&gt;
+              &lt;/svg&gt;
               6
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
+            &lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
   );
 };
 export default RecipeCard;
-```
+</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
