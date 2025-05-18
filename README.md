@@ -353,8 +353,7 @@ centered heading and a google map showing specific location.</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!-- Using iframe --&gt;
+<pre><code>&lt;!-- Using iframe --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -408,8 +407,7 @@ it with variety of additional plugins.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-let map = L.map('map').setView([Latitude, Longitude], ZoomLevel);
+<pre><code>let map = L.map('map').setView([Latitude, Longitude], ZoomLevel);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; &lt;a href="https://www.openstreetmap.org/copyright"&gt;OpenStreetMap&lt;/a&gt; contributors'
 }).addTo(map);
@@ -430,7 +428,6 @@ India Gate, New Delhi and displays it with marker.</h4>
 <pre><code>&lt;!-- Using leaflet Map --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
   &lt;title&gt;Leaflet Map Example&lt;/title&gt;
   &lt;link rel="stylesheet" href="
@@ -439,7 +436,7 @@ India Gate, New Delhi and displays it with marker.</h4>
   &lt;script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9V
     M+kNiyxNV1lvTlZBo=" crossorigin=""&gt;&lt;/script&gt;
 &lt;/head&gt;
-
+<br>
 &lt;body&gt;
   &lt;h2 style="text-align: center;"&gt;
     India Gate Location&lt;/h2&gt;
@@ -457,7 +454,7 @@ India Gate, New Delhi and displays it with marker.</h4>
       .openPopup();
   &lt;/script&gt;
 &lt;/body&gt;
-
+<br>
 &lt;/html&gt;
 </code></pre>
 </details>
