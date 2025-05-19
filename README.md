@@ -1347,7 +1347,6 @@ the icon name.</p>
   &lt;span class="material-icons"&gt;home&lt;/span&gt;
 &lt;/body&gt;
 </pre>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1753,7 +1752,7 @@ styles.css file and add the following CSS code:</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -1828,7 +1827,7 @@ body {
   font-size: 14px;
   color: rgb(255, 0, 0);
 }
-</pre>
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this Example:</h4>
@@ -1856,7 +1855,7 @@ to fetch weather data and display it to the user.</p>
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 const url =
   'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
@@ -1894,7 +1893,7 @@ function weatherShowFn(data) {
       `...`);
   $('#weather-info').fadeIn();
 }
-</pre>
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this Example:</h4>
@@ -2058,7 +2057,7 @@ body {
 <details>
   <summary>script.js</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
+<pre><code>
 const url =
   'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
@@ -2096,7 +2095,7 @@ function weatherShowFn(data) {
       `http://openweathermap.org/img/wn/${data.weather&lbrack;0&rbrack;.icon}@2x.png`); // Corrected icon URL
   $('#weather-info').fadeIn();
 }
-</pre>
+</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Step 5: Running the Application</h3>
@@ -2930,6 +2929,7 @@ npm run start
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am<br>
 Date editted: 5/15/2025 9:00+am<br>
-Date editted: 5/17/2025 3:00+pm</h6>
+Date editted: 5/17/2025 3:00+pm<br>
+Date editted: 5/18/2025 9:05+pm</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
