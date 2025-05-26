@@ -48,10 +48,8 @@ of codes</b>, if the codes get huge then you will get confused.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the use of <b><mark>var</mark></b>.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-var geeks = "GeeksforGeeks";
-console.log(geeks);
-</pre>
+<pre>var geeks = "GeeksforGeeks";
+console.log(geeks);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -69,15 +67,13 @@ if the code gets huge</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the use of <b><mark>let</mark></b>.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-if (true) {
+<pre>if (true) {
   let geeks = "GeeksforGeeks";
   console.log(geeks);
 }
 /* This will be error and 
    show geeks is not defined */
-console.log(geeks);
-</pre>
+console.log(geeks);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -96,10 +92,8 @@ using let and difference between let and const is that the variables declared us
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: This example shows the use of <b><mark>const</mark></b>.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-1  const geeks = "GeeksforGeeks";
-2  console.log(geeks);
-</pre>
+<pre>const geeks = "GeeksforGeeks";
+console.log(geeks);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -338,11 +332,9 @@ you can copy and paste directly into your HTML document.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-&lt;iframe src="https://www.google.com/maps/embed?pb=YourMapURL"
+<pre>&lt;iframe src="https://www.google.com/maps/embed?pb=YourMapURL"
   width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"&gt;
-&lt;/iframe&gt;
-</pre>
+&lt;/iframe&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Example: Below given example demonstrates how to embed a <b><mark>goggle map</mark></b> 
 into a webpage using an <b><mark>&lt;iframe&gt;</mark></b> element. It shows a webpage with 
@@ -1272,8 +1264,7 @@ the library in your HTML document's &lt;head&gt; section. Then, you can use the 
 class name associated with an inline element, such as the &lt;i&gt; tag, to display the 
 required icon.</p>
 
-<pre>
-&lt;head&gt;
+<pre>&lt;head&gt;
   &lt;!-- Include Font Awesome icon library --&gt;
   &lt;link href=
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
@@ -1283,8 +1274,7 @@ required icon.</p>
 &lt;body&gt;
   &lt;!-- Font Awesome Icon --&gt;
   &lt;i class="fas fa-home"&gt;&lt;/i&gt;
-&lt;/body&gt;
-</pre>
+&lt;/body&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1303,8 +1293,7 @@ Bootstrap framework. To use <b><mark>Bootstrap Icons</mark></b>, include the <b>
 Icons</mark></b> library using a CDN link in the &lt;head&gt; section of your HTML document. 
 Then, use the &lt;i&gt; tag with the appropriate class name to display the icon.</p>
 
-<pre>
-&lt;head&gt;
+<pre>&lt;head&gt;
   &lt;!-- Include Bootstrap Icons library --&gt;
   &lt;link href=
     "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" 
@@ -1313,9 +1302,7 @@ Then, use the &lt;i&gt; tag with the appropriate class name to display the icon.
 &lt;body&gt;
   &lt;!-- Bootstrap Icon --&gt;
   &lt;i class="bi bi-house-fill"&gt;&lt;/i&gt;
-&lt;/body&gt;
-</pre>
-
+&lt;/body&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1335,8 +1322,7 @@ Icons</mark></b>, include the <b><mark>Google Icons</mark></b> library using a C
 &lt;head&gt; section. Then, use the &lt;span&gt; tag with the class material-icons and specify 
 the icon name.</p>
 
-<pre>
-&lt;head&gt;
+<pre>&lt;head&gt;
   &lt;!-- Include Google Icons library --&gt;
   &lt;link href=
     "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" /&gt;
@@ -1345,8 +1331,7 @@ the icon name.</p>
 &lt;body&gt;
   &lt;!-- Google Icon --&gt;
   &lt;span class="material-icons"&gt;home&lt;/span&gt;
-&lt;/body&gt;
-</pre>
+&lt;/body&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1363,10 +1348,8 @@ the icon name.</p>
 <p>You can also use image files as icons by utilizing the &lt;img&gt; tag . This method allows 
 you to use custom images as icons. You can apply CSS to adjust the size of the icon as 
 needed.</p>
-<pre>
-&lt;img src="https://media.geeksforgeeks.org/wp-content/uploads/20240527124348/zi.png" 
-  alt="home icon" style="width: 24px; height: 24px;" /&gt;
-</pre>
+<pre>&lt;img src="https://media.geeksforgeeks.org/wp-content/uploads/20240527124348/zi.png" 
+  alt="home icon" style="width: 24px; height: 24px;" /&gt;</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Output:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1423,8 +1406,7 @@ and JavaScript:</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 <br>
 &lt;head&gt;
@@ -1489,8 +1471,7 @@ and JavaScript:</h4>
   &lt;script src="index.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
 <br>
-&lt;/html&gt;
-</code></pre>
+&lt;/html&gt;</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~~~~~-->
 <details>
@@ -1681,8 +1662,7 @@ retrieved in the application which consists of weather, wind speed, description,
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;head&gt;
     &lt;link rel="stylesheet" href="style2.css"&gt;
     &lt;link rel="stylesheet" href=
@@ -1728,8 +1708,7 @@ retrieved in the application which consists of weather, wind speed, description,
   &lt;/script&gt;
   &lt;script src="script2.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+&lt;/html&gt;</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this Example:</h4>
@@ -1752,8 +1731,7 @@ styles.css file and add the following CSS code:</p>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-body {
+<pre><code>body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -1826,8 +1804,7 @@ body {
 &#35;date {
   font-size: 14px;
   color: rgb(255, 0, 0);
-}
-</code></pre>
+}</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this Example:</h4>
@@ -1855,8 +1832,7 @@ to fetch weather data and display it to the user.</p>
 <details>
   <summary>JavaScript</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-const url =
+<pre><code>const url =
   'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
   'f00c38e0279b7bc85480c3fe775d518c';
@@ -1892,8 +1868,7 @@ function weatherShowFn(data) {
     attr('src',
       `...`);
   $('#weather-info').fadeIn();
-}
-</code></pre>
+}</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>In this Example:</h4>
@@ -1921,8 +1896,7 @@ and JavaScript.</h4>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;head&gt;
   &lt;link rel="stylesheet" href="style2.css"&gt;
   &lt;link rel="stylesheet" href=
@@ -1969,15 +1943,13 @@ and JavaScript.</h4>
   &lt;/script&gt;
   &lt;script src="script2.js"&gt;&lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+&lt;/html&gt;</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~ style.css ~~~~~~~~~~~~~~~~-->
 <details>
   <summary>style.css</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-body {
+<pre><code>body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -2050,15 +2022,13 @@ body {
 &#35;date {
   font-size: 14px;
   color: rgb(255, 0, 0);
-}
-</code></pre>
+}</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~ script.js ~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>script.js</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-const url =
+<pre><code>const url =
   'https://api.openweathermap.org/data/2.5/weather';
 const apiKey =
   'f00c38e0279b7bc85480c3fe775d518c';
@@ -2094,8 +2064,7 @@ function weatherShowFn(data) {
     attr('src',
       `http://openweathermap.org/img/wn/${data.weather&lbrack;0&rbrack;.icon}@2x.png`); // Corrected icon URL
   $('#weather-info').fadeIn();
-}
-</code></pre>
+}</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Step 5: Running the Application</h3>
@@ -2158,8 +2127,7 @@ to create our own <b><mark>Linktree</mark></b> using HTML, CSS, and JavaScript.<
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Project Structure:</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-root
+<pre>root
 |
 |
 |____assets
@@ -2178,16 +2146,13 @@ root
      |____links.js
      |____main.js
 |____README.md
-|____index.html
-</pre>
+|____index.html</pre>
 
 <p>Note: If you want to change the fonts, of your web page, you just need to include the 
 following stylesheet in your program for the fonts:</p>
 
-<pre>
-@import url(
-"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
-</pre>
+<pre>@import url(
+"https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");</pre>
 
 <h4><b>Example</b>: Below example illustrates the basic implementation for creating the 
 <b><mark>Linktree</mark></b> in a stepwise manner.</h4>
@@ -2202,8 +2167,7 @@ following stylesheet in your program for the fonts:</p>
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 
 &lt;head&gt;
@@ -2243,8 +2207,7 @@ following stylesheet in your program for the fonts:</p>
   &lt;/main&gt;
 
 &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+&lt;/html&gt;</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 2: Create a folder <b>"CSS"</b>, inside this "css" folder add the following code 
@@ -2258,8 +2221,7 @@ to the <b>main.css</b> file.</h4>
 <details>
   <summary>CSS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-@import url(
+<pre>@import url(
  "https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
@@ -2419,8 +2381,7 @@ a {
   .link:hover {
     transform: scale(1.01);
   }
-}
-</pre>
+}</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2435,8 +2396,7 @@ a {
 <details>
   <summary>JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-export const links = &lbrack;
+<pre>export const links = &lbrack;
   {
     name: "Twitter",
     link: 
@@ -2493,8 +2453,7 @@ export const links = &lbrack;
     image: 
       "https://media.geeksforgeeks.org/wp-content/uploads/20230115205457/user1.png",
   },
-&rbrack;;
-</pre>
+&rbrack;;</pre>
 
 </details>
 <br>
@@ -2506,8 +2465,7 @@ export const links = &lbrack;
 <details>
   <summary>JS</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-import { links } from "./links.js";
+<pre>import { links } from "./links.js";
 const linkContainer = document.getElementById("links");
 function addLink(name, link, image) {
   return `
@@ -2525,8 +2483,7 @@ links.forEach((ele) =&gt; {
   let image = ele.image;
   allLinks += addLink(name, link, image);
 });
-linkContainer.innerHTML = allLinks;
-</pre>
+linkContainer.innerHTML = allLinks;</pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2562,8 +2519,7 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
 <details>
   <summary>HTML</summary>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre><code>
-&lt;!DOCTYPE html&gt;
+<pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 
 &lt;head&gt;
@@ -2599,8 +2555,7 @@ calculates the speed of the download process, and converts it to "kbps" and "mbp
       }
   &lt;/script&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+&lt;/html&gt;</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="12">12. <b><mark>Recipe Finder</mark></b> using ReactJS</h2>
@@ -2660,13 +2615,11 @@ of card elements. We are using Tailwind CSS for styling the UI components of the
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 3: As we are using Tailwind CSS for styling, we need to install it using the npm manager. So execute the below command in the terminal, to install the tailwind CSS.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-npm install -D tailwindcss
+<pre>npm install -D tailwindcss
 npx tailwindcss init
 </pre>
 <p>The updated dependencies in package.json will look like this:</p>
-<pre>
-  "dependencies": {
+<pre>  "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -2677,14 +2630,12 @@ npx tailwindcss init
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
-  }
-</pre>
+  }</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 4: After executing the above command, a 'tailwind.config.js' will be generated, 
 so paste the below content in this file for the correct configuration.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-/*&ast; @type {import('tailwindcss').Config} */
+<pre>/*&ast; @type {import('tailwindcss').Config} */
 module.exports = {
   content: &lbrack;
     "./src/*&ast;/*.{js,jsx,ts,tsx}",
@@ -2693,8 +2644,7 @@ module.exports = {
     extend: {},
   },
   plugins: &lbrack;&rbrack;,
-}
-</pre>
+}</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 5: Now, in the src directory create a file as RecipeCard.jsx, which will consist 
 of the code for presenting the recipes to the user.</h4>
@@ -2705,13 +2655,10 @@ above directory structure.</h4>
 <pre>/* index.css */
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
-</pre>
+@tailwind utilities;</pre>
 <!--~~~~~~~~~~~~~~~~~~ JS ~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
-<pre>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <pre><code>// App.js
 import React, { useEffect, useState } from 'react';
 import RecipeCard from './RecipeCard';
@@ -2801,8 +2748,7 @@ const App = () =&gt; {
     &lt;/div&gt;
   );
 };
-export default App;
-</code></pre>
+export default App;</code></pre>
 </details>
 <!--~~~~~~~~~~~~~~~~~~ JSX ~~~~~~~~~~~~~~~~~~~-->
 <details>
@@ -2894,8 +2840,7 @@ const RecipeCard = ({ recipe }) =&gt; {
     &lt;/div&gt;
   );
 };
-export default RecipeCard;
-</code></pre>
+export default RecipeCard;</code></pre>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2903,11 +2848,9 @@ export default RecipeCard;
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 1: Run the application by executing the following command in the terminal.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
-npm start
+<pre>npm start
 or
-npm run start
-</pre>
+npm run start</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 2: Open a web browser like Chrome or Firefox and type the following URL in the address bar.</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2915,10 +2858,8 @@ npm run start
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Step 3: Change API Key and API Code in your App.js</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<pre>
- const APP_ID = 'YOUR_API_ID';
- const APP_KEY = 'YOUR_API_KEY';
- </pre>
+<pre> const APP_ID = 'YOUR_API_ID';
+ const APP_KEY = 'YOUR_API_KEY'; </pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="13">13. </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2930,6 +2871,7 @@ npm run start
 <h6>Date editted: 5/15/2025 12:00+am<br>
 Date editted: 5/15/2025 9:00+am<br>
 Date editted: 5/17/2025 3:00+pm<br>
-Date editted: 5/18/2025 9:05+pm</h6>
+Date editted: 5/18/2025 9:05+pm<br>
+Date editted: 5/25/2025 11:04+pm</h6>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
