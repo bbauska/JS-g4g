@@ -16,7 +16,7 @@
   <li><h3><a href="#09">Build a <b><mark>Weather App</mark></b> in HTML CSS and JavaScript</a>,</h3></li>
   <li><h3><a href="#10">How to make own <b><mark>Linktree</mark></b> using HTML, CSS and JavaScript?</a>,</h3></li>
   <li><h3><a href="#11">How to <b><mark>Detect Network Speed</mark></b> using JavaScript</a>,</h3></li>
-  <li><h3><a href="#12"><b><mark>Recipe Finder</mark></b> using ReactJS</a>,</h3></li>
+  <li><h3><a href="#12"><b><mark>Recipe Finder</mark></b> using ReactJS</a>.</h3></li>
 </ol>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2 id="01">01. How to declare variables in different ways in JavaScript?</h2>
@@ -38,9 +38,10 @@ avoiding unintended side effects in code.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript <b><mark>var</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This keyword is used to declare variables globally. If you use this keyword to declare a variable 
-then the variable can be accessible <b>globally</b> and <b>changeable</b> also. It is good for a <b>short length 
-of codes</b>, if the codes get huge then you will get confused.</p>
+<p>This keyword is used to declare variables globally. If you use this keyword to declare 
+a variable 
+then the variable can be accessible <b>globally</b> and <b>changeable</b> also. It is 
+good for a <b>short length of codes</b>, if the codes get huge then you will get confused.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -58,8 +59,8 @@ console.log(geeks);</pre>
 <h2>JavaScript <b><mark>let</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This keyword is used to declare variables locally. If you use this keyword to declare a 
-variable then the variable can be accessible <b>locally</b> and it is <b>changeable</b> as well. It is <b>good 
-if the code gets huge</b>.</p>
+variable then the variable can be accessible <b>locally</b> and it is <b>changeable</b> 
+as well. It is <b>good if the code gets huge</b>.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -81,10 +82,11 @@ console.log(geeks);</pre>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>JavaScript <b><mark>const</mark></b></h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This keyword is used to declare variable <b>locally</b>. If you use this keyword to declare a variable 
-then the variable will only be accessible within that block similar to the variable defined by 
-using let and difference between let and const is that the variables declared using <b>const</b> values 
-<b><mark>can’t be reassigned</mark></b>. So we should assign the value while declaring the variable.</p>
+<p>This keyword is used to declare variable <b>locally</b>. If you use this keyword to 
+declare a variable then the variable will only be accessible within that block similar to 
+the variable defined by using let and difference between let and const is that the 
+variables declared using <b>const</b> values <b><mark>can’t be reassigned</mark></b>. 
+So we should assign the value while declaring the variable.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Syntax:</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -110,16 +112,21 @@ console.log(geeks);</pre>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Can be redeclared</td><td>Cannot be redeclared</td><td>Cannot be redeclared</td></tr>
-<tr>
-<td>Can be reassigned a value</td><td>Can be reassigned a value</td><td>Cannot reassign the value</td></tr>
-<tr>
-<td>Only have global and function <b><mark>scope</mark></b></td><td>Can have a <b><mark>block scope</mark></b></td><td>Can have a <b><mark>block scope</mark></b></td></tr>
-<tr>
-<td>Variables are <b><mark>hoisted</mark></b> on top and can be used anywhere</td><td>Variables must be initialized before use</td><td>Variables must be initialized before use</td></tr>
-<tr>
-<td>Can be redeclared anywhere in the program</td><td>Cannot be redeclared inside a block</td><td>Cannot be redeclared inside a block</td></tr>
+  <tr>
+    <td>Can be redeclared</td><td>Cannot be redeclared</td><td>Cannot be redeclared</td>
+  </tr>
+  <tr>
+    <td>Can be reassigned a value</td><td>Can be reassigned a value</td><td>Cannot reassign the value</td>
+  </tr>
+  <tr>
+    <td>Only have global and function <b><mark>scope</mark></b></td><td>Can have a <b><mark>block scope</mark></b></td><td>Can have a <b><mark>block scope</mark></b></td>
+  </tr>
+  <tr>
+    <td>Variables are <b><mark>hoisted</mark></b> on top and can be used anywhere</td><td>Variables must be initialized before use</td><td>Variables must be initialized before use</td>
+  </tr>
+  <tr>
+    <td>Can be redeclared anywhere in the program</td><td>Cannot be redeclared inside a block</td><td>Cannot be redeclared inside a block</td>
+  </tr>
 </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2864,8 +2871,6 @@ npm run start</pre>
 <h2 id="13">13. </h2>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p></p>
-
-
 
 <h6>Date created: 5/14/2025 9+pm</h6>
 <h6>Date editted: 5/15/2025 12:00+am<br>
